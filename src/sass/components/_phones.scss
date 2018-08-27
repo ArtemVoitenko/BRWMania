@@ -1,0 +1,13 @@
+.phones {
+	margin: 0;
+	padding: 0;
+	margin-right: 35px;
+
+	list-style-type: none;
+
+	&__link {
+		color: $black;
+		line-height: 20px;
+		text-decoration: none;
+	}
+}

@@ -1,0 +1,61 @@
+.horizontal-categories {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+	height: 80px;
+	align-items: center;
+
+	background-color: $accent;
+	list-style-type: none;
+	
+	&__item {
+		height: 100%;
+		width: 100%;
+		padding-left: 12px;
+		padding-right: 12px;
+		box-sizing: border-box;
+		
+		&:hover {
+			border-top: 2px solid $black;
+			text-decoration: underline;
+			background-color: darken($accent, 5%);
+		}
+	}
+	&__link {
+		height: 100%;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		text-decoration: none;
+		color: #fff;
+		text-align: center;
+		line-height: 24px;
+		white-space: nowrap;
+
+
+		&--bold {
+			flex-direction: row;
+
+			font-weight: bold;
+			font-size: 16px;
+		}
+		}
+
+	&__icon {
+		display: block;
+
+		fill: #fff;
+
+		&--menu {
+			margin-right: 12px;
+		}
+		
+		&--brands {
+			margin-left: 5px;
+		}
+	}
+}

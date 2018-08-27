@@ -1,0 +1,45 @@
+body {
+	box-sizing: border-box;
+
+	font-family: $default-font;
+	font-size: 14px;
+
+	border-top: 4px solid $accent;
+
+* {
+	box-sizing: inherit;
+}
+	
+}
+.container {
+	position: relative;
+
+	width: 100%;
+	max-width: 1300px;
+	min-width: 320px;
+	margin: 0 auto;
+}
+.section-title {
+	margin-bottom: 20px;
+	margin-top: 15px;
+
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+
+}
+.common-section {
+	border-top: 1px solid $accent;
+	margin-top: 20px;
+}
+.side-divider {
+	display: flex;
+}
+
+.categories-side-wrapper {
+	display: flex;
+	flex-direction: column;
+}
+.banner-side-wrapper {
+	padding-left: 20px;
+}
