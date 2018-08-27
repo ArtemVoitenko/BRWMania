@@ -1,0 +1,14 @@
+.all-advantages {
+	&__title {
+		text-align: center;
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 24px;
+	}
+	&__cards-wrapper {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		
+	}
+}

@@ -1,0 +1,73 @@
+.advantage-card {
+	position: relative;
+
+	display: inline-block;
+	width: 33%;
+	text-align: center;
+	margin-top: 20px;
+	padding-bottom: 40px;
+	padding-top: 40px;
+
+	&__icon {
+		display: block;
+		margin: 0 auto;
+		margin-top: 40px;
+		margin-bottom: 20px;
+	}
+	&__title {
+		display: block;
+
+		text-transform: uppercase;
+		color: $accent;
+		font-weight: bold;
+	}
+	&__description {
+		display: block;
+		max-width: 220px;
+		margin: 0 auto;  
+
+		line-height: 20px;
+		
+	}
+
+	&:before {
+		content: '';
+
+		position: absolute;
+		right: 0;
+		top: 50%;
+		transform: translate(0, -50%);
+
+		display: block;
+		height: 165px;
+		width: 1px;
+
+		background-color: $accent;
+
+	}
+	&:after {
+		content: '';
+
+		position: absolute;
+		left: 50%;
+		bottom: 0;
+		transform: translate(-50%, 0);
+
+		display: block;
+		height: 1px;
+		width: 200px;
+
+		background-color: $accent;
+
+	}	
+	&:nth-child(3n) {
+		&:before {
+			display: none;
+		}
+	}
+	&:nth-child(n+4) {
+		&:after {
+			display: none;
+		}
+	}
+}

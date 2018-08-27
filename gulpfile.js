@@ -53,7 +53,7 @@ const config = {
   jsBuild: [
     `${pathes.src.js}/libs/jquery-3.3.1.min.js`,
     `${pathes.src.js}/libs/slick.min.js`,
-    `${pathes.src.js}/main.js`,
+    `${pathes.src.js}/main.js`
   ],
 };
 
@@ -264,9 +264,11 @@ gulp.task('watch', ['build'], () => {
   browserSync({ server: './dist' });
 
   gulp.watch(`${pathes.src.html}/**/*.html`, ['html-watch']);
+  gulp.watch(`${pathes.src.js}/**/*.js`, ['js']);
   gulp.watch([`${pathes.src.sass}/**/*.scss`], ['css-min-style']);
   gulp.watch(`${pathes.src.img}/**/*`, ['img']);
   gulp.watch(`${pathes.src.svg}/*.svg`, ['svg-sprite-build']);
+  
 });
 
 gulp.task('default', ['watch']);
