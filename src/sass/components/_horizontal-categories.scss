@@ -17,9 +17,14 @@
 		box-sizing: border-box;
 		
 		&:hover {
+
 			border-top: 2px solid $black;
 			text-decoration: underline;
 			background-color: darken($accent, 5%);
+		
+			// &:before {
+				
+			// }
 		}
 	}
 	&__link {

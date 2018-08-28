@@ -284,13 +284,13 @@ input::-webkit-inner-spin-button {
   -webkit-text-fill-color: currentColor;
 }
 
-::selection {
-  color: #000;
-  background: #fbd404;
-}
+// ::selection {
+//   color: #000;
+//   background: #fbd404;
+// }
 
 :focus {
-  outline: none;
+  // outline: none;
 }
 
 //class

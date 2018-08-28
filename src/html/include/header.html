@@ -2,7 +2,7 @@
 	<header class="main-header">
 		<div class="main-header__block">
 			<a href="#" class="main-header__logo">
-				<img src="../images/homepage/logo.png" alt="Магазин мебели BRW mania">
+				<img src="../images/homepage/logo.png"  alt="Магазин мебели BRW mania"  width="310"  height="52">
 				<span class="main-header__logo-description">Фирменный магазин мебели <br>
 				Black Red White и Гербор</span>
 			</a>
@@ -32,19 +32,53 @@
 			</form>
 		</div>
 		<div class="main-header__block">
-			<div class="cart">
+			<div class="cart" id="cart">
 				<div class="cart__products-counter">
-				<svg class="cart__icon"  width="80" height = "60">
-					<use xlink:href="#icon_basket"></use>
-				</svg>
-				
-				<span class="cart__products-quantity">2</span>
+					<svg class="cart__icon"  width="80" height = "60">
+						<use xlink:href="#icon_basket"></use>
+					</svg>
+					<span class="cart__products-quantity">2</span>
 				</div>
 				<span class="cart__total-sum" id="cart-total">2000,15грн.</span>
 				<button class="cart__open-btn">Корзина</button>
+				<div class="cart-modal">
+					<div class="cart-modal__item">
+						<div class="cart-modal__img-wrapper"><img src="../images/homepage/pic_basket_small.png" alt="" class="cart-modal__img"></div>
+						<div class="cart-modal__quantity-block"><span class="cart-modal__product-name">BRW (БРВ) кровать ацтека azteca loz/160 с подъемным механизмом</span>
+						<div class="quantity-switch">
+							<button class="quantity-switch__less">-</button>
+							<input class="quantity-switch__number" readonly value="1" type="text">
+							<button class="quantity-switch__more">+</button>
+						</div></div>
+						
+						<span class="cart-modal__product-price">2580,15 грн.</span>
+						<button class="cart-modal__delete-item"><svg class="cart-modal__del-icon" width="12" height = "12">
+							<use xlink:href="#icon_del"></use>
+						</svg></button>
+					</div>
+					<div class="cart-modal__item">
+						<div class="cart-modal__img-wrapper"><img src="../images/homepage/pic_basket_small.png" alt="" class="cart-modal__img"></div>
+						<div class="cart-modal__quantity-block"><span class="cart-modal__product-name">BRW (БРВ) кровать ацтека azteca loz/160 с подъемным механизмом</span>
+						<div class="quantity-switch">
+							<button class="quantity-switch__less">-</button>
+							<input class="quantity-switch__number" readonly value="1" type="text">
+							<button class="quantity-switch__more">+</button>
+						</div></div>
+						
+						<span class="cart-modal__product-price">2580,15 грн.</span>
+						<button class="cart-modal__delete-item"><svg class="cart-modal__del-icon" width="12" height = "12">
+							<use xlink:href="#icon_del"></use>
+						</svg></button>
+					</div>
+					
+					<p class='cart-modal__total'>Итого:<span class="cart-modal__total-price"> 13156грн</span></p>
+					<div class="cart-modal__buttons-block">
+						<a class="cart-modal__button" href="#" class="cart-modal__open-cart">Просмотр корзины</a>
+						<a class="cart-modal__button cart-modal__button--green" href="#" class="cart-modal__order-checkout">Оформление заказа</a>
+					</div>
+				</div>
 			</div>
 		</div>
-		
 	</header>
 	<nav class="main-nav">
 		<ul class="main-nav__list">

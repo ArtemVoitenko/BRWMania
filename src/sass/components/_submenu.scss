@@ -1,0 +1,35 @@
+.submenu {
+	position: absolute;
+	top: 0;
+	left: 100%;
+	z-index: 3;
+	
+	display: none;
+	width: 100%;
+	padding: 20px 30px 260px 30px;
+
+	background-color: #fff;
+	background-image: url(../images/homepage/logo_drop_down_menu.png);
+	background-repeat: no-repeat;
+	background-position: 50% 95%;
+	box-shadow: -1px 3px 14px 1px rgba(235,236,236,1);
+	&__item {
+		
+	}
+	&__link {
+		font-size: 16px;
+		line-height: 30px;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	&__title {
+		margin-bottom: 15px;
+
+		font-size: 16px;
+		text-transform: uppercase;
+		font-weight: bold;
+		text-align: center;
+
+	}
+}
