@@ -12,6 +12,13 @@
 	text-align: center;
 
 	border: 1px solid $grey;
+	&--slide {
+		margin-right: 20px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}	
 
 	&__img {
 		margin: 0 auto

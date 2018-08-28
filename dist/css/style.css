@@ -439,6 +439,8 @@ body {
     text-decoration: none;
     color: #040707;
     line-height: 30px; }
+    .vertical-categories__link:hover {
+      text-decoration: underline; }
     .vertical-categories__link--uppercase {
       text-transform: uppercase; }
   .vertical-categories__arrow-icon {
@@ -545,6 +547,10 @@ body {
   padding-bottom: 15px;
   text-align: center;
   border: 1px solid #ebecec; }
+  .product-card--slide {
+    margin-right: 20px; }
+    .product-card--slide:last-child {
+      margin-right: 0; }
   .product-card__img {
     margin: 0 auto; }
   .product-card__name {
@@ -640,19 +646,20 @@ body {
     .news__all-news-link:hover {
       text-decoration: underline; }
 
-.all-advantages__title {
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 24px; }
-
-.all-advantages__cards-wrapper {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+.all-advantages {
+  margin-top: 50px; }
+  .all-advantages__title {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px; }
+  .all-advantages__cards-wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
 
 .advantage-card {
   position: relative;
@@ -713,6 +720,38 @@ body {
   margin-bottom: 30px;
   font-size: 16px;
   line-height: 24px; }
+
+.call-popup {
+  position: absolute;
+  top: 360px;
+  left: 50%;
+  transform: translate(-50%, y);
+  width: 650px;
+  padding: 35px 80px;
+  display: inline-block; }
+
+.slider__button {
+  position: absolute;
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-color: #040707;
+  border: 1px solid #ebecec; }
+  .slider__button:hover {
+    background-color: #ea3c27; }
+  .slider__button--prev {
+    top: -40px;
+    right: 35px; }
+  .slider__button--next {
+    top: -40px;
+    right: 0; }
+
+.slider__button-icon {
+  fill: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); }
 
 /* Slider */
 .slick-slider {

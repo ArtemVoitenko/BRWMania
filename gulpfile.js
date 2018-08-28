@@ -265,7 +265,7 @@ gulp.task('watch', ['build'], () => {
 
   gulp.watch(`${pathes.src.html}/**/*.html`, ['html-watch']);
   gulp.watch(`${pathes.src.js}/**/*.js`, ['js']);
-  gulp.watch([`${pathes.src.sass}/**/*.scss`], ['css-min-style']);
+  gulp.watch(`${pathes.src.sass}/**/*.scss`, ['css-min-style']);
   gulp.watch(`${pathes.src.img}/**/*`, ['img']);
   gulp.watch(`${pathes.src.svg}/*.svg`, ['svg-sprite-build']);
   

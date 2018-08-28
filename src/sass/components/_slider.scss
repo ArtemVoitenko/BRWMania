@@ -1,0 +1,36 @@
+.slider {
+	&__button {
+		position: absolute;
+
+		display: block;
+		width: 32px;
+		height: 32px;
+
+		background-color: $black;
+
+		border: 1px solid $grey;
+
+		&:hover {
+			background-color: $accent;
+		}
+		&--prev {
+			top: -40px;
+			right: 35px;
+
+		}
+		&--next {
+			top: -40px;
+			right: 0;
+		}
+	}
+
+	&__button-icon {
+		fill: #fff;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+
+}
