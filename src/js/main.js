@@ -1,6 +1,6 @@
 $('.vertical-categories__item').hover(function() {
     var submenu = $(this).children("ul");
-    submenu.slideToggle();
+    submenu.toggle();
 });
 
 
