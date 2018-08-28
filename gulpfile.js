@@ -53,6 +53,9 @@ const config = {
   jsBuild: [
     `${pathes.src.js}/libs/jquery-3.3.1.min.js`,
     `${pathes.src.js}/libs/slick.min.js`,
+    `${pathes.src.js}/go-top.js`,
+    `${pathes.src.js}/quantizer.js`,
+    `${pathes.src.js}/slider.js`,
     `${pathes.src.js}/main.js`
   ],
 };

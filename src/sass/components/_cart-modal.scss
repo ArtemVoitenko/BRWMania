@@ -2,8 +2,9 @@
 	position: absolute;
 	top: 100%;
 	z-index: 5;
-
+	
 	display: flex;
+	display: none;
 	flex-direction: column;
 	width: 310px;
 	padding: 5px;

@@ -771,6 +771,7 @@ body {
   z-index: 5;
   display: -ms-flexbox;
   display: flex;
+  display: none;
   -ms-flex-direction: column;
       flex-direction: column;
   width: 310px;
@@ -855,6 +856,24 @@ body {
 .quantity-switch__number {
   max-width: 30px;
   text-align: center; }
+
+.go-top {
+  position: fixed;
+  bottom: 25px;
+  right: 70px;
+  display: none;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+  color: #ea3c27; }
+  .go-top__icon {
+    display: block;
+    fill: #ebecec; }
+  .go-top:hover {
+    text-decoration: underline; }
+    .go-top:hover svg {
+      fill: #040707; }
 
 /* Slider */
 .slick-slider {

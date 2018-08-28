@@ -1,0 +1,28 @@
+.go-top {
+  position: fixed; 
+  bottom: 25px; 
+  right: 70px;
+
+  
+  display:none;
+
+  text-align: center;
+  font-weight: bold;
+  cursor:pointer; 
+  font-size: 16px;
+  color: $accent;
+  
+  &__icon {
+    display: block;
+
+    fill: $grey;
+  }
+
+  &:hover {
+    svg {
+      fill: $black;
+    }
+    text-decoration: underline;
+  }
+
+}
