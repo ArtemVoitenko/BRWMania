@@ -38,10 +38,14 @@
 			</div>
 			<form action="#" class="main-header__search-form">
 				<div class="main-header__search-field" id="search">
-					<input class="main-header__input" type="search" placeholder = "Поиск">
-					<button class="main-header__search-button"><svg class="main-header__search-icon" width="20" height = "20">
+					<label class="visually-hidden" for="search">Поиск</label>
+					<input class="main-header__input" name="search" type="search" placeholder = "Поиск">
+
+					<button class="main-header__search-button" name="search-button"><svg class="main-header__search-icon" width="20" height = "20">
 						<use xlink:href="#icon_search"></use>
-					</svg></button>
+					</svg>
+					<span class="visually-hidden">Искать</span>
+				</button>
 				</div>
 			</form>
 		</div>
@@ -109,6 +113,19 @@
 		</ul>
 	</nav>
 </div>
+<div class="call-popup">
+	<span class="call-popup__title">
+		Заказать звонок
+	</span>
+	<form action="#" class="call-popup__form">
+		<label class = "call-popup__phone-label" for="phone">Введите Ваш контактный номер телефона:</label>
+		<input class = "call-popup__phone-input" type="tel" name="phone" id="phone-number-input" placeholder = "+380-XX-XX-XXX">
+		<button class="call-popup__submit">Заказать звонок</button>
+	</form>
+</div>
+
+<div class="fancybox"></div>
+
 <div class="container">
 	<ul class="horizontal-categories">
 		<li class="horizontal-categories__item"><a href="#" class="horizontal-categories__link horizontal-categories__link--bold">
@@ -196,6 +213,7 @@
 		</div>
 		<div class="banner-side-wrapper">
 			<section class="advantages">
+				<h3 class="visually-hidden">Наши преимущества</h3>
 				<ul class="advantages__list">
 					<li class="advantages__item">
 						<svg class='advantages__icon' width="62" height = "40">
@@ -591,17 +609,6 @@ JLOZ90 (Каркас)</span>
 		Black Red White и Гербор" class="footer__logo">
 		<a href="" class="footer__bottom-link">мебель от производителя</a>
 	</div>
-</div>
-
-<div class="call-popup">
-	<span class="call-popup__title">
-		Заказать звонок
-	</span>
-	<form action="#" class="number-form">
-		<label for="phone">Введите Ваш контактный номер телефона:</label>
-		<input type="tel" name="phone" id="phone-number-input" placeholder = ""+380-XX-XX-XXX>
-		<button class="number-form__submit">Заказать звонок</button>
-	</form>
 </div>
 </footer>
 <div hidden>

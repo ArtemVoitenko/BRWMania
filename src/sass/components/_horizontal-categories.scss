@@ -11,7 +11,7 @@
 	
 	&__item {
 		position: relative;
-		
+
 		height: 100%;
 		width: 100%;
 		padding-left: 12px;
@@ -20,7 +20,6 @@
 		
 		&:hover {
 
-			// border-top: 2px solid $black;
 			text-decoration: underline;
 			background-color: darken($accent, 5%);
 		

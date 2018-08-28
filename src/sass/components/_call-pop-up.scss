@@ -1,11 +1,53 @@
 .call-popup {
 	position: absolute;
-	top: 360px;
+	z-index: 10;
+	top: 50%;
 	left: 50%;
-	transform: translate(-50%, y);
+	transform: translate(-50%, -50%);
 	
-	width: 650px;
 	padding: 35px 80px;
 	display: inline-block;
 	
+	text-align: center;
+
+	background-color: #fff;
+
+	&__title {
+		display: block;
+
+		font-size: 36px;
+		font-weight: bold;
+		margin-bottom: 40px;
+	}
+	&__phone-input {
+		display: block;
+		width: 100%;
+		height: 80px;
+		margin-bottom: 40px;
+		
+		font-size: 24px;
+		text-align: center;
+
+		border: 1px solid $black; 
+	}
+
+	&__phone-label {
+		display: block;
+
+		font-size: 24px;
+		line-height: 24px;
+		margin-bottom: 35px;
+	}
+	&__submit {
+		width: 100%;
+		height: 80px;
+		
+		font-size: 24px;
+		color: #fff;
+		text-align: center;
+		text-decoration: underline;
+
+		background-color: $accent;
+	}
+
 }
