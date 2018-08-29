@@ -1,0 +1,57 @@
+.product-catalog {
+
+	&__topline {
+		display: flex;
+		min-height: 90px;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__view-button {
+		&:first-child {
+			margin-right: 10px;
+		}
+	}
+	&__sort-icon {
+		&:hover {
+			fill: $accent;
+		}
+	}
+	&__sorting-input {
+		height: 60px;
+		
+
+		border: 1px solid $grey;
+	}
+	&__sorting-type {
+		padding-right: 180px;
+		padding-left: 25px;
+		margin-right: 40px;
+
+	}
+	&__sorting-limit {
+		padding-left: 10px;
+		padding-right: 55px;
+	}
+	&__sort-label {
+		margin-right: 20px;
+	}
+
+	&__product-grid {
+		display: flex;
+		flex-wrap: wrap;
+// Руслан просил стилизовать повторяющиеся блоки в зависимости от родителя
+		.product-card {
+			margin-right: 20px;
+			margin-bottom: 20px;
+			&:nth-child(3n) {
+			margin-right: 0;
+			}
+			&:hover {
+				box-shadow: 0px 0px 15px 3px rgba(235,236,236,1);
+				.product-card__details {
+					display: block;
+				}
+			}
+		}
+	}
+}
