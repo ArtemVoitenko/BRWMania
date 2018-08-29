@@ -30,3 +30,16 @@ $(".call-popup__close-button").click(function () {
 	callPopUp.fadeOut();
 	fancybox.fadeOut();
 });
+
+$(".sliderRange").slider({
+        range: true,
+        min: 1,
+        max: 10000,
+        values: [100, 2000],
+        slide: function(event, ui) {
+            $("#amountMin").val(ui.values[0]);
+            $("#amountMax").val(ui.values[1]);
+        }
+    });
+    $("#amountMin").val($(".sliderRange").slider("values", 0));
+    $("#amountMax").val($(".sliderRange").slider("values", 1));

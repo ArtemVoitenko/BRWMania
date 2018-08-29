@@ -1,4 +1,7 @@
 body {
+	display: flex;
+	flex-direction: column;
+
 	font-family: $default-font;
 	font-size: 14px;
 	border-top: 4px solid $accent;
