@@ -1,0 +1,19 @@
+.product-info {
+	&__title {
+		margin-bottom: 20px;
+
+		font-size: 24px;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+	}
+	&__slider-wrapper {
+		max-width: 530px;
+		width: 100%;
+	}
+}
+

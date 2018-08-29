@@ -5,16 +5,14 @@
 	height: 3px;
 	width: 100%;
 }
-// .ui-slider-handle {
-// 	border: none!important;
-// 	margin-top: -1px;
-// 	border-radius: 100%;
-// 	width: 15px!important;
-// 	height: 15px!important;
-// 	background-color: $accent!important;
-// 	outline: none;
-// 	cursor: pointer!important;
-// }	
+.ui-slider-handle {
+	border: none!important;
+	width: 15px!important;
+	height: 15px!important;
+	background-color: $accent!important;
+	outline: none;
+	cursor: pointer!important;
+}	
 .ui-slider-range {
 	background-color: $accent;
 	opacity: 1;
