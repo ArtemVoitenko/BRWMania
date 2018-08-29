@@ -81,15 +81,16 @@
 		content: '';
 		
 		position: absolute;
-		top: -6px;
+		top: -15px;
 		left: 40px;
-		z-index: 0;
 
-		display: block;
-		width: 10px;
-		height: 10px;
+		// display: block;
+		// width: 10px;
+		// height: 10px;
 
-		background-color: $black;
-		transform: rotate(45deg);
+		// background-color: $black;
+		// transform: rotate(45deg);
+		border: 7px solid transparent;	
+		border-bottom: 7px solid $black;
 	}
 }
