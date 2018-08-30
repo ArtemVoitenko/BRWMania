@@ -58,6 +58,7 @@ const config = {
     `${pathes.src.js}/quantizer.js`,
     `${pathes.src.js}/product-info__slider.js`,
     `${pathes.src.js}/slider.js`,
+    `${pathes.src.js}/range-sliders.js`,
     `${pathes.src.js}/main.js`
   ],
 };

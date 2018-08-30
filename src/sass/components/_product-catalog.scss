@@ -18,7 +18,8 @@
 	}
 	&__sorting-input {
 		height: 60px;
-		
+
+		font-size: 16px;
 
 		border: 1px solid $grey;
 	}
@@ -34,6 +35,8 @@
 	}
 	&__sort-label {
 		margin-right: 20px;
+
+		font-size: 16px;
 	}
 
 	&__product-grid {
@@ -43,15 +46,28 @@
 		.product-card {
 			margin-right: 20px;
 			margin-bottom: 20px;
+
+
 			&:nth-child(3n) {
 			margin-right: 0;
 			}
 			&:hover {
 				box-shadow: 0px 0px 15px 3px rgba(235,236,236,1);
+				border-bottom: none;
 				.product-card__details {
 					display: block;
+					
 				}
 			}
 		}
+	}
+
+	&__shown-products-quantity {
+		display: inline-block;
+		width: 100%;
+		padding-top: 15px;
+		padding-bottom: 15px;
+
+		text-align: right;
 	}
 }

@@ -1,38 +1,47 @@
 .sliderRange {
-	background-color: #E4E4E4;
-	display: inline-block;
-	border: none!important;
-	height: 3px;
+	position: relative;
+
 	width: 100%;
+	height: 8px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	
+	background-color: #fff;
+
 }
 .ui-slider-handle {
-	border: none!important;
-	width: 15px!important;
-	height: 15px!important;
-	background-color: $accent!important;
-	outline: none;
-	cursor: pointer!important;
-}	
-.ui-slider-range {
-	background-color: $accent;
-	opacity: 1;
-	height: 5px;
-}	
-.option-slider {
-	display: flex;
-	align-items: center;
-	padding-left: 20px!important;
-}	
-.rangeVal {
-	width: 40px;
+	position: absolute;
+	top: -3px;
+
 	display: inline-block;
-	background-color: transparent;
-	border: 1px solid #596A73;
+	width: 16px;
+	height: 16px;
+
+	background-color: $accent;
+	
+
+}
+.ui-slider-range {
+	position: absolute;
+
+	height: 8px;
+	
+	background-color: $accent;
+}
+.rangeVal {
+	display: inline-block;
+	width: 80px;
+	height: 40px;
+	margin-right: 5px;
+
 	text-align: center;
-	padding-top: 7px;
-	padding-bottom: 7px;
-	font-size: 13px;
-	color: #fff;
-	margin-left: 10px;
-	margin-right: 10px;
-}	
+	font-size: 16px;
+
+	border: 1px solid #C5C6C6;
+	background-color: #fff;
+}
+.range-values {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}

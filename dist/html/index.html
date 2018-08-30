@@ -201,13 +201,35 @@
 						<ul class="filters__list">
 							<li class="filters__list-item"><input type="checkbox" name="wood" id="wood" class="filters__property"><label for="wood" class="filters__property-label">Дерево</label></li>
 							<li class="filters__list-item"><input type="checkbox" name="metal" id="metal" class="filters__property"><label for="metal" class="filters__property-label">Металл</label></li>
-							<li class="filters__list-item"><input type="checkbox" name="cloth" id="cloth" class="filters__property"><label for="cloth" class="filters__property-label">Мягкая ткань/кожа</label></li>
+							<li class="filters__list-item"><input type="checkbox" name="cloth" id="cloth" class="filters__property"><label for="cloth" class="filters__property-label">Мягкая ткань/кожа</label></li></ul>
 						</div>
 						<div class="filters__element">
 							<p class="filters__title">Цена</p>
-							<input type="text" class='rangeVal' id="amountMin" readonly>
-							<div class="sliderRange"> </div>
-							<input type="text" class='rangeVal' id="amountMax" readonly>
+							<div class="range-values"><input type="text" class='rangeVal' id="priceMin" readonly><span class="uah">грн.</span> -
+							<input type="text" class='rangeVal' id="priceMax" readonly><span class="uah">грн.</span></div>
+							<div class="sliderRange" id="price-slider"> </div>
+							
+						</div>
+						<div class="filters__element">
+							<p class="filters__title">Производитель</p>
+							<ul class="filters__list">
+							<li class="filters__list-item"><input type="checkbox" name="producer-brw" id="producer-brw" class="filters__property"><label for="producer-brw" class="filters__property-label">BRW - Украина</label></li>
+							
+						</div>
+			
+						<div class="filters__element">
+							<p class="filters__title">Ширина</p>
+							<div class="range-values"><input type="text" class='rangeVal' id="widthMin" readonly><span class="uah">мм.</span> -
+							<input type="text" class='rangeVal' id="widthMax" readonly><span class="uah">мм.</span></div>
+							<div class="sliderRange" id="width-slider"> </div>
+							
+						</div>
+						<div class="filters__element">
+							<p class="filters__title">Глубина</p>
+							<div class="range-values"><input type="text" class='rangeVal' id="deepMin" readonly><span class="uah">мм.</span> -
+							<input type="text" class='rangeVal' id="deepMax" readonly><span class="uah">мм.</span></div>
+							<div class="sliderRange" id="deep-slider"> </div>
+							
 						</div>
 					</section>
 		</div>
@@ -411,11 +433,72 @@
 								<li class="product-card__details-item">Длина: 216см</li>
 								<li class="product-card__details-item">Спальное место: 180х200см</li>
 								<li class="product-card__details-item">Каркас: ДСП, глянец</li>
-								<li class="product-card__details-item">Ящики для бель: без ящиков</li>
+								<li class="product-card__details-item">Ящики для белья: без ящиков</li>
 							</ul>
 						</div>
 					</div>
+				<div class="product-card"><a href="#" class="product__link">
+					<span class="product-card__name">BRW (БРВ) Кровать  Индиана Indiana <br> (дуб шутер) <br> JLOZ90 (Каркас)</span> <div class="product-card__img-wrapper">
+						<img src="../images/search/pic_product_search.png" alt="" class="product-card__img"></div></a>
+						<span class="product-card__phrase">Топ продаж</span>
+						<span class="product-card__delivery"><svg class='product-card__delivery-icon' width="40" height = "16">
+							<use xlink:href="#icon_fast_shipping_product"></use>
+						</svg>Быстрая доставка</span>
+						<span class="product-card__price">2142грн</span>
+						<button class="product-card__cart-button"><svg class='product-card__button-icon' width="22" height = "16">
+							<use xlink:href="#icon_buy_product"></use>
+						</svg>Купить</button>
+						<button  class="product-card__buy-button">Купить в 1-н клик</button>
+						<div class="product-card__details">
+							<ul class="product-card__details-list">
+								<li class="product-card__details-item">Бренд: MircMark</li>
+								<li class="product-card__details-item">Страна производитель: Украина</li>
+								<li class="product-card__details-item">Гарантия: 12 месяцев от фабрики</li>
+								<li class="product-card__details-item">Ширина: 184,5</li>
+								<li class="product-card__details-item">Высота изголовья: 105,5см</li>
+								<li class="product-card__details-item">Высота изножья: 35см</li>
+								<li class="product-card__details-item">Длина: 216см</li>
+								<li class="product-card__details-item">Спальное место: 180х200см</li>
+								<li class="product-card__details-item">Каркас: ДСП, глянец</li>
+								<li class="product-card__details-item">Ящики для белья: без ящиков</li>
+							</ul>
+						</div>
+					</div>
+
 			</div>
+			<span class="product-catalog__shown-products-quantity">Показано с 1 по 5 из 5 (всего 1 страниц)</span>
+		</section>
+
+		<section class="common-section product-full-description">
+			<h3 class="section-title">МЕБЕЛЬ ДЛЯ ГОСТИНОЙ “АВАТАР”: ЯРКИЙ АКЦЕНТ В ВАШЕЙ ЖИЗНИ</h3>
+			<p>“Аватар” – оригинальное название для модульной мебели, не так ли? Как только вы взглянете на нее воочию, то поймете, что именно вдохновило дизайнеров на создание этой оригинальной и невероятно красивой коллекции. Конечно же, речь идет об одноименном кассовом фильме Джеймса Камерона.</p>
+			<p>Четкие линии, оригинальная расцветка, компактность, вместимост - это далеко не весь перечень преимуществ, которыми обладает мебель для гостиной “Аватар”. Прочитав нашу заметку до конца, вы поймете, что AVATAR от отечественной фабрики Gerbor – это именно то, что вам надо!</p>
+			<h3 class="section-title">МЕБЕЛЬ ДЛЯ ГОСТИНОЙ “АВАТАР”: ВНИМАНИЕ НА ДЕТАЛИ</h3>
+			<p>Для изготовления модульной системы “Аватар” специалисты фабрики “Гербор” используют ламинированную ДСП класса Е1. Как известно, этот материал является довольно прочным и долговечным. Ансамбль дополняется качественной польской фурнитурой, которая подчеркивает стиль и изысканность модульной гостиной “Аватар”.</p>
+			<p>Вы можете выбрать мебель AVATAR в следующих цветовых решениях:
+				<ul>
+					<li>корпус - “венге магия”, фасад – белый с рисунком;</li>
+					<li>фасад – синий, корпус - “венге магия”,;</li>
+					<li>корпус - “венге магия”, фасад – розовый глянец.</li>
+				</ul>
+				Каждый из вариантов органично впишется в любой интерьер и создаст яркий акцент в доме.<br>
+				Несколько неоспоримых преимуществ мебели “Аватар”
+			</p>
+			<p>
+				Говорят, что все гениальное – просто. Нельзя не согласиться с этим, глядя на мебельную систему для гостиной “Аватар”:
+				<ul>
+					<li>строгие геометрические формы;</li>
+					<li>эффектный дизайн;</li>
+					<li>простые, легкие, мобильные, компактные и вместительные конструкции;</li>
+					<li>оригинальные стеклянные вставки;</li>
+					<li>модные и стильные ручки квадратной формы.</li>
+				</ul>
+				Но главное преимущество мебели Аватар - большое количество модулей: полки, тумбы, столы, комоды, витрины, шкафы и кровати. Вы можете купить только те элементы, которые вам наиболее необходимы.
+			</p>
+			<h3 class="section-title">сАМОЕ ВЫГОДНОЕ МЕСТО ДЛЯ ПОКУПКИ МЕБЕЛИ AVATAR</h3>
+			<p>Если вы хотите купить мебель “Аватар” и ищете самые доступные цены в Сети, рекомендуем остановить свой выбор на интернет-магазине BRWmania. Мы не работаем с посредниками, а являемся прямыми поставщиками, которые готовы предоставить все необходимые сертификаты качества и гарантию на реализуемую продукцию.</p>
+			<p>Наша компания обеспечивает жителям Украины (Киева, Харькова, Одессы, Львова, Днепропетровска (Днепра) или других, менее крупных городов страны) оперативную доставку прямо на дом. Все это благодаря прямым поставкам товаров со складских и региональных складов.</p>
+			<p>Остались сомнения или возникли вопросы? Звоните нам прямо сейчас! Мы сделаем все необходимое, чтобы вы остались довольны сотрудничеством с интернет-магазином BRWmania!</p>
 		</section>
 	</div>
 </div>

@@ -27,6 +27,18 @@ body {
 .common-section {
 	border-top: 1px solid $accent;
 	margin-top: 20px;
+
+	p {
+		margin-bottom: 30px;
+
+		font-size: 16px;
+		line-height: 24px;
+
+	}
+	ul {
+		list-style-type: disc;
+		list-style-position: inside;
+	}
 }
 .side-divider {
 	display: flex;
