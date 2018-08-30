@@ -45,6 +45,7 @@ body {
 }
 .side-divider {
 	display: flex;
+	justify-content: space-between;
 }
 
 .categories-side-wrapper {
@@ -53,4 +54,30 @@ body {
 }
 .banner-side-wrapper {
 	padding-left: 20px;
+}
+.left-side {
+	width: 100%;
+}
+.right-side {
+	width: 100%;
+}
+.common-button {
+	background-color: $accent;
+	border-radius: 2px;
+	
+	text-transform: uppercase;
+	color: #fff;
+
+
+	&:hover {
+		background-color: darken($accent, 5%);
+	}
+	&--black {
+		text-transform: lowercase;
+		background-color: $black;
+		text-decoration: underline;
+		&:hover {
+			background-color: lighten($black, 5%);
+		}
+	}
 }

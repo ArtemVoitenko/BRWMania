@@ -1,0 +1,23 @@
+.all-characteristics {
+	&__item {
+		display: flex;
+		font-size: 16px;
+		line-height: 24px;
+	}
+	&__dots {
+	
+		width: 100%;
+		background-image: url(../images/product/dot.png); 
+		background-repeat: repeat-x;
+		background-position: 0 12px;
+		margin-right: 5px;
+		margin-left: 5px;
+	}
+	&__name {
+		white-space: nowrap;
+	}
+	&__value {
+		font-weight: bold;
+		white-space: nowrap;
+	}
+}

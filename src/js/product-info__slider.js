@@ -10,5 +10,6 @@ $('.small-slider').slick({
   draggable: false,
   focusOnSelect: true,
   variableWidth: true,
+  infinite: false,
   asNavFor: '.big-slider',
 });
