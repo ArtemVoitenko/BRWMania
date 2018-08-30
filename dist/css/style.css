@@ -1184,6 +1184,9 @@ body {
   .product-comments__wrapper {
     max-height: 420px;
     overflow-y: scroll; }
+    .product-comments__wrapper--full-width {
+      max-height: none;
+      overflow-y: visible; }
   .product-comments__topline {
     display: -ms-flexbox;
     display: flex;
@@ -1225,6 +1228,8 @@ body {
     top: 13px; }
   .product-comments__rate-icon {
     fill: #ea3c27; }
+  .product-comments--full-width {
+    margin-left: 0; }
 
 .product-catalog__topline {
   display: -ms-flexbox;

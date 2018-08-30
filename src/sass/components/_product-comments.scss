@@ -9,6 +9,10 @@
 	&__wrapper {
 		max-height: 420px;
 		overflow-y: scroll;
+		&--full-width {
+			max-height: none;
+			overflow-y: visible;
+		}
 	}
 
 	&__topline {
@@ -68,4 +72,8 @@
 	&__rate-icon {
 		fill: $accent;
 	}
+	&--full-width {
+		margin-left: 0;
+	}
+
 }
