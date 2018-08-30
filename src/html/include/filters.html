@@ -1,5 +1,6 @@
 <section class="filters">
 	<h4 class="visually-hidden">фильтры</h4>
+	<form class="filters__form" action="#">
 	<div class="filters__element">
 		<p class="filters__title">Бренд</p>
 		<ul class="filters__list">
@@ -44,7 +45,7 @@
 			<div class="filters__element">
 				<p class="filters__title">Производитель</p>
 				<ul class="filters__list">
-				<li class="filters__list-item"><input type="checkbox" name="producer-brw" id="producer-brw" class="filters__property"><label for="producer-brw" class="filters__property-label">BRW - Украина</label></li>
+				<li class="filters__list-item"><input type="checkbox" name="producer-brw" id="producer-brw" class="filters__property"><label for="producer-brw" class="filters__property-label">BRW - Украина</label> <span class="filters__producer-products-quantity">5</span></li>
 				
 			</div>
 
@@ -62,4 +63,10 @@
 				<div class="sliderRange" id="deep-slider"> </div>
 				
 			</div>
+			<button type="reset" class="filters__reset"><svg class="filters__reset-icon" width = "12" height = "12">
+					<use xlink:href="#icon_del"></use>
+				</svg>Сбросить фильтр
+			</button>
+			<button class="filters__button-filtrate">фильтровать</button>
+			</form>
 		</section>

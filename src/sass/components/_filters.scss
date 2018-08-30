@@ -41,10 +41,23 @@
 
 		&:checked {
 			+ label {
-			&:before {
-			background: ('../images/svg-bg-icons/icon_check.svg');
-			background-color: $accent;
-			background-size: cover;
+			&:after {
+				content: '';
+				position: absolute;
+				left: 4px;
+				top: 9px;
+
+				display: block;
+				width: 12px;
+				height: 8px;
+				border-left: 2px solid $black;
+				border-bottom: 2px solid $black;
+
+				transform: rotate(-45deg);
+
+			}
+			+ .filters__producer-products-quantity {
+				display: block;
 			}
 			}
 		}
@@ -54,6 +67,9 @@
 		margin-bottom: 20px;
 
 		border-bottom: 1px solid #fff;
+	}
+	&__list-item {
+		position: relative;
 	}
 	&__show-more {
 		position: relative;
@@ -74,6 +90,47 @@
 		border-top: 1px solid $black;
 		border-left: 1px solid $black;
 		transform: rotate(-135deg);
+	}
+	}
+	&__reset-icon {
+		margin-right: 15px;
+	}
+	&__button-filtrate {
+		width: 100%;
+		height: 60px;
+		margin-top: 20px;
+
+		font-size: 16px;
+		text-transform: uppercase;
+		color: #fff;
+		text-align: center;
+
+		background-color: $black;
+	}
+	&__producer-products-quantity {
+		position: absolute;
+		right: 0;
+		top: 0;
+
+		display: none;
+		width: 25px;
+		height: 25px;
+		padding-top: 5px;
+		
+		text-align: center;
+		color: #fff;
+
+		background-color: $accent;
+
+	&:before {
+		content: '';
+		
+		position: absolute;
+		top: 5px;
+		right: 100%;
+
+		border: 7px solid transparent;
+		border-right: 7px solid $accent;
 	}
 	}
 

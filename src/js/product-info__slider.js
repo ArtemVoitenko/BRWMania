@@ -6,9 +6,9 @@
   asNavFor: '.small-slider'
 });
 $('.small-slider').slick({
-  slidesToShow: 6,
   slidesToScroll: 1,
+  draggable: false,
+  focusOnSelect: true,
   variableWidth: true,
   asNavFor: '.big-slider',
-  infinite: true
 });
