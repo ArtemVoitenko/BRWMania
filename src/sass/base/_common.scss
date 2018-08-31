@@ -56,10 +56,10 @@ body {
 	padding-left: 20px;
 }
 .left-side {
-	width: 100%;
+	width: 58%;
 }
 .right-side {
-	width: 100%;
+	width: 41%;
 }
 .common-button {
 	background-color: $accent;
@@ -80,4 +80,7 @@ body {
 			background-color: lighten($black, 5%);
 		}
 	}
+}
+.common-bold {
+	font-weight: bold;
 }

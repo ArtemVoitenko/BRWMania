@@ -15,4 +15,16 @@
 		flex-wrap: wrap;
 		
 	}
+	&--small {
+		margin-top: 20px;
+		margin-bottom: 20px;
+		.all-advantages__title {
+			font-size: 16px;
+			margin-top: 20px;
+			margin-bottom: 0;
+		}
+		.advantage-card {
+			padding: 15px 5px 15px 5px;
+		}
+	}
 }
