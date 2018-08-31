@@ -1,0 +1,70 @@
+.review {
+	padding: 25px;
+	background-color: $grey;
+	margin-bottom: 25px;
+
+	&__title {
+		display: block;
+		font-size: 24px;
+		text-align: center;
+		margin-bottom: 25px;
+	}
+	&__form-input {
+		height: 60px;
+		width: 100%;
+		margin-bottom: 25px;
+		padding-left: 15px;
+
+		background-color: #fff;
+		
+	}
+
+	&__send-side {
+		width: 33%;
+	}
+	&__text-side {
+		width: 65%;
+
+	}
+	&__content-field {
+		width: 100%;
+		height: 145px;
+		padding: 25px;
+
+		background-color: #fff;
+
+	}
+	&__capcha-wrapper {
+		display: flex;
+		margin-top: 10px;
+	}
+	&__send-capcha {
+		width: 100%;
+		height: 60px;
+		margin-left: 15px;
+		
+		font-size: 16px;
+		text-align: center;
+		color: #fff;
+		background-color: $black;
+
+	}
+	&__capcha-label {
+		line-height: 0;
+	}
+	&__submit {
+		width: 100%;
+		height: 60px;
+
+		text-align: center;
+	}
+	&__quality-wrapper {
+		height: 60px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__note {
+		margin-top: 15px;
+	}
+}

@@ -30,7 +30,6 @@
 <defs>
     <style>
       .cls-1 {
-        fill: #ea3c27;
         fill-opacity: 0;
         stroke: #040707;
         stroke-linejoin: round;
