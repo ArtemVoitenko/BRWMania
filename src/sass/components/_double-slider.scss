@@ -1,6 +1,8 @@
-.big-slider {
-	margin-bottom: 30px;
-}
+
 .small-slider {
-	display: flex;
+	width: 330px;
+	margin: 0 auto;
+	&__slide {
+		padding: 15px;
+	}
 }

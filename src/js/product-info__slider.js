@@ -1,15 +1,17 @@
- $('.big-slider').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  arrows: false,
-  fade: true,
-  asNavFor: '.small-slider'
-});
+
 $('.small-slider').slick({
   slidesToScroll: 1,
+  slidesToShow: 3,
   draggable: false,
-  focusOnSelect: true,
   variableWidth: true,
   infinite: false,
-  asNavFor: '.big-slider',
+  arrows: false
 });
+var smallSlide = $(".small-slider__slide");
+var productPicture = $(".product-picture");
+smallSlide.on("click", function () {
+  var src = $(this).children("img").attr("data-img-big");
+  console.log(src);
+  productPicture.attr("src", src);
+
+})

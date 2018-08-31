@@ -1376,7 +1376,6 @@ body {
   position: fixed;
   display: -ms-flexbox;
   display: flex;
-  display: none;
   -ms-flex-align: center;
       align-items: center;
   -ms-flex-direction: column;
@@ -1399,12 +1398,11 @@ body {
     text-align: center;
     margin-bottom: 30px; }
 
-.big-slider {
-  margin-bottom: 30px; }
-
 .small-slider {
-  display: -ms-flexbox;
-  display: flex; }
+  width: 330px;
+  margin: 0 auto; }
+  .small-slider__slide {
+    padding: 15px; }
 
 .product-characteristics__slider-wrapper {
   max-width: 755px; }
