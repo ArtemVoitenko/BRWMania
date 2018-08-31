@@ -76,9 +76,10 @@ body {
 	&--black {
 		text-transform: lowercase;
 		background-color: $black;
-		text-decoration: underline;
+		
 		&:hover {
-			background-color: lighten($black, 5%);
+			background-color: lighten($black, 7%);
+			text-decoration: underline;
 		}
 	}
 }

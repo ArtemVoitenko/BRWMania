@@ -21,4 +21,30 @@
 		fill: #fff
 
 	}
+	&__click-buy {
+	margin-left: 15px;
+
+	text-decoration: underline;
+	&:hover {
+		color: $accent;
+	}
+	}
+	&__color-block {
+		margin-top: 85px;
+		display: flex;
+		align-items: center;
+	}
+	&__color-label {
+		display: inline-block;
+		margin-right: 25px;
+
+		text-align: left;
+	}
+	&__color-value {
+		display: block;
+		font-weight: bold;
+	}
+	&__color-img {
+		display: inline-block;
+	}
 }
