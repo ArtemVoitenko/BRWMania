@@ -1,0 +1,30 @@
+.list-view {
+	width: 100%;
+	.product-card {
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-around;
+		&__img-wrapper {
+			padding: 0;
+			overflow: visible;
+
+		}
+		&__img {
+			position: relative;
+			margin: 0;
+		}
+		&__purchase {
+			display: flex;
+			flex-direction: column;
+		}
+		&__details {
+			position: relative;
+			width: auto;
+			display: block;
+			box-shadow: none;
+		}
+		&__price {
+			font-size: 25px;
+		}
+	}
+	}

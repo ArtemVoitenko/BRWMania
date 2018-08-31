@@ -31,4 +31,12 @@ $(".call-popup__close-button").click(function () {
 	callPopUp.fadeOut();
 	fancybox.fadeOut();
 });
+var productCardList = $(".product-card__wrapper")
+$("#list-view").on("click", function () {
+    console.log(productCardList);
+    productCardList.addClass("list-view");
+});
+$("#grid-view").on("click", function () {
+    productCardList.removeClass("list-view");
+})
 });

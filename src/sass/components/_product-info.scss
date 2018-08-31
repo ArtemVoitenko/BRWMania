@@ -66,6 +66,13 @@
 		font-size: 16px;
 	}
 
+	&__rate-icon {
+		fill: $grey;
+		&:hover {
+			fill: $accent
+		}
+	}
+
 }
 
 
