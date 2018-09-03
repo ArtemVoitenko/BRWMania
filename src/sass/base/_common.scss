@@ -95,3 +95,24 @@ body {
 	font-weight: bold;
 	text-align: center;
 }
+.continue-button {
+	display: block;
+	width: 420px;
+	height: 40px;
+	margin: 0 auto;
+
+	text-align: center;
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #fff;
+
+	background-color: $black;
+
+	&:hover {
+		background-color: lighten($black, 10%);
+	}
+	&__icon {
+	margin-left: 15px;
+	fill: #fff
+	}
+	}

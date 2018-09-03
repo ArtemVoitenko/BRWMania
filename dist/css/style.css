@@ -343,6 +343,22 @@ body {
   font-weight: bold;
   text-align: center; }
 
+.continue-button {
+  display: block;
+  width: 420px;
+  height: 40px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #040707; }
+  .continue-button:hover {
+    background-color: #172727; }
+  .continue-button__icon {
+    margin-left: 15px;
+    fill: #fff; }
+
 .main-nav {
   margin-bottom: 20px; }
   .main-nav__list {
@@ -1899,23 +1915,6 @@ body {
 .contacts__map {
   margin-top: 20px;
   margin-bottom: 25px; }
-
-.contacts__button {
-  display: block;
-  width: 420px;
-  height: 40px;
-  margin: 0 auto;
-  text-align: center;
-  font-size: 16px;
-  text-transform: uppercase;
-  color: #fff;
-  background-color: #040707; }
-  .contacts__button:hover {
-    background-color: #172727; }
-
-.contacts__button-icon {
-  margin-left: 15px;
-  fill: #fff; }
 
 /* Slider */
 .slick-slider {
