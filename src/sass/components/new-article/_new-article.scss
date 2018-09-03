@@ -1,0 +1,75 @@
+.new-article {
+	&__title {
+		margin-bottom: 15px;
+		font-size: 24px;
+		
+	}
+	&__date {
+		margin-bottom: 15px;
+		display: block;
+		color: #B0B0B0;
+	}
+
+	&__img-left {
+		float: left;
+		margin-right: 15px;
+		}
+		
+	&__img-right {
+			float: right;
+			margin-left: 30px;
+			margin-bottom: 30px;
+		}
+	
+	
+	&__big-letter {
+		padding-right: 10px;
+		padding-bottom: 15px;
+		font-size: 72px;
+		color: $accent;
+		line-height: 25px;
+		display: inline-block;
+		float: left;
+	}
+	&__content {
+		margin-bottom: 20px;
+
+		font-size: 16px;
+		line-height: 24px;
+	}
+	&__block {
+		display: block;
+		clear: both;
+	}
+}
+.new-buttons-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.clear {
+	clear: both;
+}
+.new-button {
+	position: relative;
+	padding: 10px 45px;
+	font-size: 16px;
+	text-transform: uppercase;
+	&:hover {
+		background-color: $black;
+		color: #fff;
+		svg {
+			fill: #fff
+		}
+	}
+	&__icon-left {
+		position: absolute;
+		left: 15px;
+		top: 14px;
+	}
+	&__icon-right {
+		position: absolute;
+		right: 15px;
+		top: 14px;
+	}
+}

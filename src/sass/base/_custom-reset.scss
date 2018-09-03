@@ -295,7 +295,7 @@ input::-webkit-inner-spin-button {
 
 //class
 .clearfix:after {
-  content: '.';
+  content: '';
   display: block;
   clear: both;
 }
