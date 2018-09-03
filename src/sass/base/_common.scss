@@ -131,3 +131,14 @@ body {
 	transform: translate(-50%, -50%);
 
 }
+.clear {
+	clear: both;
+}
+.left-img {
+	float: left;
+	margin-right: 15px;
+}
+.right-img {
+	float: right;
+	margin-left: 15px;
+}

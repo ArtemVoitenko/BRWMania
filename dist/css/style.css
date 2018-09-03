@@ -372,6 +372,17 @@ body {
   top: 50%;
   transform: translate(-50%, -50%); }
 
+.clear {
+  clear: both; }
+
+.left-img {
+  float: left;
+  margin-right: 15px; }
+
+.right-img {
+  float: right;
+  margin-left: 15px; }
+
 .main-nav {
   margin-bottom: 20px; }
   .main-nav__list {
@@ -1879,9 +1890,6 @@ body {
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between; }
-
-.clear {
-  clear: both; }
 
 .new-button {
   position: relative;
