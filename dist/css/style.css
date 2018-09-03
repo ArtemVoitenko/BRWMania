@@ -341,7 +341,8 @@ body {
 .page-title {
   font-size: 24px;
   font-weight: bold;
-  text-align: center; }
+  text-align: center;
+  text-transform: uppercase; }
 
 .continue-button {
   display: block;
@@ -1847,6 +1848,19 @@ body {
 .new-article__block {
   display: block;
   clear: both; }
+
+.new-article--item {
+  position: relative;
+  display: inline-block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #040707; }
+
+.new-article__item-button {
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+  width: 200px; }
 
 .new-buttons-wrapper {
   display: -ms-flexbox;
