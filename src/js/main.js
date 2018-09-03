@@ -40,3 +40,6 @@ $("#grid-view").on("click", function () {
     productCardList.removeClass("list-view");
 })
 });
+// $(".big-slide__zoom").ZooMove({
+//     scale : 2
+// });

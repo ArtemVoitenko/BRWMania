@@ -53,6 +53,7 @@ const config = {
   jsBuild: [
     `${pathes.src.js}/libs/jquery-3.3.1.min.js`,
     `${pathes.src.js}/libs/jquery-ui.min.js`,
+    `${pathes.src.js}/libs/zoomove.min.js`,
     `${pathes.src.js}/libs/slick.min.js`,
     `${pathes.src.js}/go-top.js`,
     `${pathes.src.js}/quantizer.js`,
@@ -60,7 +61,7 @@ const config = {
     `${pathes.src.js}/slider.js`,
     `${pathes.src.js}/range-sliders.js`,
     `${pathes.src.js}/main.js`
-  ],
+  ]
 };
 
 function plumberFn(error) {
@@ -260,8 +261,9 @@ gulp.task('svg-sprite-build', () =>
 gulp.task('build', callback => {
   runSequence(
     'clean',
-    ['copy', 'html', 'svg-sprite-build', 'img'],
+    ['copy', 'html', 'svg-sprite-build','js', 'img'],
     'css-min-style',
+    
     callback
   );
 });
