@@ -117,3 +117,17 @@ body {
 	fill: #fff
 	}
 	}
+.paragraph {
+	margin-bottom: 25px;
+	font-size: 16px;
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+.centered {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+
+}

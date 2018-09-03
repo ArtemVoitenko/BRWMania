@@ -1,0 +1,39 @@
+.delivery {
+	&__attention-block {
+
+		background-color: $grey;
+		display: flex;
+		padding: 20px;
+		padding-left: 0;
+		margin-bottom: 25px;
+	}
+	&__attention-icon-wrapper {
+		position: relative;
+		width: 200px;
+	}
+	&__note {
+		margin-top: 20px;
+		margin-bottom: 20px;
+		color: $accent;
+	}
+	&__common-title {
+		display: block;
+		margin-bottom: 20px;
+		margin-top: 20px;
+		display: flex;
+		align-items: center;
+	}
+	&__big-title {
+		font-size: 16px;
+		text-transform: uppercase;
+		line-height: 48px;
+		text-align: center;
+	}
+	&__new-post {
+		margin-right: 15px;
+	}
+	&__paragraph {
+		font-size: 16px;
+		line-height: 24px;
+	}
+}

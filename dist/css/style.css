@@ -360,6 +360,18 @@ body {
     margin-left: 15px;
     fill: #fff; }
 
+.paragraph {
+  margin-bottom: 25px;
+  font-size: 16px; }
+  .paragraph:last-child {
+    margin-bottom: 0; }
+
+.centered {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); }
+
 .main-nav {
   margin-bottom: 20px; }
   .main-nav__list {
@@ -1929,6 +1941,45 @@ body {
 .contacts__map {
   margin-top: 20px;
   margin-bottom: 25px; }
+
+.delivery__attention-block {
+  background-color: #ebecec;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+  padding-left: 0;
+  margin-bottom: 25px; }
+
+.delivery__attention-icon-wrapper {
+  position: relative;
+  width: 200px; }
+
+.delivery__note {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #ea3c27; }
+
+.delivery__common-title {
+  display: block;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center; }
+
+.delivery__big-title {
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 48px;
+  text-align: center; }
+
+.delivery__new-post {
+  margin-right: 15px; }
+
+.delivery__paragraph {
+  font-size: 16px;
+  line-height: 24px; }
 
 /* Slider */
 .slick-slider {
