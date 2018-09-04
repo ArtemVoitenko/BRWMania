@@ -1,0 +1,43 @@
+.pagination {
+	text-align: center;
+
+	&__link {
+		position: relative;
+		display: inline-block;
+		padding: 10px 15px;
+		margin-left: -6px;
+
+		font-size: 16px;
+		
+		border-radius: 2px;
+
+		&:after {
+			content: '';
+			position: absolute;
+			right: 0;
+			top: 7px;
+			width: 1px;
+			height: 60%;
+
+			background-color: $black;
+
+		}
+		&:hover {
+			background-color: $accent;
+			color: #fff;
+
+			&:after {
+				display: none;
+			}
+		}
+			&--active {
+		background-color: $accent;
+			color: #fff;
+
+			&:after {
+				display: none;
+			}
+	}
+	}
+
+}

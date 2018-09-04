@@ -100,6 +100,9 @@ body {
 	&--left {
 		text-align: left;
 	}
+	&--capitalize {
+		text-transform: capitalize;
+	}
 }
 .continue-button {
 	display: block;
