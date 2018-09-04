@@ -39,9 +39,11 @@ body {
 
 	}
 	ul {
+		margin-bottom: 30px;
 		list-style-type: disc;
 		list-style-position: inside;
 		line-height: 24px;
+
 	}	
 }
 .side-divider {
@@ -95,6 +97,9 @@ body {
 	font-weight: bold;
 	text-align: center;
 	text-transform: uppercase;
+	&--left {
+		text-align: left;
+	}
 }
 .continue-button {
 	display: block;

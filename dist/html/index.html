@@ -115,38 +115,321 @@
 
 </div>
 <div class="container">
-	
-	<div class="breadcrumbs">
-		<ul class="breadcrumbs__list">
-			<li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></li>
-			<li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Мебель для гочтиной, зала</a></li>
-			<li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Модульная мебель для гостинных и зала</a></li>
-			<li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Система Аватар</a></li>
+	<ul class="horizontal-categories">
+		<li class="horizontal-categories__item"><a href="#" class="horizontal-categories__link horizontal-categories__link--bold">
+			<svg class="horizontal-categories__icon
+				horizontal-categories__icon--menu " width="27" height = "19">
+				<use xlink:href="#icon_menu"></use>
+			</svg>ВСЯ МЕБЕЛЬ</a></li>
+			<li class="horizontal-categories__item"><a href="#" class="horizontal-categories__link horizontal-categories__link--bold">Все бренды <svg class="horizontal-categories__icon horizontal-categories__icon--brands " width="7" height = "5">
+			<use xlink:href="#icon_arrow_down"></use></a></li>
+			<li class="horizontal-categories__item"><a href="#" class="horizontal-categories__link"><svg class="horizontal-categories__icon"  width="35" height = "35">
+				<use xlink:href="#icon_living_room"></use>
+			</svg>Гостиная</a></li>
+			<li class="horizontal-categories__item"><a href="#" class="horizontal-categories__link"><svg class="horizontal-categories__icon"  width="40" height = "35">
+				<use xlink:href="#icon_bed_room"></use>
+			</svg>Спальня</a></li>
+			<li class="horizontal-categories__item"><a href="#" class="horizontal-categories__link"><svg class="horizontal-categories__icon"  width="30" height = "35">
+				<use xlink:href="#icon_cradle"></use>
+			</svg>Десткая</a></li>
+			<li class="horizontal-categories__item"><a href="#" class="horizontal-categories__link"><svg class="horizontal-categories__icon"  width="35" height = "35">
+				<use xlink:href="#icon_hanger"></use>
+			</svg>Прихожая</a></li>
+			<li class="horizontal-categories__item"><a href="#" class="horizontal-categories__link"><svg class="horizontal-categories__icon"  width="40" height = "35">
+				<use xlink:href="#icon_work_place"></use>
+			</svg>Рабочее место</a></li>
+			<li class="horizontal-categories__item"><a href="#" class="horizontal-categories__link"><svg class="horizontal-categories__icon"  width="35" height = "35">
+				<use xlink:href="#icon_office"></use>
+			</svg>Офис</a></li>
+			<li class="horizontal-categories__item"><a href="#" class="horizontal-categories__link"><svg class="horizontal-categories__icon"  width="35" height = "35">
+				<use xlink:href="#icon_kitchen"></use>
+			</svg>Кухня</a></li>
+			<li class="horizontal-categories__item"><a href="#" class="horizontal-categories__link"><svg class="horizontal-categories__icon"  width="35" height = "35">
+				<use xlink:href="#icon_closet"></use>
+			</svg>Шкаф купе</a></li>
+			<li class="horizontal-categories__item"><a href="#" class="horizontal-categories__link"><svg class="horizontal-categories__icon"  width="35" height = "35">
+				<use xlink:href="#icon_sale"></use>
+			</svg>Акции</a></li>
 		</ul>
 	</div>
-	<section class="about">
-	<h3 class="page-title">о компании</h3>
+<div class="call-popup">
+	<span class="call-popup__title">
+		Заказать звонок
+	</span>
+	<form action="#" class="call-popup__form">
+		<label class = "call-popup__phone-label" for="phone">Введите Ваш контактный номер телефона:</label>
+		<input class = "call-popup__phone-input" type="tel" name="phone" id="phone-number-input" placeholder = "+380-XX-XX-XXX">
+		<button class="call-popup__submit">Заказать звонок</button>
+	</form>
+	<button class="call-popup__close-button"><svg class="call-popup__close-icon"  width="13" height = "13">
+				<use xlink:href="#icon_del"></use>
+			</svg><span class="visually-hidden">Закрыть окно</span></button>
+</div>
 
-	<div class="about__certificates"></div>
-	<div class="about__information common-section">
-		<h3 class="section-title">о компании</h3>
-		<p class="paragraph">Компания «BRWmania» представляет продукцию холдинга Black Red White Польша. Этот холдинг является польской компанией, которая занимается производством мебели. Холдинг основан в 1991 году в Польше со штаб квартирой в городе Билгорай, Польша. В настоящее время компания является экспортером мебели в 40 стран мира, в том числе страны Евросоюза, Израиль, США, Канаду и Украину. Холдинг имеет 30 региональных складов с общей площадью 260тис. м.кв. Ассортимент насчитывает более 3500 наименований продукции.</p>
-		<img src="../images/about_us/pic_1_about_us.jpg" alt="" class="responsive-img left-img">
-
+<div class="fancybox"></div>
+<div class="container">
+	<div class="side-divider">
+		<div class="categories-side-wrapper">
+			<section class="filters">
+				<h4 class="visually-hidden">фильтры</h4>
+				<form class="filters__form" action="#">
+				<div class="filters__element">
+					<p class="filters__title">Бренд</p>
+					<ul class="filters__list">
+						<li class="filters__list-item"><input type="checkbox" name="pehotin" id="pehotin" class="filters__property"><label for="pehotin" class="filters__property-label">Пехотин</label></li>
+						<li class="filters__list-item"><input type="checkbox" name="livs" id="livs" class="filters__property"><label for="livs" class="filters__property-label">Ливс</label></li>
+						<li class="filters__list-item"><input type="checkbox" name="livsCavalieri" id="livsCavalieri" class="filters__property"><label for="livsCavalieri" class="filters__property-label">Ливс. Cavaliery</label></li>
+						<li class="filters__list-item"><input type="checkbox" name="brw" id="brw" class="filters__property"><label for="brw" class="filters__property-label">BRW Украина</label></li>
+						<li class="filters__list-item"><input type="checkbox" name="gerbor" id="gerbor" class="filters__property"><label for="gerbor" class="filters__property-label">Gerbor</label></li>
+						<li class="filters__list-item"><input type="checkbox" name="miromark" id="miromark" class="filters__property"><label for="miromark" class="filters__property-label">MiroMark</label></li>
+						<li class="filters__list-item"><input type="checkbox" name="mobler" id="mobler" class="filters__property"><label for="mobler" class="filters__property-label">Mobler</label></li>
+						<li class="filters__list-item"><input type="checkbox" name="novelty" id="novelty" class="filters__property"><label for="novelty" class="filters__property-label">Novelty</label></li>
+						<li class="filters__list-item"><input type="checkbox" name="skamya" id="skamya" class="filters__property"><label for="skamya" class="filters__property-label">Skamya</label></li>
+						<li class="filters__list-item"><input type="checkbox" name="zenit" id="zenit" class="filters__property"><label for="zenit" class="filters__property-label">Zenit</label></li>
+						<li class="filters__list-item"><input type="checkbox" name="alice" id="alice" class="filters__property"><label for="alice" class="filters__property-label">Аліс Меблі</label></li>
+						<li class="filters__list-item"><input type="checkbox" name="vika" id="vika" class="filters__property"><label for="vika" class="filters__property-label">Віка Меблі</label></li>
+						<li class="filters__list-item"><input type="checkbox" name="katun" id="katun" class="filters__property"><label for="katun" class="filters__property-label">Катунь</label></li>
+						<li class="filters__list-item"><input type="checkbox" name="luxstudio" id="luxstudio" class="filters__property"><label for="luxstudio" class="filters__property-label">Люкс Студио</label></li>
+					</ul>
+					<button class="filters__show-more">Показать еще (<span class="filters__more-quantity">3</span>)</button>
+				</div>
+				<div class="filters__element">
+					<p class="filters__title">Тип</p>
+					<ul class="filters__list">
+						<li class="filters__list-item"><input type="checkbox" name="withMatress" id="withMatress" class="filters__property"><label for="withMatress" class="filters__property-label">С матрасом</label></li>
+						<li class="filters__list-item"><input type="checkbox" name="withLinenBox" id="withLinenBox" class="filters__property"><label for="withLinenBox" class="filters__property-label">С ящиком для белья</label></li>
+						<li class="filters__list-item"><input type="checkbox" name="withLifting" id="withLifting" class="filters__property"><label for="withLifting" class="filters__property-label">С подъемным механизмом</label></li>
+					</div>
+					<div class="filters__element">
+						<p class="filters__title">Материал</p>
+						<ul class="filters__list">
+							<li class="filters__list-item"><input type="checkbox" name="wood" id="wood" class="filters__property"><label for="wood" class="filters__property-label">Дерево</label></li>
+							<li class="filters__list-item"><input type="checkbox" name="metal" id="metal" class="filters__property"><label for="metal" class="filters__property-label">Металл</label></li>
+							<li class="filters__list-item"><input type="checkbox" name="cloth" id="cloth" class="filters__property"><label for="cloth" class="filters__property-label">Мягкая ткань/кожа</label></li></ul>
+						</div>
+						<div class="filters__element">
+							<p class="filters__title">Цена</p>
+							<div class="range-values"><input type="text" class='rangeVal' id="priceMin" readonly><span class="uah">грн.</span> -
+							<input type="text" class='rangeVal' id="priceMax" readonly><span class="uah">грн.</span></div>
+							<div class="sliderRange" id="price-slider"> </div>
+							
+						</div>
+						<div class="filters__element">
+							<p class="filters__title">Производитель</p>
+							<ul class="filters__list">
+							<li class="filters__list-item"><input type="checkbox" name="producer-brw" id="producer-brw" class="filters__property"><label for="producer-brw" class="filters__property-label">BRW - Украина</label> <span class="filters__producer-products-quantity">5</span></li>
+							
+						</div>
+			
+						<div class="filters__element">
+							<p class="filters__title">Ширина</p>
+							<div class="range-values"><input type="text" class='rangeVal' id="widthMin" readonly><span class="uah">мм.</span> -
+							<input type="text" class='rangeVal' id="widthMax" readonly><span class="uah">мм.</span></div>
+							<div class="sliderRange" id="width-slider"> </div>
+							
+						</div>
+						<div class="filters__element">
+							<p class="filters__title">Глубина</p>
+							<div class="range-values"><input type="text" class='rangeVal' id="deepMin" readonly><span class="uah">мм.</span> -
+							<input type="text" class='rangeVal' id="deepMax" readonly><span class="uah">мм.</span></div>
+							<div class="sliderRange" id="deep-slider"> </div>
+							
+						</div>
+						<button type="reset" class="filters__reset"><svg class="filters__reset-icon" width = "12" height = "12">
+								<use xlink:href="#icon_del"></use>
+							</svg>Сбросить фильтр
+						</button>
+						<button class="filters__button-filtrate">фильтровать</button>
+						</form>
+					</section>
+			<div class="product-info__side-img-wrapper"><img src="" alt="" class="product-info__side-img"></div>
+			<div class="product-info__side-img-wrapper"><img src="" alt="" class="product-info__side-img"></div>
+			<div class="product-info__side-img-wrapper"><img src="" alt="" class="product-info__side-img"></div>
+			<div class="product-info__side-img-wrapper"><img src="" alt="" class="product-info__side-img"></div>
+			<div class="product-info__side-img-wrapper"><img src="" alt="" class="product-info__side-img"></div>
+			<div class="product-info__side-img-wrapper"><img src="" alt="" class="product-info__side-img"></div>
+		</div>
+		<div class="banner-side-wrapper">
+			
+			<div class="breadcrumbs">
+				<ul class="breadcrumbs__list">
+					<li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></li>
+					<li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Мебель для гочтиной, зала</a></li>
+					<li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Модульная мебель для гостинных и зала</a></li>
+					<li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Система Аватар</a></li>
+				</ul>
+			</div>
+			<h3 class="page-title page-title--left">МОДУЛЬНАЯ МЕБЕЛЬ ДЛЯ ГОСТИННЫХ И ЗАЛА</h3>
+			<div class="product-catalog__product-grid common-section">
+				<div class="product-card__wrapper ">
+					<div class="product-card"><a href="#" class="product__link">
+						<div class="product-card__img-wrapper">
+						<img src="../images/catalog_2/pic_catalog_2.jpg" alt="" class="product-card__img"></div></a>
+						<div class="product-card__purchase">
+							<span class="product-card__name">Cистема Антверпен <br>
+							Antverpen Гербор</span>
+							<button class="product-card__cart-button"><svg class='product-card__button-icon' width="25" height = "25">
+								<use xlink:href="#icon_pick_up"></use>
+							</svg>Подобрать</button>
+						</div>
+					</div>
+				</div>
+				<div class="product-card__wrapper ">
+					<div class="product-card"><a href="#" class="product__link">
+						<div class="product-card__img-wrapper">
+						<img src="../images/catalog_2/pic_catalog_2.jpg" alt="" class="product-card__img"></div></a>
+						<div class="product-card__purchase">
+							<span class="product-card__name">Cистема Антверпен <br>
+							Antverpen Гербор</span>
+							<button class="product-card__cart-button"><svg class='product-card__button-icon' width="25" height = "25">
+								<use xlink:href="#icon_pick_up"></use>
+							</svg>Подобрать</button>
+						</div>
+					</div>
+				</div>
+				<div class="product-card__wrapper ">
+					<div class="product-card"><a href="#" class="product__link">
+						<div class="product-card__img-wrapper">
+						<img src="../images/catalog_2/pic_catalog_2.jpg" alt="" class="product-card__img"></div></a>
+						<div class="product-card__purchase">
+							<span class="product-card__name">Cистема Антверпен <br>
+							Antverpen Гербор</span>
+							<button class="product-card__cart-button"><svg class='product-card__button-icon' width="25" height = "25">
+								<use xlink:href="#icon_pick_up"></use>
+							</svg>Подобрать</button>
+						</div>
+					</div>
+				</div>
+				<div class="product-card__wrapper ">
+					<div class="product-card"><a href="#" class="product__link">
+						<div class="product-card__img-wrapper">
+						<img src="../images/catalog_2/pic_catalog_2.jpg" alt="" class="product-card__img"></div></a>
+						<div class="product-card__purchase">
+							<span class="product-card__name">Cистема Антверпен <br>
+							Antverpen Гербор</span>
+							<button class="product-card__cart-button"><svg class='product-card__button-icon' width="25" height = "25">
+								<use xlink:href="#icon_pick_up"></use>
+							</svg>Подобрать</button>
+						</div>
+					</div>
+				</div>
+				<div class="product-card__wrapper ">
+					<div class="product-card"><a href="#" class="product__link">
+						<div class="product-card__img-wrapper">
+						<img src="../images/catalog_2/pic_catalog_2.jpg" alt="" class="product-card__img"></div></a>
+						<div class="product-card__purchase">
+							<span class="product-card__name">Cистема Антверпен <br>
+							Antverpen Гербор</span>
+							<button class="product-card__cart-button"><svg class='product-card__button-icon' width="25" height = "25">
+								<use xlink:href="#icon_pick_up"></use>
+							</svg>Подобрать</button>
+						</div>
+					</div>
+				</div>
+				<div class="product-card__wrapper ">
+					<div class="product-card"><a href="#" class="product__link">
+						<div class="product-card__img-wrapper">
+						<img src="../images/catalog_2/pic_catalog_2.jpg" alt="" class="product-card__img"></div></a>
+						<div class="product-card__purchase">
+							<span class="product-card__name">Cистема Антверпен <br>
+							Antverpen Гербор</span>
+							<button class="product-card__cart-button"><svg class='product-card__button-icon' width="25" height = "25">
+								<use xlink:href="#icon_pick_up"></use>
+							</svg>Подобрать</button>
+						</div>
+					</div>
+				</div>
+				<div class="product-card__wrapper ">
+					<div class="product-card"><a href="#" class="product__link">
+						<div class="product-card__img-wrapper">
+						<img src="../images/catalog_2/pic_catalog_2.jpg" alt="" class="product-card__img"></div></a>
+						<div class="product-card__purchase">
+							<span class="product-card__name">Cистема Антверпен <br>
+							Antverpen Гербор</span>
+							<button class="product-card__cart-button"><svg class='product-card__button-icon' width="25" height = "25">
+								<use xlink:href="#icon_pick_up"></use>
+							</svg>Подобрать</button>
+						</div>
+					</div>
+				</div>
+				<div class="product-card__wrapper ">
+					<div class="product-card"><a href="#" class="product__link">
+						<div class="product-card__img-wrapper">
+						<img src="../images/catalog_2/pic_catalog_2.jpg" alt="" class="product-card__img"></div></a>
+						<div class="product-card__purchase">
+							<span class="product-card__name">Cистема Антверпен <br>
+							Antverpen Гербор</span>
+							<button class="product-card__cart-button"><svg class='product-card__button-icon' width="25" height = "25">
+								<use xlink:href="#icon_pick_up"></use>
+							</svg>Подобрать</button>
+						</div>
+					</div>
+				</div>
+				<div class="product-card__wrapper ">
+					<div class="product-card"><a href="#" class="product__link">
+						<div class="product-card__img-wrapper">
+						<img src="../images/catalog_2/pic_catalog_2.jpg" alt="" class="product-card__img"></div></a>
+						<div class="product-card__purchase">
+							<span class="product-card__name">Cистема Антверпен <br>
+							Antverpen Гербор</span>
+							<button class="product-card__cart-button"><svg class='product-card__button-icon' width="25" height = "25">
+								<use xlink:href="#icon_pick_up"></use>
+							</svg>Подобрать</button>
+						</div>
+					</div>
+				</div>
+				<div class="product-card__wrapper ">
+					<div class="product-card"><a href="#" class="product__link">
+						<div class="product-card__img-wrapper">
+						<img src="../images/catalog_2/pic_catalog_2.jpg" alt="" class="product-card__img"></div></a>
+						<div class="product-card__purchase">
+							<span class="product-card__name">Cистема Антверпен <br>
+							Antverpen Гербор</span>
+							<button class="product-card__cart-button"><svg class='product-card__button-icon' width="25" height = "25">
+								<use xlink:href="#icon_pick_up"></use>
+							</svg>Подобрать</button>
+						</div>
+					</div>
+				</div>
+				<div class="product-card__wrapper ">
+					<div class="product-card"><a href="#" class="product__link">
+						<div class="product-card__img-wrapper">
+						<img src="../images/catalog_2/pic_catalog_2.jpg" alt="" class="product-card__img"></div></a>
+						<div class="product-card__purchase">
+							<span class="product-card__name">Cистема Антверпен <br>
+							Antverpen Гербор</span>
+							<button class="product-card__cart-button"><svg class='product-card__button-icon' width="25" height = "25">
+								<use xlink:href="#icon_pick_up"></use>
+							</svg>Подобрать</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<section class="common-section common-description">
+				<h3 class="section-title">
+					МОДУЛЬНЫЕ СИСТЕМЫ ДЛЯ ГОСТИНОЙ – ИДЕАЛЬНОЕ РЕШЕНИЕ ДЛЯ ДОМА
+				</h3>
+				<p class="paragraph">Гостиная – одна из особых комнат в доме. Именно здесь собираются гости на пышные застолья, сюда приходят провести тихие семейные вечера все члены семейства… Именно поэтому в ней стоит создать особую атмосферу. Помочь в этом могут модульные системы для гостиной. Они привнесут в интерьер комфорт, уют и функциональность.</p>
+				<p class="paragraph">Давайте поговорим о том, что же собой представляют модульные гостиные, каковы их преимущества и недостатки, а также о том, где выгоднее всего их приобрести.</p>
+				<h3 class="section-title">МОДУЛЬНЫЕ СИСТЕМЫ ДЛЯ ГОСТИНОЙ: ЧТО ЭТО ТАКОЕ?</h3>
+				<p class="paragraph">Помните, как в советские времена практически во всех гостиных стояли огромные мебельные стенки, которые состояли из двух-четырех элементов, соединенных между собою. Конечно, помните! Они изготавливались все на один манер и были похожи как две капли воды. Такие стенки занимали половину комнаты, являлись отличными собирателями пыли и имели сомнительную эстетическую ценность. В то время о модульных системах и не слышали. Хочешь купить стенку – бери ее всю целиком или не бери совсем! Хорошо, что сегодня ситуация кардинально другая! И можно вібрать качествинную мебель BRW или Gerbor.</p>
+				<p class="paragraph">Модульная система для гостиной представляет собою различную мебель, которая имеет единый материал изготовления, цветовую гамму, стилистическое направление и т. д. Это, по сути, комплекс внешне независимых элементов, которые можно приобрести отдельно либо же в комплекте и компоновать по своему усмотрению. Таких модулей может быть от трех до десяти. Чаще всего это:</p>
+				<ul>
+					<li>витрина;</li>
+					<li>комод;</li>
+					<li>пенал;</li>
+					<li>тумба;</li>
+					<li>шкаф;</li>
+					<li>стеллаж;</li>
+					<li>журнальный столик;</li>
+					<li>полка и пр.</li>
+				</ul>
+				<p class="paragraph">Каждый покупатель выбирает то количество модулей, которое необходимо именно ему.  К примеру, выбранная модульная система включает в себя 7 элементов интерьера. Но клиенту все не нужны, ему необходимы только 2 одинаковые витрины, 2 одинаковых пенала и 1 стеллаж. И купить вот так, по отдельности, вполне возможно в любом интернет-магазине, который продает модульные системы. Ну, а если со временем у покупателя возникнет мысль дополнить интерьер еще каким-то элементом мебели из данной серии, то это и эту идею можно будет воплотить в жизнь без каких-либо проблем.</p>
+				<p class="paragraph">Кстати, в последнее время большой популярностью пользуются модульные системы для гостиной с угловым шкафом. Они помогают существенно сэкономить пространство в небольших комнатах, а также обустроить интерьер по своему вкусу. Угловой шкаф – это вообще чудо дизайнерской мысли.</p>
+			</section>
+		</div>
 		
-		<p class="paragraph">На территории Украины холдинг представлен Фабрикой Гербор, Украина, г. Владимир-Волынский, и фабрикой БРВ-Украина г. Нововолынск. На предприятиях работают более 10 000 сотрудников. </p>
-		<p class="paragraph">Этими фабриками изготавливается широкий спектр корпусной мебели: гостиных, детской мебели, мебели для спальни, прихожих, кухонь, офисов и кабинетов. </p>
-		<p class="paragraph">Производство большого масштаба позволяет сократить расходы и обеспечить низкие цены на мебель. Большое количество элементов позволяет скомбинировать расстановку мебели для любых помещений. </p>
-		<p class="paragraph">Дизайн мебели создан по последней мировыми трендами в этой области.</p>
-		<p class="paragraph clear"></p>
-		<img src="../images/about_us/pic_2_about_us.jpg" alt="" class="responsive-img right-img">
-		<p class="paragraph">На территории Украины холдинг представлен Фабрикой Гербор, Украина, г. Владимир-Волынский, и фабрикой БРВ-Украина г. Нововолынск. На предприятиях работают более 10 000 сотрудников. </p>
-		<p class="paragraph">Этими фабриками изготавливается широкий спектр корпусной мебели: гостиных, детской мебели, мебели для спальни, прихожих, кухонь, офисов и кабинетов. </p>
-		<p class="paragraph">Производство большого масштаба позволяет сократить расходы и обеспечить низкие цены на мебель. Большое количество элементов позволяет скомбинировать расстановку мебели для любых помещений. </p>
-		<p class="paragraph">Дизайн мебели создан по последней мировыми трендами в этой области.</p>
-		<p class="paragraph clear"></p>
 	</div>
-	</section>
 	<section class="all-advantages">
 		<h4 class="all-advantages__title">почему покупают в brwmania.com.ua</h4>
 		<div class="all-advantages__cards-wrapper">
@@ -191,9 +474,6 @@
 				<span class="advantage-card__description">довольных клиентов</span>
 			</div>
 		</div>
-	</section>
-	<button class="continue-button">продолжить <svg class="continue-button__icon" width="15" height="10"><use xlink:href="#icon_next"></use>
-		</svg></button>
 	</section>
 </div>
 </div>
