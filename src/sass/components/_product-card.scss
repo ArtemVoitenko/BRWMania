@@ -70,6 +70,10 @@
 
 		background-color: #1A8B04;
 		border-radius: 2px;
+
+		&:after {
+			content: 'Топ продаж';
+		}
 	}
 	&__delivery {
 		position: absolute;
@@ -85,6 +89,10 @@
 
 		background-color: $grey;
 		border-radius: 2px;
+
+		&:after {
+			content: 'Быстрая доставка';
+		}
 		}
 	&__cart-button {
 		position: relative;
