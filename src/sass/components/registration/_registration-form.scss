@@ -1,5 +1,4 @@
 .registration-form {
-
 	&__elements-wrapper {
 		width: 49%;
 	}
@@ -35,10 +34,11 @@
 		
 		display: block;
 		margin-bottom: 15px;
+
 		
 
 	}
-	&__dispatch-label {
+	&__radio-label {
 		position: relative;
 
 		padding-left: 30px;
@@ -57,6 +57,7 @@
 			cursor: pointer;
 
 		}		
+		cursor: pointer;
 	}
 	&__radio {
 		&:checked {

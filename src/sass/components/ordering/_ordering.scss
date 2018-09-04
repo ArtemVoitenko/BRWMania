@@ -1,0 +1,63 @@
+.ordering {
+	&__table {
+		width: 100%;
+		margin-top: 25px;
+
+
+	}
+	&__row{
+		text-align: center;
+		border-bottom: 1px solid $grey;
+		&:first-of-type {
+			background-color: $accent;
+			color: #fff;
+			text-transform: uppercase;
+		}
+
+	}
+	&__column {
+		
+		font-size: 16px;
+		// color: #fff;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		&:first-child {
+			width: 90px;
+		}
+	}
+	&__img-wrapper {
+		position: relative;
+
+		padding-bottom: 100%;
+
+		overflow: hidden;
+	}
+	&__img {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+
+		margin: auto;
+		object-fit: cover;
+	}
+	&__delete {
+		position: relative;
+
+		width: 30px;
+		height: 30px;
+
+		background-color: $grey;
+
+	}
+	&__total {
+		margin-top: 20px;
+		font-size: 16px;
+		text-align: right;
+	}
+	&__sum {
+		font-size: 24px;
+		font-weight: bold;
+	}
+}
