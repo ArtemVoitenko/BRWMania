@@ -30,6 +30,9 @@
 	padding-bottom: 62%;
 
 	overflow: hidden;
+	&--clickable {
+		cursor: pointer;
+	}
 }
 	&__img {
 		position: absolute;

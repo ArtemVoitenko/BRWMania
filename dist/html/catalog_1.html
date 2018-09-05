@@ -285,37 +285,45 @@
 		<input class = "call-popup__phone-input" type="tel" name="phone" id="phone-number-input" placeholder = "+380-XX-XX-XXX">
 		<button class="call-popup__submit">Заказать звонок</button>
 	</form>
-	<button class="call-popup__close-button"><svg class="call-popup__close-icon"  width="13" height = "13">
+	<button id= "close-call-popup"class="call-popup__close-button"><svg class="call-popup__close-icon"  width="13" height = "13">
 				<use xlink:href="#icon_del"></use>
 			</svg><span class="visually-hidden">Закрыть окно</span></button>
 </div>
 
 <div class="fancybox"></div>
 <div class="gallery-popup centered">
-		
-		<span class="gallery-popup__title">BRW (БРВ) Кровать  Индиана Indiana (дуб шутер) JLOZ90 (Каркас)СИСТЕМА АВАТАР</span>
+	
+	<span class="gallery-popup__title">BRW (БРВ) Кровать  Индиана Indiana (дуб шутер) JLOZ90 (Каркас)СИСТЕМА АВАТАР</span>
 	<div class="gallery-popup__slider-wrapper">
-							
-					<div class="big-slide__wrapper">
-						<img class = "big-slide__img" src="../images/catalog_1/big_product_pic.jpg" alt="">
-					</div>
-						<div class="small-slider">
-						<div class="small-slider__slide">
-							<img src="../images/product/small_pic_product_slider_1.jpg" data-img-big = "../images/product/big_product_pic_slider.jpg" alt="">
-						</div>
-						<div class="small-slider__slide">
-							<img src="../images/product/small_pic_product_slider_2.jpg" alt="" data-img-big = "../images/catalog_1/big_product_pic.jpg">
-						</div>
-						<div class="small-slider__slide">
-							<img src="../images/product/small_pic_product_slider_3.jpg" alt="" data-img-big = "../images/catalog_1/big_product_pic_pop_up.jpg">
-						</div>
-						<div class="small-slider__slide">
-							<img src="../images/product/small_pic_product_slider_3.jpg" alt="" data-img-big = "../images/catalog_1/big_product_pic.jpg">
-						</div>
-					
-					</div>
+		
+		<div class="big-slide__wrapper">
+			<img class = "big-slide__img" src="../images/catalog_1/big_product_pic.jpg" alt="">
+		</div>
+		<div class="small-slider">
+			<div class="small-slider__slide">
+				<img src="../images/product/small_pic_product_slider_1.jpg" data-img-big = "../images/product/big_product_pic_slider.jpg" alt="">
+			</div>
+			<div class="small-slider__slide">
+				<img src="../images/product/small_pic_product_slider_2.jpg" alt="" data-img-big = "../images/catalog_1/big_product_pic.jpg">
+			</div>
+			<div class="small-slider__slide">
+				<img src="../images/product/small_pic_product_slider_3.jpg" alt="" data-img-big = "../images/catalog_1/big_product_pic_pop_up.jpg">
+			</div>
+			<div class="small-slider__slide">
+				<img src="../images/product/small_pic_product_slider_3.jpg" alt="" data-img-big = "../images/catalog_1/big_product_pic.jpg">
+			</div>
+			
+		</div>
+		<div class="gallery-popup__purchase">
+			<p class="gallery-popup__price">2142 грн.</p>
+			<button class="product-card__cart-button gallery-popup__cart-button common-button"><svg class='product-card__button-icon' width="35" height = "25">
+				<use xlink:href="#icon_buy_product"></use>
+			</svg>Купить</button>
+		</div>
 	</div>
-
+	<button id="close-gallery" class="call-popup__close-button gallery-popup__close-button"><svg class="call-popup__close-icon"  width="13" height = "13">
+				<use xlink:href="#icon_del"></use>
+			</svg><span class="visually-hidden">Закрыть окно</span></button>
 </div>
 
 <div class="container">
@@ -411,7 +419,7 @@
 				<h2 class="product-info__title">система аватар</h2>
 				<div class="product-info__wrapper">
 					<div class="product-info__slider-wrapper">
-					<div class="big-slide__wrapper">
+					<div class="big-slide__wrapper big-slide__wrapper--clickable">
 						<img class = "big-slide__img" src="../images/catalog_1/big_product_pic.jpg" alt="">
 					</div>
 						<div class="small-slider">

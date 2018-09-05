@@ -2,6 +2,7 @@ $(function() {
 var cartModal = $(".cart-modal");
 var callPopUp = $(".call-popup");
 var fancybox = $(".fancybox");
+var galleryPopup = $(".gallery-popup");
 
 $('.vertical-categories__item').hover(function() {
     var submenu = $(this).children("ul");
@@ -31,9 +32,17 @@ $(document).mouseup(function(e) {
     fancybox.fadeOut();
     }
 });
-$(".call-popup__close-button").click(function () {
+$("#close-call-popup").click(function () {
 	callPopUp.fadeOut();
 	fancybox.fadeOut();
+});
+$(".big-slide__wrapper--clickable").click(function () {
+    galleryPopup.slideDown();
+    fancybox.slideDown();
+})
+$("#close-gallery").click(function () {
+    galleryPopup.fadeOut();
+    fancybox.fadeOut();
 });
 var productCardList = $(".product-card__wrapper")
 $("#list-view").on("click", function () {

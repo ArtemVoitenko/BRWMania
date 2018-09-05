@@ -1474,6 +1474,7 @@ body {
   z-index: 10;
   background-color: #fff; }
   .gallery-popup__slider-wrapper {
+    position: relative;
     max-width: 730px;
     width: 100%;
     margin: 0 auto; }
@@ -1484,6 +1485,22 @@ body {
     font-weight: bold;
     text-align: center;
     margin-bottom: 30px; }
+  .gallery-popup__purchase {
+    position: absolute;
+    left: 110%;
+    top: 40%;
+    transform: translate(0, -50%);
+    text-align: center; }
+  .gallery-popup__price {
+    font-size: 24px; }
+  .gallery-popup__cart-button {
+    width: 220px;
+    height: 60px;
+    font-size: 24px;
+    text-transform: capitalize; }
+  .gallery-popup__close-button {
+    top: 30px;
+    right: 30px; }
 
 .small-slider {
   position: relative;
@@ -1505,6 +1522,8 @@ body {
   position: relative;
   padding-bottom: 62%;
   overflow: hidden; }
+  .big-slide__wrapper--clickable {
+    cursor: pointer; }
 
 .big-slide__img {
   position: absolute;
