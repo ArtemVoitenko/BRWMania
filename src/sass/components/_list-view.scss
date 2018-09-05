@@ -16,15 +16,20 @@
 		&__purchase {
 			display: flex;
 			flex-direction: column;
+			order: 1;
 		}
 		&__details {
 			position: relative;
 			width: auto;
 			display: block;
 			box-shadow: none;
+
 		}
 		&__price {
 			font-size: 25px;
+		}
+		&__advantages {
+			top: 20px;
 		}
 	}
 	}

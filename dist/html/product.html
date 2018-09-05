@@ -41,7 +41,7 @@
 					<label class="visually-hidden" for="search">Поиск</label>
 					<input class="main-header__input" name="search" type="search" placeholder = "Поиск">
 
-					<button class="main-header__search-button" name="search-button"><svg class="main-header__search-icon" width="20" height = "20">
+					<button class="main-header__search-button common-button" name="search-button"><svg class="main-header__search-icon" width="20" height = "20">
 						<use xlink:href="#icon_search"></use>
 					</svg>
 					<span class="visually-hidden">Искать</span>
@@ -65,7 +65,7 @@
 						<div class="cart-modal__quantity-block"><span class="cart-modal__product-name">BRW (БРВ) кровать ацтека azteca loz/160 с подъемным механизмом</span>
 						<div class="quantity-switch">
 							<button class="quantity-switch__less">-</button>
-							<input class="quantity-switch__number" readonly value="1" type="text">
+							<input class="quantity-switch__number" readonly value="1" type="number">
 							<button class="quantity-switch__more">+</button>
 						</div></div>
 						
@@ -116,11 +116,135 @@
 </div>
 <div class="container">
 	<ul class="horizontal-categories">
-		<li class="horizontal-categories__item"><a href="#" class="horizontal-categories__link horizontal-categories__link--bold">
+		<li class="horizontal-categories__item "><a href="#" class="horizontal-categories__link horizontal-categories__link--bold horizontal-categories__link--show-vertical">
 			<svg class="horizontal-categories__icon
 				horizontal-categories__icon--menu " width="27" height = "19">
 				<use xlink:href="#icon_menu"></use>
-			</svg>ВСЯ МЕБЕЛЬ</a></li>
+			</svg>ВСЯ МЕБЕЛЬ</a>
+			<ul class="vertical-categories vertical-categories--popup">
+				<li class="vertical-categories__item">
+					<a href="#" class="vertical-categories__link vertical-categories__link--uppercase">мебель для гостиной, зала
+						<svg class="vertical-categories__arrow-icon" width="5" height="8">
+							<use xlink:href="#icon_arrow"></use>
+						</svg>
+					</a>
+				</li>
+				<li class="vertical-categories__item">
+					<a href="#" class="vertical-categories__link vertical-categories__link--uppercase">мебель для спальни
+						<svg class="vertical-categories__arrow-icon" width="5" height="8">
+							<use xlink:href="#icon_arrow"></use>
+						</svg>
+					</a>
+					<ul class="submenu submenu-bedroom">
+						<h4 class="submenu__title">мебель для спальни </h4>
+						<li class="submenu__item"><a href="#" class="submenu__link">Модульные спальни</a></li>
+						<li class="submenu__item"><a href="#" class="submenu__link">Спальный гарнитур</a></li>
+						<li class="submenu__item"><a href="#" class="submenu__link">Кровати двухспальные</a></li>
+						<li class="submenu__item"><a href="#" class="submenu__link">Кровати односпальные</a></li>
+						<li class="submenu__item"><a href="#" class="submenu__link">Матрасы и ламели</a></li>
+						<li class="submenu__item"><a href="#" class="submenu__link">Комоды в спальню</a></li>
+						<li class="submenu__item"><a href="#" class="submenu__link">Столики туалетные</a></li>
+						<li class="submenu__item"><a href="#" class="submenu__link">Тумбы прикроватные</a></li>
+						<li class="submenu__item"><a href="#" class="submenu__link">Шкафы для спальни</a></li>
+					</ul>
+				</li>
+				<li class="vertical-categories__item">
+					<a href="#" class="vertical-categories__link vertical-categories__link--uppercase">десткая мебель
+						<svg class="vertical-categories__arrow-icon" width="5" height="8">
+							<use xlink:href="#icon_arrow"></use>
+						</svg>
+					</a>
+				</li>
+				<li class="vertical-categories__item">
+					<a href="#" class="vertical-categories__link vertical-categories__link--uppercase">мебель для прихожей
+						<svg class="vertical-categories__arrow-icon" width="5" height="8">
+							<use xlink:href="#icon_arrow"></use>
+						</svg>
+					</a>
+				</li>
+				<li class="vertical-categories__item">
+					<a href="#" class="vertical-categories__link vertical-categories__link--uppercase">мебель для кабинета
+						<svg class="vertical-categories__arrow-icon" width="5" height="8">
+							<use xlink:href="#icon_arrow"></use>
+						</svg>
+					</a>
+				</li>
+				<li class="vertical-categories__item">
+					<a href="#" class="vertical-categories__link vertical-categories__link--uppercase">офисная мебель
+						<svg class="vertical-categories__arrow-icon" width="5" height="8">
+							<use xlink:href="#icon_arrow"></use>
+						</svg>
+					</a>
+				</li>
+				<li class="vertical-categories__item">
+					<a href="#" class="vertical-categories__link">Вешалки
+					</a>
+				</li>
+				<li class="vertical-categories__item">
+					<a href="#" class="vertical-categories__link">Зеркала
+					</a>
+				</li>
+				<li class="vertical-categories__item">
+					<a href="#" class="vertical-categories__link">Комоды
+						<svg class="vertical-categories__arrow-icon" width="5" height="8">
+							<use xlink:href="#icon_arrow"></use>
+						</svg>
+					</a>
+				</li>
+				<li class="vertical-categories__item">
+					<a href="#" class="vertical-categories__link">Кровати
+						<svg class="vertical-categories__arrow-icon" width="5" height="8">
+							<use xlink:href="#icon_arrow"></use>
+						</svg>
+					</a>
+				</li>
+				<li class="vertical-categories__item">
+					<a href="#" class="vertical-categories__link">Матрасы. основание под матрас
+					</a>
+				</li>
+				<li class="vertical-categories__item">
+					<a href="#" class="vertical-categories__link">Мебель для кухни
+						<svg class="vertical-categories__arrow-icon" width="5" height="8">
+							<use xlink:href="#icon_arrow"></use>
+						</svg>
+					</a>
+				</li>
+				<li class="vertical-categories__item">
+					<a href="#" class="vertical-categories__link">Полочки
+					</a>
+				</li>
+				<li class="vertical-categories__item">
+					<a href="#" class="vertical-categories__link">Столы
+						<svg class="vertical-categories__arrow-icon" width="5" height="8">
+							<use xlink:href="#icon_arrow"></use>
+						</svg>
+					</a>
+				</li>
+				<li class="vertical-categories__item">
+					<a href="#" class="vertical-categories__link">Тумбы
+						<svg class="vertical-categories__arrow-icon" width="5" height="8">
+							<use xlink:href="#icon_arrow"></use>
+						</svg>
+					</a>
+				</li>
+				<li class="vertical-categories__item">
+					<a href="#" class="vertical-categories__link">Шкафы и хранение
+						<svg class="vertical-categories__arrow-icon" width="5" height="8">
+							<use xlink:href="#icon_arrow"></use>
+						</svg>
+					</a>
+				</li>
+				<li class="vertical-categories__item">
+					<a href="#" class="vertical-categories__link">Шкафы-купе
+						<svg class="vertical-categories__arrow-icon" width="5" height="8">
+							<use xlink:href="#icon_arrow"></use>
+						</svg>
+					</a>
+				</li>
+				<li class="vertical-categories__item">
+					<a href="#" class="vertical-categories__link">Территория низких цен</a></li>
+				</ul>
+			</li>
 			<li class="horizontal-categories__item"><a href="#" class="horizontal-categories__link horizontal-categories__link--bold">Все бренды <svg class="horizontal-categories__icon horizontal-categories__icon--brands " width="7" height = "5">
 			<use xlink:href="#icon_arrow_down"></use></a></li>
 			<li class="horizontal-categories__item"><a href="#" class="horizontal-categories__link"><svg class="horizontal-categories__icon"  width="35" height = "35">
@@ -239,17 +363,16 @@
 					<button class="quantity-switch__more">+</button>
 				</div>
 				<div class="products-info__elements-wrapper">
-				<button class="product-characteristics__buy-button common-button common-button--black">Купить в кредит</button>
-				<button class="product-characteristics__click-buy">Купить в 1-н клик</button>
+					<button class="product-characteristics__buy-button common-button common-button--black">Купить в кредит</button>
+					<button class="product-characteristics__click-buy">Купить в 1-н клик</button>
 				</div>
 				
-
 				<div class="product-characteristics__color-block">
 					<p class="product-characteristics__color-label">Цвет(корпус/фасад):<span class="product-characteristics__color-value">Белый / белый глянец</span></p>
 					<img src="../images/product/color.jpg" alt="" class="product-charasteristics__color-img">
 				</div>
 			</div>
-		
+			
 		</div>
 		<div class="side-divider">
 			<div class="left-side">
@@ -318,11 +441,12 @@
 							<div class="product-card"><a href="#" class="product__link">
 								<span class="product-card__name">BRW (БРВ) Кровать  Индиана Indiana <br> (дуб шутер) <br> JLOZ90 (Каркас)</span> <div class="product-card__img-wrapper">
 							<img src="../images/search/pic_product_search.png" alt="" class="product-card__img"></div></a>
+							<div class="product-card__advantages">
 							<span class="product-card__delivery"><svg class='product-card__delivery-icon' width="40" height = "16">
 								<use xlink:href="#icon_fast_shipping_product"></use>
-							</svg>Быстрая доставка</span>
+							</svg></span></div>
 							<span class="product-card__price">2142грн</span>
-							<button class="product-card__cart-button"><svg class='product-card__button-icon' width="22" height = "16">
+							<button class="product-card__cart-button common-button"><svg class='product-card__button-icon' width="22" height = "16">
 								<use xlink:href="#icon_buy_product"></use>
 							</svg>Купить</button>
 							<button  class="product-card__buy-button">Купить в 1-н клик</button>
@@ -344,87 +468,90 @@
 					</div>
 					<div class="product-card__wrapper">
 						<div class="product-card"><a href="#" class="product__link">
-							<span class="product-card__name">BRW (БРВ) Кровать  Индиана Indiana <br> (дуб шутер) <br> JLOZ90 (Каркас)</span> <div class="product-card__img-wrapper">
-						<img src="../images/search/pic_product_search.png" alt="" class="product-card__img"></div></a>
-						<span class="product-card__delivery"><svg class='product-card__delivery-icon' width="40" height = "16">
-							<use xlink:href="#icon_fast_shipping_product"></use>
-						</svg>Быстрая доставка</span>
-						<span class="product-card__price">2142грн</span>
-						<button class="product-card__cart-button"><svg class='product-card__button-icon' width="22" height = "16">
-							<use xlink:href="#icon_buy_product"></use>
-						</svg>Купить</button>
-						<button  class="product-card__buy-button">Купить в 1-н клик</button>
-						<div class="product-card__details">
-							<ul class="product-card__details-list">
-								<li class="product-card__details-item">Бренд: MircMark</li>
-								<li class="product-card__details-item">Страна производитель: Украина</li>
-								<li class="product-card__details-item">Гарантия: 12 месяцев от фабрики</li>
-								<li class="product-card__details-item">Ширина: 184,5</li>
-								<li class="product-card__details-item">Высота изголовья: 105,5см</li>
-								<li class="product-card__details-item">Высота изножья: 35см</li>
-								<li class="product-card__details-item">Длина: 216см</li>
-								<li class="product-card__details-item">Спальное место: 180х200см</li>
-								<li class="product-card__details-item">Каркас: ДСП, глянец</li>
-								<li class="product-card__details-item">Ящики для белья: без ящиков</li>
-							</ul>
+								<span class="product-card__name">BRW (БРВ) Кровать  Индиана Indiana <br> (дуб шутер) <br> JLOZ90 (Каркас)</span> <div class="product-card__img-wrapper">
+							<img src="../images/search/pic_product_search.png" alt="" class="product-card__img"></div></a>
+							<div class="product-card__advantages">
+							<span class="product-card__delivery"><svg class='product-card__delivery-icon' width="40" height = "16">
+								<use xlink:href="#icon_fast_shipping_product"></use>
+							</svg></span></div>
+							<span class="product-card__price">2142грн</span>
+							<button class="product-card__cart-button common-button"><svg class='product-card__button-icon' width="22" height = "16">
+								<use xlink:href="#icon_buy_product"></use>
+							</svg>Купить</button>
+							<button  class="product-card__buy-button">Купить в 1-н клик</button>
+							<div class="product-card__details">
+								<ul class="product-card__details-list">
+									<li class="product-card__details-item">Бренд: MircMark</li>
+									<li class="product-card__details-item">Страна производитель: Украина</li>
+									<li class="product-card__details-item">Гарантия: 12 месяцев от фабрики</li>
+									<li class="product-card__details-item">Ширина: 184,5</li>
+									<li class="product-card__details-item">Высота изголовья: 105,5см</li>
+									<li class="product-card__details-item">Высота изножья: 35см</li>
+									<li class="product-card__details-item">Длина: 216см</li>
+									<li class="product-card__details-item">Спальное место: 180х200см</li>
+									<li class="product-card__details-item">Каркас: ДСП, глянец</li>
+									<li class="product-card__details-item">Ящики для белья: без ящиков</li>
+								</ul>
+							</div>
 						</div>
-					</div>
 				</div>
 				<div class="product-card__wrapper">
 					<div class="product-card"><a href="#" class="product__link">
-						<span class="product-card__name">BRW (БРВ) Кровать  Индиана Indiana <br> (дуб шутер) <br> JLOZ90 (Каркас)</span> <div class="product-card__img-wrapper">
-					<img src="../images/search/pic_product_search.png" alt="" class="product-card__img"></div></a>
-					<span class="product-card__delivery"><svg class='product-card__delivery-icon' width="40" height = "16">
-						<use xlink:href="#icon_fast_shipping_product"></use>
-					</svg>Быстрая доставка</span>
-					<span class="product-card__price">2142грн</span>
-					<button class="product-card__cart-button"><svg class='product-card__button-icon' width="22" height = "16">
-						<use xlink:href="#icon_buy_product"></use>
-					</svg>Купить</button>
-					<button  class="product-card__buy-button">Купить в 1-н клик</button>
-					<div class="product-card__details">
-						<ul class="product-card__details-list">
-							<li class="product-card__details-item">Бренд: MircMark</li>
-							<li class="product-card__details-item">Страна производитель: Украина</li>
-							<li class="product-card__details-item">Гарантия: 12 месяцев от фабрики</li>
-							<li class="product-card__details-item">Ширина: 184,5</li>
-							<li class="product-card__details-item">Высота изголовья: 105,5см</li>
-							<li class="product-card__details-item">Высота изножья: 35см</li>
-							<li class="product-card__details-item">Длина: 216см</li>
-							<li class="product-card__details-item">Спальное место: 180х200см</li>
-							<li class="product-card__details-item">Каркас: ДСП, глянец</li>
-							<li class="product-card__details-item">Ящики для белья: без ящиков</li>
-						</ul>
-					</div>
-				</div>
+								<span class="product-card__name">BRW (БРВ) Кровать  Индиана Indiana <br> (дуб шутер) <br> JLOZ90 (Каркас)</span> <div class="product-card__img-wrapper">
+							<img src="../images/search/pic_product_search.png" alt="" class="product-card__img"></div></a>
+							<div class="product-card__advantages">
+							<span class="product-card__delivery"><svg class='product-card__delivery-icon' width="40" height = "16">
+								<use xlink:href="#icon_fast_shipping_product"></use>
+							</svg></span></div>
+							<span class="product-card__price">2142грн</span>
+							<button class="product-card__cart-button common-button"><svg class='product-card__button-icon' width="22" height = "16">
+								<use xlink:href="#icon_buy_product"></use>
+							</svg>Купить</button>
+							<button  class="product-card__buy-button">Купить в 1-н клик</button>
+							<div class="product-card__details">
+								<ul class="product-card__details-list">
+									<li class="product-card__details-item">Бренд: MircMark</li>
+									<li class="product-card__details-item">Страна производитель: Украина</li>
+									<li class="product-card__details-item">Гарантия: 12 месяцев от фабрики</li>
+									<li class="product-card__details-item">Ширина: 184,5</li>
+									<li class="product-card__details-item">Высота изголовья: 105,5см</li>
+									<li class="product-card__details-item">Высота изножья: 35см</li>
+									<li class="product-card__details-item">Длина: 216см</li>
+									<li class="product-card__details-item">Спальное место: 180х200см</li>
+									<li class="product-card__details-item">Каркас: ДСП, глянец</li>
+									<li class="product-card__details-item">Ящики для белья: без ящиков</li>
+								</ul>
+							</div>
+						</div>
 			</div>
 			<div class="product-card__wrapper">
 				<div class="product-card"><a href="#" class="product__link">
-					<span class="product-card__name">BRW (БРВ) Кровать  Индиана Indiana <br> (дуб шутер) <br> JLOZ90 (Каркас)</span> <div class="product-card__img-wrapper">
-				<img src="../images/search/pic_product_search.png" alt="" class="product-card__img"></div></a>
-				<span class="product-card__delivery"><svg class='product-card__delivery-icon' width="40" height = "16">
-					<use xlink:href="#icon_fast_shipping_product"></use>
-				</svg>Быстрая доставка</span>
-				<span class="product-card__price">2142грн</span>
-				<button class="product-card__cart-button"><svg class='product-card__button-icon' width="22" height = "16">
-					<use xlink:href="#icon_buy_product"></use>
-				</svg>Купить</button>
-				<button  class="product-card__buy-button">Купить в 1-н клик</button>
-				<div class="product-card__details">
-					<ul class="product-card__details-list">
-						<li class="product-card__details-item">Бренд: MircMark</li>
-						<li class="product-card__details-item">Страна производитель: Украина</li>
-						<li class="product-card__details-item">Гарантия: 12 месяцев от фабрики</li>
-						<li class="product-card__details-item">Ширина: 184,5</li>
-						<li class="product-card__details-item">Высота изголовья: 105,5см</li>
-						<li class="product-card__details-item">Высота изножья: 35см</li>
-						<li class="product-card__details-item">Длина: 216см</li>
-						<li class="product-card__details-item">Спальное место: 180х200см</li>
-						<li class="product-card__details-item">Каркас: ДСП, глянец</li>
-						<li class="product-card__details-item">Ящики для белья: без ящиков</li>
-					</ul>
-				</div>
-			</div>
+								<span class="product-card__name">BRW (БРВ) Кровать  Индиана Indiana <br> (дуб шутер) <br> JLOZ90 (Каркас)</span> <div class="product-card__img-wrapper">
+							<img src="../images/search/pic_product_search.png" alt="" class="product-card__img"></div></a>
+							<div class="product-card__advantages">
+							<span class="product-card__delivery"><svg class='product-card__delivery-icon' width="40" height = "16">
+								<use xlink:href="#icon_fast_shipping_product"></use>
+							</svg></span></div>
+							<span class="product-card__price">2142грн</span>
+							<button class="product-card__cart-button common-button"><svg class='product-card__button-icon' width="22" height = "16">
+								<use xlink:href="#icon_buy_product"></use>
+							</svg>Купить</button>
+							<button  class="product-card__buy-button">Купить в 1-н клик</button>
+							<div class="product-card__details">
+								<ul class="product-card__details-list">
+									<li class="product-card__details-item">Бренд: MircMark</li>
+									<li class="product-card__details-item">Страна производитель: Украина</li>
+									<li class="product-card__details-item">Гарантия: 12 месяцев от фабрики</li>
+									<li class="product-card__details-item">Ширина: 184,5</li>
+									<li class="product-card__details-item">Высота изголовья: 105,5см</li>
+									<li class="product-card__details-item">Высота изножья: 35см</li>
+									<li class="product-card__details-item">Длина: 216см</li>
+									<li class="product-card__details-item">Спальное место: 180х200см</li>
+									<li class="product-card__details-item">Каркас: ДСП, глянец</li>
+									<li class="product-card__details-item">Ящики для белья: без ящиков</li>
+								</ul>
+							</div>
+						</div>
 		</div>
 	</section>
 	<section class="purchase-info">
@@ -607,62 +734,18 @@
 		Сопутствующие товары (11)
 		</h3>
 		<div class="slider slider-watched">
-			<div class="product-card product-card--slide">
-				<a href="#" class="product__link">
-					<span class="product-card__name">BRW (БРВ) Кровать  Индиана Indiana <br> (дуб шутер) <br>
-					JLOZ90 (Каркас)</span>
-					<div class="product-card__img-wrapper">
-					<img src="../images/search/pic_product_search.png" alt="" class="product-card__img"></div></a>
-					<span class="product-card__phrase">Топ продаж</span>
-					<span class="product-card__delivery">
-						<svg class='product-card__delivery-icon' width="40" height = "16">
-							<use xlink:href="#icon_fast_shipping_product"></use>
-						</svg>Быстрая доставка</span>
-						<span class="product-card__price">2142грн</span>
-						<button class="product-card__cart-button">
-						<svg class='product-card__button-icon' width="22" height = "16">
-							<use xlink:href="#icon_buy_product"></use>
-						</svg>Купить</button>
-						<button  class="product-card__buy-button">Купить в 1-н клик</button>
-					</div>
-					<div class="product-card product-card--slide"><a href="#" class="product__link">
-						<span class="product-card__name">BRW (БРВ) Кровать  Индиана Indiana <br> (дуб шутер) <br>
-						JLOZ90 (Каркас)</span> <div class="product-card__img-wrapper">
-					<img src="../images/search/pic_product_search.png" alt="" class="product-card__img"></div></a>
-					<span class="product-card__phrase">Топ продаж</span>
-					<span class="product-card__delivery"><svg class='product-card__delivery-icon' width="40" height = "16">
-						<use xlink:href="#icon_fast_shipping_product"></use>
-					</svg>Быстрая доставка</span>
-					<span class="product-card__price">2142грн</span>
-					<button class="product-card__cart-button"><svg class='product-card__button-icon' width="22" height = "16">
-						<use xlink:href="#icon_buy_product"></use>
-					</svg>Купить</button>
-					<button  class="product-card__buy-button">Купить в 1-н клик</button>
-				</div>
-				<div class="product-card product-card--slide"><a href="#" class="product__link">
-					<span class="product-card__name">BRW (БРВ) Кровать  Индиана Indiana <br> (дуб шутер) <br>
-					JLOZ90 (Каркас)</span> <div class="product-card__img-wrapper">
-				<img src="../images/search/pic_product_search.png" alt="" class="product-card__img"></div></a>
-				<span class="product-card__phrase">Топ продаж</span>
+			<div class="product-card product-card--slide"><a href="#" class="product__link">
+				<span class="product-card__name">BRW (БРВ) Кровать  Индиана Indiana <br> (дуб шутер) <br>
+				JLOZ90 (Каркас)</span> <div class="product-card__img-wrapper">
+			<img src="../images/search/pic_product_search.png" alt="" class="product-card__img"></div></a>
+			<div class="product-card__advantages">
+				<span class="product-card__phrase"></span>
 				<span class="product-card__delivery"><svg class='product-card__delivery-icon' width="40" height = "16">
 					<use xlink:href="#icon_fast_shipping_product"></use>
-				</svg>Быстрая доставка</span>
-				<span class="product-card__price">2142грн</span>
-				<button class="product-card__cart-button"><svg class='product-card__button-icon' width="22" height = "16">
-					<use xlink:href="#icon_buy_product"></use>
-				</svg>Купить</button>
-				<button  class="product-card__buy-button">Купить в 1-н клик</button>
+				</svg></span>
 			</div>
-			<div class="product-card product-card--slide"><a href="#" class="product__link">
-				<span class="product-card__name">BRW (БРВ) Кровать  Индиана Indiana <br> (дуб шутер) <br>
-				JLOZ90 (Каркас)</span> <div class="product-card__img-wrapper">
-			<img src="../images/search/pic_product_search.png" alt="" class="product-card__img"></div></a>
-			<span class="product-card__phrase">Топ продаж</span>
-			<span class="product-card__delivery"><svg class='product-card__delivery-icon' width="40" height = "16">
-				<use xlink:href="#icon_fast_shipping_product"></use>
-			</svg>Быстрая доставка</span>
 			<span class="product-card__price">2142грн</span>
-			<button class="product-card__cart-button"><svg class='product-card__button-icon' width="22" height = "16">
+			<button class="product-card__cart-button common-button"><svg class='product-card__button-icon' width="22" height = "16">
 				<use xlink:href="#icon_buy_product"></use>
 			</svg>Купить</button>
 			<button  class="product-card__buy-button">Купить в 1-н клик</button>
@@ -671,65 +754,81 @@
 			<span class="product-card__name">BRW (БРВ) Кровать  Индиана Indiana <br> (дуб шутер) <br>
 			JLOZ90 (Каркас)</span> <div class="product-card__img-wrapper">
 		<img src="../images/search/pic_product_search.png" alt="" class="product-card__img"></div></a>
-		<span class="product-card__phrase">Топ продаж</span>
-		<span class="product-card__delivery"><svg class='product-card__delivery-icon' width="40" height = "16">
-			<use xlink:href="#icon_fast_shipping_product"></use>
-		</svg>Быстрая доставка</span>
-		<span class="product-card__price">2142грн</span>
-		<button class="product-card__cart-button"><svg class='product-card__button-icon' width="22" height = "16">
-			<use xlink:href="#icon_buy_product"></use>
-		</svg>Купить</button>
-		<button  class="product-card__buy-button">Купить в 1-н клик</button>
+		<div class="product-card__advantages">
+			<span class="product-card__phrase"></span>
+			<span class="product-card__delivery"><svg class='product-card__delivery-icon' width="40" height = "16">
+				<use xlink:href="#icon_fast_shipping_product"></use>
+			</svg></span></div>
+			<span class="product-card__price">2142грн</span>
+			<button class="product-card__cart-button common-button"><svg class='product-card__button-icon' width="22" height = "16">
+				<use xlink:href="#icon_buy_product"></use>
+			</svg>Купить</button>
+			<button  class="product-card__buy-button">Купить в 1-н клик</button>
+		</div>
+		<div class="product-card product-card--slide"><a href="#" class="product__link">
+			<span class="product-card__name">BRW (БРВ) Кровать  Индиана Indiana <br> (дуб шутер) <br>
+			JLOZ90 (Каркас)</span> <div class="product-card__img-wrapper">
+		<img src="../images/search/pic_product_search.png" alt="" class="product-card__img"></div></a>
+		<div class="product-card__advantages">
+			<span class="product-card__phrase"></span>
+			<span class="product-card__delivery"><svg class='product-card__delivery-icon' width="40" height = "16">
+				<use xlink:href="#icon_fast_shipping_product"></use>
+			</svg></span></div>
+			<span class="product-card__price">2142грн</span>
+			<button class="product-card__cart-button common-button"><svg class='product-card__button-icon' width="22" height = "16">
+				<use xlink:href="#icon_buy_product"></use>
+			</svg>Купить</button>
+			<button  class="product-card__buy-button">Купить в 1-н клик</button>
+		</div>
+		<div class="product-card product-card--slide"><a href="#" class="product__link">
+			<span class="product-card__name">BRW (БРВ) Кровать  Индиана Indiana <br> (дуб шутер) <br>
+			JLOZ90 (Каркас)</span> <div class="product-card__img-wrapper">
+		<img src="../images/search/pic_product_search.png" alt="" class="product-card__img"></div></a>
+		<div class="product-card__advantages">
+			<span class="product-card__phrase"></span>
+			<span class="product-card__delivery"><svg class='product-card__delivery-icon' width="40" height = "16">
+				<use xlink:href="#icon_fast_shipping_product"></use>
+			</svg></span></div>
+			<span class="product-card__price">2142грн</span>
+			<button class="product-card__cart-button common-button"><svg class='product-card__button-icon' width="22" height = "16">
+				<use xlink:href="#icon_buy_product"></use>
+			</svg>Купить</button>
+			<button  class="product-card__buy-button">Купить в 1-н клик</button>
+		</div>
+		<div class="product-card product-card--slide"><a href="#" class="product__link">
+			<span class="product-card__name">BRW (БРВ) Кровать  Индиана Indiana <br> (дуб шутер) <br>
+			JLOZ90 (Каркас)</span> <div class="product-card__img-wrapper">
+		<img src="../images/search/pic_product_search.png" alt="" class="product-card__img"></div></a>
+		<div class="product-card__advantages">
+			<span class="product-card__phrase"></span>
+			<span class="product-card__delivery"><svg class='product-card__delivery-icon' width="40" height = "16">
+				<use xlink:href="#icon_fast_shipping_product"></use>
+			</svg></span></div>
+			<span class="product-card__price">2142грн</span>
+			<button class="product-card__cart-button common-button"><svg class='product-card__button-icon' width="22" height = "16">
+				<use xlink:href="#icon_buy_product"></use>
+			</svg>Купить</button>
+			<button  class="product-card__buy-button">Купить в 1-н клик</button>
+		</div>
 	</div>
-</div>
 </section>
 <section class="recomendations common-section">
-<h3 class="section-title">
-Рекомендуем
-</h3>
-<div class="slider slider-watched">
-	<div class="product-card product-card--slide">
-		<a href="#" class="product__link">
-			<span class="product-card__name">BRW (БРВ) Кровать  Индиана Indiana <br> (дуб шутер) <br>
-			JLOZ90 (Каркас)</span>
-			<div class="product-card__img-wrapper">
-			<img src="../images/search/pic_product_search.png" alt="" class="product-card__img"></div></a>
-			<span class="product-card__phrase">Топ продаж</span>
-			<span class="product-card__delivery">
-				<svg class='product-card__delivery-icon' width="40" height = "16">
-					<use xlink:href="#icon_fast_shipping_product"></use>
-				</svg>Быстрая доставка</span>
-				<span class="product-card__price">2142грн</span>
-				<button class="product-card__cart-button">
-				<svg class='product-card__button-icon' width="22" height = "16">
-					<use xlink:href="#icon_buy_product"></use>
-				</svg>Купить</button>
-				<button  class="product-card__buy-button">Купить в 1-н клик</button>
-			</div>
-			<div class="product-card product-card--slide"><a href="#" class="product__link">
-				<span class="product-card__name">BRW (БРВ) Кровать  Индиана Indiana <br> (дуб шутер) <br>
-				JLOZ90 (Каркас)</span> <div class="product-card__img-wrapper">
-			<img src="../images/search/pic_product_search.png" alt="" class="product-card__img"></div></a>
-			<span class="product-card__phrase">Топ продаж</span>
-			<span class="product-card__delivery"><svg class='product-card__delivery-icon' width="40" height = "16">
-				<use xlink:href="#icon_fast_shipping_product"></use>
-			</svg>Быстрая доставка</span>
-			<span class="product-card__price">2142грн</span>
-			<button class="product-card__cart-button"><svg class='product-card__button-icon' width="22" height = "16">
-				<use xlink:href="#icon_buy_product"></use>
-			</svg>Купить</button>
-			<button  class="product-card__buy-button">Купить в 1-н клик</button>
-		</div>
+	<h3 class="section-title">
+	Рекомендуем
+	</h3>
+	<div class="slider slider-watched">
 		<div class="product-card product-card--slide"><a href="#" class="product__link">
 			<span class="product-card__name">BRW (БРВ) Кровать  Индиана Indiana <br> (дуб шутер) <br>
 			JLOZ90 (Каркас)</span> <div class="product-card__img-wrapper">
 		<img src="../images/search/pic_product_search.png" alt="" class="product-card__img"></div></a>
-		<span class="product-card__phrase">Топ продаж</span>
-		<span class="product-card__delivery"><svg class='product-card__delivery-icon' width="40" height = "16">
-			<use xlink:href="#icon_fast_shipping_product"></use>
-		</svg>Быстрая доставка</span>
+		<div class="product-card__advantages">
+			<span class="product-card__phrase"></span>
+			<span class="product-card__delivery"><svg class='product-card__delivery-icon' width="40" height = "16">
+				<use xlink:href="#icon_fast_shipping_product"></use>
+			</svg></span>
+		</div>
 		<span class="product-card__price">2142грн</span>
-		<button class="product-card__cart-button"><svg class='product-card__button-icon' width="22" height = "16">
+		<button class="product-card__cart-button common-button"><svg class='product-card__button-icon' width="22" height = "16">
 			<use xlink:href="#icon_buy_product"></use>
 		</svg>Купить</button>
 		<button  class="product-card__buy-button">Купить в 1-н клик</button>
@@ -738,30 +837,62 @@
 		<span class="product-card__name">BRW (БРВ) Кровать  Индиана Indiana <br> (дуб шутер) <br>
 		JLOZ90 (Каркас)</span> <div class="product-card__img-wrapper">
 	<img src="../images/search/pic_product_search.png" alt="" class="product-card__img"></div></a>
-	<span class="product-card__phrase">Топ продаж</span>
-	<span class="product-card__delivery"><svg class='product-card__delivery-icon' width="40" height = "16">
-		<use xlink:href="#icon_fast_shipping_product"></use>
-	</svg>Быстрая доставка</span>
-	<span class="product-card__price">2142грн</span>
-	<button class="product-card__cart-button"><svg class='product-card__button-icon' width="22" height = "16">
-		<use xlink:href="#icon_buy_product"></use>
-	</svg>Купить</button>
-	<button  class="product-card__buy-button">Купить в 1-н клик</button>
-</div>
-<div class="product-card product-card--slide"><a href="#" class="product__link">
-	<span class="product-card__name">BRW (БРВ) Кровать  Индиана Indiana <br> (дуб шутер) <br>
-	JLOZ90 (Каркас)</span> <div class="product-card__img-wrapper">
-<img src="../images/search/pic_product_search.png" alt="" class="product-card__img"></div></a>
-<span class="product-card__phrase">Топ продаж</span>
-<span class="product-card__delivery"><svg class='product-card__delivery-icon' width="40" height = "16">
-	<use xlink:href="#icon_fast_shipping_product"></use>
-</svg>Быстрая доставка</span>
-<span class="product-card__price">2142грн</span>
-<button class="product-card__cart-button"><svg class='product-card__button-icon' width="22" height = "16">
-	<use xlink:href="#icon_buy_product"></use>
-</svg>Купить</button>
-<button  class="product-card__buy-button">Купить в 1-н клик</button>
-</div>
+	<div class="product-card__advantages">
+		<span class="product-card__phrase"></span>
+		<span class="product-card__delivery"><svg class='product-card__delivery-icon' width="40" height = "16">
+			<use xlink:href="#icon_fast_shipping_product"></use>
+		</svg></span></div>
+		<span class="product-card__price">2142грн</span>
+		<button class="product-card__cart-button common-button"><svg class='product-card__button-icon' width="22" height = "16">
+			<use xlink:href="#icon_buy_product"></use>
+		</svg>Купить</button>
+		<button  class="product-card__buy-button">Купить в 1-н клик</button>
+	</div>
+	<div class="product-card product-card--slide"><a href="#" class="product__link">
+		<span class="product-card__name">BRW (БРВ) Кровать  Индиана Indiana <br> (дуб шутер) <br>
+		JLOZ90 (Каркас)</span> <div class="product-card__img-wrapper">
+	<img src="../images/search/pic_product_search.png" alt="" class="product-card__img"></div></a>
+	<div class="product-card__advantages">
+		<span class="product-card__phrase"></span>
+		<span class="product-card__delivery"><svg class='product-card__delivery-icon' width="40" height = "16">
+			<use xlink:href="#icon_fast_shipping_product"></use>
+		</svg></span></div>
+		<span class="product-card__price">2142грн</span>
+		<button class="product-card__cart-button common-button"><svg class='product-card__button-icon' width="22" height = "16">
+			<use xlink:href="#icon_buy_product"></use>
+		</svg>Купить</button>
+		<button  class="product-card__buy-button">Купить в 1-н клик</button>
+	</div>
+	<div class="product-card product-card--slide"><a href="#" class="product__link">
+		<span class="product-card__name">BRW (БРВ) Кровать  Индиана Indiana <br> (дуб шутер) <br>
+		JLOZ90 (Каркас)</span> <div class="product-card__img-wrapper">
+	<img src="../images/search/pic_product_search.png" alt="" class="product-card__img"></div></a>
+	<div class="product-card__advantages">
+		<span class="product-card__phrase"></span>
+		<span class="product-card__delivery"><svg class='product-card__delivery-icon' width="40" height = "16">
+			<use xlink:href="#icon_fast_shipping_product"></use>
+		</svg></span></div>
+		<span class="product-card__price">2142грн</span>
+		<button class="product-card__cart-button common-button"><svg class='product-card__button-icon' width="22" height = "16">
+			<use xlink:href="#icon_buy_product"></use>
+		</svg>Купить</button>
+		<button  class="product-card__buy-button">Купить в 1-н клик</button>
+	</div>
+	<div class="product-card product-card--slide"><a href="#" class="product__link">
+		<span class="product-card__name">BRW (БРВ) Кровать  Индиана Indiana <br> (дуб шутер) <br>
+		JLOZ90 (Каркас)</span> <div class="product-card__img-wrapper">
+	<img src="../images/search/pic_product_search.png" alt="" class="product-card__img"></div></a>
+	<div class="product-card__advantages">
+		<span class="product-card__phrase"></span>
+		<span class="product-card__delivery"><svg class='product-card__delivery-icon' width="40" height = "16">
+			<use xlink:href="#icon_fast_shipping_product"></use>
+		</svg></span></div>
+		<span class="product-card__price">2142грн</span>
+		<button class="product-card__cart-button common-button"><svg class='product-card__button-icon' width="22" height = "16">
+			<use xlink:href="#icon_buy_product"></use>
+		</svg>Купить</button>
+		<button  class="product-card__buy-button">Купить в 1-н клик</button>
+	</div>
 </div>
 </section>
 <section class="watched common-section">
@@ -769,34 +900,18 @@
 вы смотрели
 </h3>
 <div class="slider slider-watched">
-<div class="product-card product-card--slide">
-<a href="#" class="product__link">
-	<span class="product-card__name">BRW (БРВ) Кровать  Индиана Indiana <br> (дуб шутер) <br>
-	JLOZ90 (Каркас)</span>
-	<div class="product-card__img-wrapper">
-	<img src="../images/search/pic_product_search.png" alt="" class="product-card__img"></div></a>
-	<span class="product-card__phrase">Топ продаж</span>
-	<span class="product-card__delivery">
-		<svg class='product-card__delivery-icon' width="40" height = "16">
-			<use xlink:href="#icon_fast_shipping_product"></use>
-		</svg>Быстрая доставка</span>
-		<span class="product-card__price">2142грн</span>
-		<button class="product-card__cart-button">
-		<svg class='product-card__button-icon' width="22" height = "16">
-			<use xlink:href="#icon_buy_product"></use>
-		</svg>Купить</button>
-		<button  class="product-card__buy-button">Купить в 1-н клик</button>
-	</div>
 	<div class="product-card product-card--slide"><a href="#" class="product__link">
 		<span class="product-card__name">BRW (БРВ) Кровать  Индиана Indiana <br> (дуб шутер) <br>
 		JLOZ90 (Каркас)</span> <div class="product-card__img-wrapper">
 	<img src="../images/search/pic_product_search.png" alt="" class="product-card__img"></div></a>
-	<span class="product-card__phrase">Топ продаж</span>
-	<span class="product-card__delivery"><svg class='product-card__delivery-icon' width="40" height = "16">
-		<use xlink:href="#icon_fast_shipping_product"></use>
-	</svg>Быстрая доставка</span>
+	<div class="product-card__advantages">
+		<span class="product-card__phrase"></span>
+		<span class="product-card__delivery"><svg class='product-card__delivery-icon' width="40" height = "16">
+			<use xlink:href="#icon_fast_shipping_product"></use>
+		</svg></span>
+	</div>
 	<span class="product-card__price">2142грн</span>
-	<button class="product-card__cart-button"><svg class='product-card__button-icon' width="22" height = "16">
+	<button class="product-card__cart-button common-button"><svg class='product-card__button-icon' width="22" height = "16">
 		<use xlink:href="#icon_buy_product"></use>
 	</svg>Купить</button>
 	<button  class="product-card__buy-button">Купить в 1-н клик</button>
@@ -805,43 +920,61 @@
 	<span class="product-card__name">BRW (БРВ) Кровать  Индиана Indiana <br> (дуб шутер) <br>
 	JLOZ90 (Каркас)</span> <div class="product-card__img-wrapper">
 <img src="../images/search/pic_product_search.png" alt="" class="product-card__img"></div></a>
-<span class="product-card__phrase">Топ продаж</span>
-<span class="product-card__delivery"><svg class='product-card__delivery-icon' width="40" height = "16">
-	<use xlink:href="#icon_fast_shipping_product"></use>
-</svg>Быстрая доставка</span>
-<span class="product-card__price">2142грн</span>
-<button class="product-card__cart-button"><svg class='product-card__button-icon' width="22" height = "16">
-	<use xlink:href="#icon_buy_product"></use>
-</svg>Купить</button>
-<button  class="product-card__buy-button">Купить в 1-н клик</button>
+<div class="product-card__advantages">
+	<span class="product-card__phrase"></span>
+	<span class="product-card__delivery"><svg class='product-card__delivery-icon' width="40" height = "16">
+		<use xlink:href="#icon_fast_shipping_product"></use>
+	</svg></span></div>
+	<span class="product-card__price">2142грн</span>
+	<button class="product-card__cart-button common-button"><svg class='product-card__button-icon' width="22" height = "16">
+		<use xlink:href="#icon_buy_product"></use>
+	</svg>Купить</button>
+	<button  class="product-card__buy-button">Купить в 1-н клик</button>
 </div>
 <div class="product-card product-card--slide"><a href="#" class="product__link">
-<span class="product-card__name">BRW (БРВ) Кровать  Индиана Indiana <br> (дуб шутер) <br>
-JLOZ90 (Каркас)</span> <div class="product-card__img-wrapper">
+	<span class="product-card__name">BRW (БРВ) Кровать  Индиана Indiana <br> (дуб шутер) <br>
+	JLOZ90 (Каркас)</span> <div class="product-card__img-wrapper">
 <img src="../images/search/pic_product_search.png" alt="" class="product-card__img"></div></a>
-<span class="product-card__phrase">Топ продаж</span>
-<span class="product-card__delivery"><svg class='product-card__delivery-icon' width="40" height = "16">
-<use xlink:href="#icon_fast_shipping_product"></use>
-</svg>Быстрая доставка</span>
-<span class="product-card__price">2142грн</span>
-<button class="product-card__cart-button"><svg class='product-card__button-icon' width="22" height = "16">
-<use xlink:href="#icon_buy_product"></use>
-</svg>Купить</button>
-<button  class="product-card__buy-button">Купить в 1-н клик</button>
+<div class="product-card__advantages">
+	<span class="product-card__phrase"></span>
+	<span class="product-card__delivery"><svg class='product-card__delivery-icon' width="40" height = "16">
+		<use xlink:href="#icon_fast_shipping_product"></use>
+	</svg></span></div>
+	<span class="product-card__price">2142грн</span>
+	<button class="product-card__cart-button common-button"><svg class='product-card__button-icon' width="22" height = "16">
+		<use xlink:href="#icon_buy_product"></use>
+	</svg>Купить</button>
+	<button  class="product-card__buy-button">Купить в 1-н клик</button>
 </div>
 <div class="product-card product-card--slide"><a href="#" class="product__link">
-<span class="product-card__name">BRW (БРВ) Кровать  Индиана Indiana <br> (дуб шутер) <br>
-JLOZ90 (Каркас)</span> <div class="product-card__img-wrapper">
+	<span class="product-card__name">BRW (БРВ) Кровать  Индиана Indiana <br> (дуб шутер) <br>
+	JLOZ90 (Каркас)</span> <div class="product-card__img-wrapper">
 <img src="../images/search/pic_product_search.png" alt="" class="product-card__img"></div></a>
-<span class="product-card__phrase">Топ продаж</span>
-<span class="product-card__delivery"><svg class='product-card__delivery-icon' width="40" height = "16">
-<use xlink:href="#icon_fast_shipping_product"></use>
-</svg>Быстрая доставка</span>
-<span class="product-card__price">2142грн</span>
-<button class="product-card__cart-button"><svg class='product-card__button-icon' width="22" height = "16">
-<use xlink:href="#icon_buy_product"></use>
-</svg>Купить</button>
-<button  class="product-card__buy-button">Купить в 1-н клик</button>
+<div class="product-card__advantages">
+	<span class="product-card__phrase"></span>
+	<span class="product-card__delivery"><svg class='product-card__delivery-icon' width="40" height = "16">
+		<use xlink:href="#icon_fast_shipping_product"></use>
+	</svg></span></div>
+	<span class="product-card__price">2142грн</span>
+	<button class="product-card__cart-button common-button"><svg class='product-card__button-icon' width="22" height = "16">
+		<use xlink:href="#icon_buy_product"></use>
+	</svg>Купить</button>
+	<button  class="product-card__buy-button">Купить в 1-н клик</button>
+</div>
+<div class="product-card product-card--slide"><a href="#" class="product__link">
+	<span class="product-card__name">BRW (БРВ) Кровать  Индиана Indiana <br> (дуб шутер) <br>
+	JLOZ90 (Каркас)</span> <div class="product-card__img-wrapper">
+<img src="../images/search/pic_product_search.png" alt="" class="product-card__img"></div></a>
+<div class="product-card__advantages">
+	<span class="product-card__phrase"></span>
+	<span class="product-card__delivery"><svg class='product-card__delivery-icon' width="40" height = "16">
+		<use xlink:href="#icon_fast_shipping_product"></use>
+	</svg></span></div>
+	<span class="product-card__price">2142грн</span>
+	<button class="product-card__cart-button common-button"><svg class='product-card__button-icon' width="22" height = "16">
+		<use xlink:href="#icon_buy_product"></use>
+	</svg>Купить</button>
+	<button  class="product-card__buy-button">Купить в 1-н клик</button>
 </div>
 </div>
 </section>

@@ -1,16 +1,20 @@
-var currentQuantity = 1;
+
 $('.quantity-switch__less').on('click', function(e) {
     e.preventDefault();
-    if (currentQuantity > 1) {
-        currentQuantity -= 1;
-        $(".quantity-switch__number").val(currentQuantity);
+    var quantityInput = $(this).siblings('.quantity-switch__number');
+    var quantityValue = quantityInput.val();
+    if (quantityValue > 1) {
+        quantityValue --;
+        $(quantityInput).val(quantityValue);
     }
 });
 
 $('.quantity-switch__more').on('click', function(e) {
     e.preventDefault();
-    if (currentQuantity <= 9) {
-        currentQuantity += 1;
-        $(".quantity-switch__number").val(currentQuantity);
+    var quantityInput = $(this).siblings('.quantity-switch__number');
+    var quantityValue = quantityInput.val();
+    if (quantityValue <= 9) {
+        quantityValue ++;
+        $(quantityInput).val(quantityValue);
     }
 });

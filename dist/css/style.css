@@ -541,6 +541,12 @@ body {
     right: 25px;
     top: 50%;
     transform: translate(0, -50%); }
+  .vertical-categories--popup {
+    display: none;
+    position: absolute;
+    top: 100%;
+    z-index: 10;
+    background-color: #fff; }
 
 .cart {
   position: relative;
@@ -622,6 +628,8 @@ body {
 .top-sell {
   margin-top: 25px; }
   .top-sell__wrapper {
+    margin-left: -10px;
+    margin-right: -10px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: justify;
@@ -666,14 +674,16 @@ body {
   .product-card__name {
     color: #333;
     line-height: 20px; }
-  .product-card__phrase {
+  .product-card__advantages {
     position: absolute;
-    right: 10px;
     top: 90px;
+    right: 10px; }
+  .product-card__phrase {
     display: block;
     width: 55px;
     height: 40px;
     padding-top: 6px;
+    margin-bottom: 10px;
     font-size: 12px;
     text-align: center;
     color: #fff;
@@ -682,9 +692,6 @@ body {
     .product-card__phrase:after {
       content: 'Топ продаж'; }
   .product-card__delivery {
-    position: absolute;
-    right: 10px;
-    top: 140px;
     display: block;
     width: 55px;
     padding: 4px;
@@ -1106,7 +1113,6 @@ body {
   left: 0;
   top: 0;
   z-index: 7;
-  display: none;
   width: 100%;
   height: 100%;
   background-color: rgba(4, 7, 7, 0.5); }
@@ -1457,20 +1463,19 @@ body {
   position: fixed;
   display: -ms-flexbox;
   display: flex;
-  display: none;
   -ms-flex-align: center;
       align-items: center;
   -ms-flex-direction: column;
       flex-direction: column;
-  width: 100%;
-  height: 100%;
+  -ms-flex-pack: center;
+      justify-content: center;
+  width: 98%;
+  height: 98%;
   z-index: 10;
-  margin: 20px;
   background-color: #fff; }
   .gallery-popup__slider-wrapper {
     max-width: 730px;
     width: 100%;
-    min-height: 100%;
     margin: 0 auto; }
   .gallery-popup__title {
     display: inline-block;
@@ -1696,7 +1701,9 @@ body {
       display: -ms-flexbox;
       display: flex;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+      -ms-flex-order: 1;
+          order: 1; }
     .list-view .product-card__details {
       position: relative;
       width: auto;
@@ -1704,6 +1711,8 @@ body {
       box-shadow: none; }
     .list-view .product-card__price {
       font-size: 25px; }
+    .list-view .product-card__advantages {
+      top: 20px; }
 
 .side-menu__list {
   position: relative;

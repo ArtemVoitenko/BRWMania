@@ -53,15 +53,17 @@
 		color: #333;
 		line-height: 20px;
 	}
-	&__phrase {
+	&__advantages {
 		position: absolute;
-		right: 10px;
 		top: 90px;
-
+		right: 10px;
+	}
+	&__phrase {
 		display: block;
 		width: 55px;
 		height: 40px;
 		padding-top: 6px;
+		margin-bottom: 10px;
 
 		font-size: 12px;
 		text-align: center;
@@ -76,10 +78,6 @@
 		}
 	}
 	&__delivery {
-		position: absolute;
-		right: 10px;
-		top: 140px;
-
 		display: block;
 		width: 55px;
 		padding: 4px;

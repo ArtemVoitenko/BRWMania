@@ -38,4 +38,11 @@
 		top: 50%;
 		transform: translate(0, -50%);
 	}
+	&--popup {
+		display: none;
+		position: absolute;
+		top: 100%;
+		z-index: 10;
+		background-color: #fff;
+	}
 }
