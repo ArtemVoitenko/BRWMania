@@ -3,6 +3,9 @@ var cartModal = $(".cart-modal");
 var callPopUp = $(".call-popup");
 var fancybox = $(".fancybox");
 var galleryPopup = $(".gallery-popup");
+var filtersList = $(".filters__list");
+var filtersHide = $("#filters__hide");
+var filtersMore = $("#filters__show-more");
 
 $('.vertical-categories__item').hover(function() {
     var submenu = $(this).children("ul");
@@ -72,5 +75,15 @@ $(document).mouseup(function(e) {
     fancybox.slideUp();
     }
 });
+filtersMore.click(function () {
+    filtersList.removeClass("filters__list--compressed");
+    filtersMore.hide();
+    filtersHide.show();
+})
+filtersHide.click(function () {
+    filtersList.addClass("filters__list--compressed");
+    filtersHide.hide();
+    filtersMore.show();
+})
 
 });

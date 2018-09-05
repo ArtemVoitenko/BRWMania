@@ -22,8 +22,7 @@
 
 		&:hover {
 			border-bottom: 2px solid $accent;
-			text-decoration: underline;
-			background-color: lighten($black, 10%);
+			background-color: lighten($black, 7%);
 		}
 	}	
 

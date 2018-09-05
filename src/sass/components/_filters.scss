@@ -68,6 +68,10 @@
 
 		border-bottom: 1px solid #fff;
 	}
+	&__list--compressed {
+		max-height: 420px;
+		overflow: hidden;
+	}
 	&__list-item {
 		position: relative;
 	}
@@ -90,6 +94,13 @@
 		border-top: 1px solid $black;
 		border-left: 1px solid $black;
 		transform: rotate(-135deg);
+	}
+	&--hide {
+		display: none;
+		&:before {
+			top: 8px;
+			transform: rotate(45deg);
+		}
 	}
 	}
 	&__reset-icon {

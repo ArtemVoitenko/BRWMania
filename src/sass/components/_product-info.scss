@@ -69,12 +69,13 @@
 	}
 
 	&__rate-icon {
-		fill: $grey;
-		&:hover {
-			fill: $accent
+		fill: $accent;
+		&--not{ 
+			fill: $grey
+		}
 		}
 	}
 
-}
+
 
 

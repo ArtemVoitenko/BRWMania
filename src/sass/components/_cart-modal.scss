@@ -1,6 +1,7 @@
 .cart-modal {
 	position: absolute;
 	top: 100%;
+	right: -1px;
 	z-index: 5;
 	
 	display: flex;
@@ -82,7 +83,7 @@
 		
 		position: absolute;
 		top: -15px;
-		left: 40px;
+		left: 50%;
 		border: 7px solid transparent;
 		border-bottom: 7px solid $black;
 	}

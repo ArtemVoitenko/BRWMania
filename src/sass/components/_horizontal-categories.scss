@@ -19,8 +19,6 @@
 		box-sizing: border-box;
 		
 		&:hover {
-
-			text-decoration: underline;
 			background-color: darken($accent, 5%);
 		
 			&:before {

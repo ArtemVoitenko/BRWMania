@@ -413,8 +413,7 @@ body {
     padding-right: 12px; }
     .main-nav__item:hover {
       border-bottom: 2px solid #ea3c27;
-      text-decoration: underline;
-      background-color: #172727; }
+      background-color: #111e1e; }
   .main-nav__link {
     display: block;
     color: #fff;
@@ -426,23 +425,21 @@ body {
   padding-right: 15px;
   height: 45px;
   margin-right: 30px;
-  color: #040707;
-  text-decoration: underline;
-  background-color: #ebecec;
-  border-radius: 30px;
+  color: #fff;
+  background-color: #ea3c27;
+  border-radius: 5px;
   border: none;
-  box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.77);
+  text-transform: uppercase;
   cursor: pointer;
   background-repeat: no-repeat;
   background-position: 10px center; }
-  .button:hover {
-    color: #ea3c27; }
   .button--request-call {
     padding-left: 35px; }
   .button__icon {
     margin-right: 5px;
     margin-left: 10px;
-    margin-bottom: -3px; }
+    margin-bottom: -3px;
+    fill: #fff; }
 
 .phones {
   margin: 0;
@@ -474,7 +471,6 @@ body {
     padding-right: 12px;
     box-sizing: border-box; }
     .horizontal-categories__item:hover {
-      text-decoration: underline;
       background-color: #e22c16; }
       .horizontal-categories__item:hover:before {
         content: '';
@@ -580,26 +576,14 @@ body {
     font-size: 16px;
     font-weight: 700;
     color: #ea3c27; }
-  .cart__open-btn {
-    position: relative;
-    margin-right: 15px;
-    padding-right: 10px;
-    text-decoration: underline;
-    color: #040707;
-    background-color: transparent;
-    border: none;
-    cursor: pointer; }
-    .cart__open-btn::after {
-      position: absolute;
-      right: -15px;
-      content: '\003e\003e'; }
-    .cart__open-btn:hover {
-      color: #ea3c27; }
   .cart__icon {
     position: absolute;
     left: -100px;
     top: -30px;
-    fill: #ea3c27; }
+    fill: #ea3c27;
+    cursor: pointer; }
+    .cart__icon:hover {
+      fill: #d82a15; }
 
 .advantages__list {
   display: -ms-flexbox;
@@ -711,8 +695,6 @@ body {
     border-radius: 2px;
     color: #fff;
     text-align: center; }
-    .product-card__cart-button:hover {
-      text-decoration: underline; }
   .product-card__buy-button {
     display: inline-block;
     margin-top: 15px;
@@ -905,7 +887,6 @@ body {
     font-size: 24px;
     color: #fff;
     text-align: center;
-    text-decoration: underline;
     background-color: #ea3c27; }
   .call-popup__close-button {
     position: absolute;
@@ -982,6 +963,7 @@ body {
 .cart-modal {
   position: absolute;
   top: 100%;
+  right: -1px;
   z-index: 5;
   display: -ms-flexbox;
   display: flex;
@@ -1044,7 +1026,7 @@ body {
     content: '';
     position: absolute;
     top: -15px;
-    left: 40px;
+    left: 50%;
     border: 7px solid transparent;
     border-bottom: 7px solid #040707; }
 
@@ -1113,6 +1095,7 @@ body {
   left: 0;
   top: 0;
   z-index: 7;
+  display: none;
   width: 100%;
   height: 100%;
   background-color: rgba(4, 7, 7, 0.5); }
@@ -1165,6 +1148,9 @@ body {
     padding-bottom: 15px;
     margin-bottom: 20px;
     border-bottom: 1px solid #fff; }
+  .filters__list--compressed {
+    max-height: 420px;
+    overflow: hidden; }
   .filters__list-item {
     position: relative; }
   .filters__show-more {
@@ -1183,6 +1169,11 @@ body {
       border-top: 1px solid #040707;
       border-left: 1px solid #040707;
       transform: rotate(-135deg); }
+    .filters__show-more--hide {
+      display: none; }
+      .filters__show-more--hide:before {
+        top: 8px;
+        transform: rotate(45deg); }
   .filters__reset-icon {
     margin-right: 15px; }
   .filters__button-filtrate {
@@ -1319,9 +1310,9 @@ body {
   font-size: 16px; }
 
 .product-info__rate-icon {
-  fill: #ebecec; }
-  .product-info__rate-icon:hover {
-    fill: #ea3c27; }
+  fill: #ea3c27; }
+  .product-info__rate-icon--not {
+    fill: #ebecec; }
 
 .product-comments {
   width: 100%;
@@ -1463,6 +1454,7 @@ body {
   position: fixed;
   display: -ms-flexbox;
   display: flex;
+  display: none;
   -ms-flex-align: center;
       align-items: center;
   -ms-flex-direction: column;
@@ -1656,6 +1648,8 @@ body {
     margin-bottom: 25px;
     padding-left: 15px;
     background-color: #fff; }
+  .review__input-wrapper {
+    background-color: #fff; }
   .review__send-side {
     width: 33%; }
   .review__text-side {
@@ -1795,7 +1789,8 @@ body {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%);
+  fill: #ea3c27; }
 
 .registration-form__input {
   width: 100%;
@@ -2247,6 +2242,51 @@ body {
       border-top: 10px solid #1A8B04; }
   .ordering-form__submit {
     margin-top: 45px; }
+
+.rating {
+  margin-top: -5px;
+  float: left;
+  font-size: 20px; }
+
+/* :not(:checked) is a filter, so that browsers that don’t support :checked don’t 
+   follow these rules. Every browser that supports :checked also supports :not(), so
+   it doesn’t make the test unnecessarily selective */
+.rating:not(:checked) > input {
+  position: absolute;
+  top: -9999px;
+  clip: rect(0, 0, 0, 0); }
+
+.rating:not(:checked) > label {
+  float: right;
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 200%;
+  line-height: 1;
+  color: #ddd; }
+
+.rating:not(:checked) > label:before {
+  content: '★ '; }
+
+.rating > input:checked ~ label {
+  color: #ea3c27; }
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+  color: #ea3c27; }
+
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+  color: #c12613; }
+
+.rating > label:active {
+  position: relative;
+  top: 2px;
+  left: 2px; }
 
 /* Slider */
 .slick-slider {
