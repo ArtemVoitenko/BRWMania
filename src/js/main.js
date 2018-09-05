@@ -42,10 +42,14 @@ $("#close-call-popup").click(function () {
 $(".big-slide__wrapper--clickable").click(function () {
     galleryPopup.slideDown();
     fancybox.slideDown();
+        if(galleryPopup.css('display') === 'block'){
+        galleryPopup.css("display", "flex");
+    }
 })
 $("#close-gallery").click(function () {
     galleryPopup.fadeOut();
     fancybox.fadeOut();
+
 });
 var productCardList = $(".product-card__wrapper")
 $("#list-view").on("click", function () {
