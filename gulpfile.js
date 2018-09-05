@@ -261,7 +261,8 @@ gulp.task('svg-sprite-build', () =>
 gulp.task('build', callback => {
   runSequence(
     'clean',
-    ['copy', 'html', 'svg-sprite-build','js', 'img'],
+    'js',
+    ['copy', 'html', 'svg-sprite-build', 'img'],
     'css-min-style',
     
     callback
