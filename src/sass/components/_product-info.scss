@@ -12,11 +12,12 @@
 		width: 100%;
 	}
 	&__slider-wrapper {
-		max-width: 530px;
-		width: 100%;
+		// max-width: 530px;
+		// width: 100%;
+		width: 50%;
 	}
 	&__comments-wrapper {
-		width: 49%;
+		width: 50%;
 
 		padding-right: 20px;
 	}
@@ -52,13 +53,13 @@
 		font-size: 24px;
 		color: $accent;
 		font-weight: bold;
+		margin-right: 40px;
 	}
 	&__elements-wrapper {
 
 		margin-bottom: 30px;
 
 		display: flex;
-		justify-content: space-between;
 		align-items: center;
 
 		text-align: center;

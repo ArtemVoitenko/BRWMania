@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title></title>
+	<title>BRWMania</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 	<link rel="stylesheet" href="../css/style.min.css">
@@ -37,9 +37,9 @@
 				</svg>Пн-Вс 9.00 - 20.00</span>
 			</div>
 			<form action="#" class="main-header__search-form">
-				<div class="main-header__search-field" id="search">
+				<div class="main-header__search-field" >
 					<label class="visually-hidden" for="search">Поиск</label>
-					<input class="main-header__input" name="search" type="search" placeholder = "Поиск">
+					<input class="main-header__input" id="search" name="search" type="search" placeholder = "Поиск">
 
 					<button class="main-header__search-button common-button" name="search-button"><svg class="main-header__search-icon" width="20" height = "20">
 						<use xlink:href="#icon_search"></use>
@@ -91,8 +91,8 @@
 					
 					<p class='cart-modal__total'>Итого:<span class="cart-modal__total-price"> 13156грн</span></p>
 					<div class="cart-modal__buttons-block">
-						<a class="cart-modal__button" href="#" class="cart-modal__open-cart">Просмотр корзины</a>
-						<a class="cart-modal__button cart-modal__button--green" href="#" class="cart-modal__order-checkout">Оформление заказа</a>
+						<a class="cart-modal__button cart-modal__open-cart" href="#" >Просмотр корзины</a>
+						<a class="cart-modal__button cart-modal__button--green cart-modal__order-checkout" href="#" >Оформление заказа</a>
 					</div>
 				</div>
 			</div>
@@ -246,7 +246,7 @@
 				</ul>
 			</li>
 			<li class="horizontal-categories__item"><a href="#" class="horizontal-categories__link horizontal-categories__link--bold">Все бренды <svg class="horizontal-categories__icon horizontal-categories__icon--brands " width="7" height = "5">
-			<use xlink:href="#icon_arrow_down"></use></a></li>
+			<use xlink:href="#icon_arrow_down"></use></svg></a></li>
 			<li class="horizontal-categories__item"><a href="#" class="horizontal-categories__link"><svg class="horizontal-categories__icon"  width="35" height = "35">
 				<use xlink:href="#icon_living_room"></use>
 			</svg>Гостиная</a></li>
@@ -281,11 +281,11 @@
 		Заказать звонок
 	</span>
 	<form action="#" class="call-popup__form">
-		<label class = "call-popup__phone-label" for="phone">Введите Ваш контактный номер телефона:</label>
+		<label class = "call-popup__phone-label" for="phone-number-input">Введите Ваш контактный номер телефона:</label>
 		<input class = "call-popup__phone-input" type="tel" name="phone" id="phone-number-input" placeholder = "+380-XX-XX-XXX">
 		<button class="common-button call-popup__submit">Заказать звонок</button>
 	</form>
-	<button id= "close-call-popup"class="call-popup__close-button"><svg class="call-popup__close-icon"  width="13" height = "13">
+	<button id= "close-call-popup" class="call-popup__close-button"><svg class="call-popup__close-icon"  width="13" height = "13">
 				<use xlink:href="#icon_del"></use>
 			</svg><span class="visually-hidden">Закрыть окно</span></button>
 </div>
@@ -362,7 +362,7 @@
 					<ul class="filters__list">
 						<li class="filters__list-item"><input type="checkbox" name="withMatress" id="withMatress" class="filters__property"><label for="withMatress" class="filters__property-label">С матрасом</label></li>
 						<li class="filters__list-item"><input type="checkbox" name="withLinenBox" id="withLinenBox" class="filters__property"><label for="withLinenBox" class="filters__property-label">С ящиком для белья</label></li>
-						<li class="filters__list-item"><input type="checkbox" name="withLifting" id="withLifting" class="filters__property"><label for="withLifting" class="filters__property-label">С подъемным механизмом</label></li>
+						<li class="filters__list-item"><input type="checkbox" name="withLifting" id="withLifting" class="filters__property"><label for="withLifting" class="filters__property-label">С подъемным механизмом</label></li></ul>
 					</div>
 					<div class="filters__element">
 						<p class="filters__title">Материал</p>
@@ -381,7 +381,7 @@
 						<div class="filters__element">
 							<p class="filters__title">Производитель</p>
 							<ul class="filters__list">
-							<li class="filters__list-item"><input type="checkbox" name="producer-brw" id="producer-brw" class="filters__property"><label for="producer-brw" class="filters__property-label">BRW - Украина</label> <span class="filters__producer-products-quantity">5</span></li>
+							<li class="filters__list-item"><input type="checkbox" name="producer-brw" id="producer-brw" class="filters__property"><label for="producer-brw" class="filters__property-label">BRW - Украина</label> <span class="filters__producer-products-quantity">5</span></li></ul>
 							
 						</div>
 			
@@ -406,8 +406,8 @@
 						<button class="filters__button-filtrate">фильтровать</button>
 						</form>
 					</section>
-			<div class="product-info__side-img-wrapper"><img src="" alt="" class="product-info__side-img"></div>
-			<div class="product-info__side-img-wrapper"><img src="" alt="" class="product-info__side-img"></div>
+			<div class="product-info__side-img-wrapper"><img src="#" alt="" class="product-info__side-img"></div>
+			<div class="product-info__side-img-wrapper"><img src="#" alt="" class="product-info__side-img"></div>
 		</div>
 		<div class="banner-side-wrapper">
 			
@@ -474,7 +474,7 @@
 								<p class="product-comments__content">Спинка удобная, не прогибается. А на кровати, хотела бы, валятся сутки напролет, такая удобная! Как только увидела
 									у вас ее, твердо решила – вот это то, что мне нужно! спасибо вам, что не только оперативно доставили, но и так
 								же собрали!</p>
-								<time class = "product-comments__date">May 21st, 2011</time>
+								<p class = "product-comments__date">May 21st, 2011</p>
 							</div>
 							<div class="product-comments__item">
 									<span class="product-comments__name">
@@ -502,7 +502,7 @@
 								<p class="product-comments__content">Спинка удобная, не прогибается. А на кровати, хотела бы, валятся сутки напролет, такая удобная! Как только увидела
 									у вас ее, твердо решила – вот это то, что мне нужно! спасибо вам, что не только оперативно доставили, но и так
 								же собрали!</p>
-								<time class = "product-comments__date">May 21st, 2011</time>
+								<p class = "product-comments__date">May 21st, 2011</p>
 							</div>
 							<div class="product-comments__item">
 									<span class="product-comments__name">
@@ -530,7 +530,7 @@
 								<p class="product-comments__content">Спинка удобная, не прогибается. А на кровати, хотела бы, валятся сутки напролет, такая удобная! Как только увидела
 									у вас ее, твердо решила – вот это то, что мне нужно! спасибо вам, что не только оперативно доставили, но и так
 								же собрали!</p>
-								<time class = "product-comments__date">May 21st, 2011</time>
+								<p class = "product-comments__date">May 21st, 2011</p>
 							</div>
 							
 						</div>
@@ -693,17 +693,18 @@
 			<p>Четкие линии, оригинальная расцветка, компактность, вместимост - это далеко не весь перечень преимуществ, которыми обладает мебель для гостиной “Аватар”. Прочитав нашу заметку до конца, вы поймете, что AVATAR от отечественной фабрики Gerbor – это именно то, что вам надо!</p>
 			<h3 class="section-title">МЕБЕЛЬ ДЛЯ ГОСТИНОЙ “АВАТАР”: ВНИМАНИЕ НА ДЕТАЛИ</h3>
 			<p>Для изготовления модульной системы “Аватар” специалисты фабрики “Гербор” используют ламинированную ДСП класса Е1. Как известно, этот материал является довольно прочным и долговечным. Ансамбль дополняется качественной польской фурнитурой, которая подчеркивает стиль и изысканность модульной гостиной “Аватар”.</p>
-			<p>Вы можете выбрать мебель AVATAR в следующих цветовых решениях:
+			<p>Вы можете выбрать мебель AVATAR в следующих цветовых решениях:</p>
 				<ul>
 					<li>корпус - “венге магия”, фасад – белый с рисунком;</li>
 					<li>фасад – синий, корпус - “венге магия”,;</li>
 					<li>корпус - “венге магия”, фасад – розовый глянец.</li>
 				</ul>
+				<p>
 				Каждый из вариантов органично впишется в любой интерьер и создаст яркий акцент в доме.<br>
 				Несколько неоспоримых преимуществ мебели “Аватар”
 			</p>
 			<p>
-				Говорят, что все гениальное – просто. Нельзя не согласиться с этим, глядя на мебельную систему для гостиной “Аватар”:
+				Говорят, что все гениальное – просто. Нельзя не согласиться с этим, глядя на мебельную систему для гостиной “Аватар”:</p>
 				<ul>
 					<li>строгие геометрические формы;</li>
 					<li>эффектный дизайн;</li>
@@ -711,6 +712,7 @@
 					<li>оригинальные стеклянные вставки;</li>
 					<li>модные и стильные ручки квадратной формы.</li>
 				</ul>
+				<p>
 				Но главное преимущество мебели Аватар - большое количество модулей: полки, тумбы, столы, комоды, витрины, шкафы и кровати. Вы можете купить только те элементы, которые вам наиболее необходимы.
 			</p>
 			<h3 class="section-title">сАМОЕ ВЫГОДНОЕ МЕСТО ДЛЯ ПОКУПКИ МЕБЕЛИ AVATAR</h3>

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title></title>
+	<title>BRWMania</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 	<link rel="stylesheet" href="../css/style.min.css">
@@ -37,9 +37,9 @@
 				</svg>Пн-Вс 9.00 - 20.00</span>
 			</div>
 			<form action="#" class="main-header__search-form">
-				<div class="main-header__search-field" id="search">
+				<div class="main-header__search-field" >
 					<label class="visually-hidden" for="search">Поиск</label>
-					<input class="main-header__input" name="search" type="search" placeholder = "Поиск">
+					<input class="main-header__input" id="search" name="search" type="search" placeholder = "Поиск">
 
 					<button class="main-header__search-button common-button" name="search-button"><svg class="main-header__search-icon" width="20" height = "20">
 						<use xlink:href="#icon_search"></use>
@@ -91,8 +91,8 @@
 					
 					<p class='cart-modal__total'>Итого:<span class="cart-modal__total-price"> 13156грн</span></p>
 					<div class="cart-modal__buttons-block">
-						<a class="cart-modal__button" href="#" class="cart-modal__open-cart">Просмотр корзины</a>
-						<a class="cart-modal__button cart-modal__button--green" href="#" class="cart-modal__order-checkout">Оформление заказа</a>
+						<a class="cart-modal__button cart-modal__open-cart" href="#" >Просмотр корзины</a>
+						<a class="cart-modal__button cart-modal__button--green cart-modal__order-checkout" href="#" >Оформление заказа</a>
 					</div>
 				</div>
 			</div>
@@ -246,7 +246,7 @@
 				</ul>
 			</li>
 			<li class="horizontal-categories__item"><a href="#" class="horizontal-categories__link horizontal-categories__link--bold">Все бренды <svg class="horizontal-categories__icon horizontal-categories__icon--brands " width="7" height = "5">
-			<use xlink:href="#icon_arrow_down"></use></a></li>
+			<use xlink:href="#icon_arrow_down"></use></svg></a></li>
 			<li class="horizontal-categories__item"><a href="#" class="horizontal-categories__link"><svg class="horizontal-categories__icon"  width="35" height = "35">
 				<use xlink:href="#icon_living_room"></use>
 			</svg>Гостиная</a></li>
@@ -281,11 +281,11 @@
 		Заказать звонок
 	</span>
 	<form action="#" class="call-popup__form">
-		<label class = "call-popup__phone-label" for="phone">Введите Ваш контактный номер телефона:</label>
+		<label class = "call-popup__phone-label" for="phone-number-input">Введите Ваш контактный номер телефона:</label>
 		<input class = "call-popup__phone-input" type="tel" name="phone" id="phone-number-input" placeholder = "+380-XX-XX-XXX">
 		<button class="common-button call-popup__submit">Заказать звонок</button>
 	</form>
-	<button id= "close-call-popup"class="call-popup__close-button"><svg class="call-popup__close-icon"  width="13" height = "13">
+	<button id= "close-call-popup" class="call-popup__close-button"><svg class="call-popup__close-icon"  width="13" height = "13">
 				<use xlink:href="#icon_del"></use>
 			</svg><span class="visually-hidden">Закрыть окно</span></button>
 </div>
@@ -431,8 +431,8 @@
 				<h3 class="page-title page-title--left">поиск - <span class="page-title--capitalize ">Кровать</span></h3>
 				<section class="search common-section">
 					<form action="#" class="search__form">
-					<label for="search" class="search__label">Поиск:</label>
-					<input type="search" name="search" id="search" class="search__input">
+					<label for="page-search" class="search__label">Поиск:</label>
+					<input type="search" name="search" id="page-search" class="search__input">
 					<button type = "submit" class="common-button search__button">поиск</button>
 					</form>
 				</section>

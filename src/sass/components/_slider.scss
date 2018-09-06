@@ -1,4 +1,7 @@
 .slider {
+
+	margin-right: -10px;
+	margin-left: -10px;
 	&__button {
 		position: absolute;
 
@@ -33,4 +36,8 @@
 	}
 
 
+}
+.slider-section {
+	padding-right: 10px;
+	padding-left: 10px;
 }

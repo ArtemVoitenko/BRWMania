@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title></title>
+	<title>BRWMania</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 	<link rel="stylesheet" href="../css/style.min.css">
@@ -37,9 +37,9 @@
 				</svg>Пн-Вс 9.00 - 20.00</span>
 			</div>
 			<form action="#" class="main-header__search-form">
-				<div class="main-header__search-field" id="search">
+				<div class="main-header__search-field" >
 					<label class="visually-hidden" for="search">Поиск</label>
-					<input class="main-header__input" name="search" type="search" placeholder = "Поиск">
+					<input class="main-header__input" id="search" name="search" type="search" placeholder = "Поиск">
 
 					<button class="main-header__search-button common-button" name="search-button"><svg class="main-header__search-icon" width="20" height = "20">
 						<use xlink:href="#icon_search"></use>
@@ -91,8 +91,8 @@
 					
 					<p class='cart-modal__total'>Итого:<span class="cart-modal__total-price"> 13156грн</span></p>
 					<div class="cart-modal__buttons-block">
-						<a class="cart-modal__button" href="#" class="cart-modal__open-cart">Просмотр корзины</a>
-						<a class="cart-modal__button cart-modal__button--green" href="#" class="cart-modal__order-checkout">Оформление заказа</a>
+						<a class="cart-modal__button cart-modal__open-cart" href="#" >Просмотр корзины</a>
+						<a class="cart-modal__button cart-modal__button--green cart-modal__order-checkout" href="#" >Оформление заказа</a>
 					</div>
 				</div>
 			</div>
@@ -119,11 +119,11 @@
 		Заказать звонок
 	</span>
 	<form action="#" class="call-popup__form">
-		<label class = "call-popup__phone-label" for="phone">Введите Ваш контактный номер телефона:</label>
+		<label class = "call-popup__phone-label" for="phone-number-input">Введите Ваш контактный номер телефона:</label>
 		<input class = "call-popup__phone-input" type="tel" name="phone" id="phone-number-input" placeholder = "+380-XX-XX-XXX">
 		<button class="common-button call-popup__submit">Заказать звонок</button>
 	</form>
-	<button id= "close-call-popup"class="call-popup__close-button"><svg class="call-popup__close-icon"  width="13" height = "13">
+	<button id= "close-call-popup" class="call-popup__close-button"><svg class="call-popup__close-icon"  width="13" height = "13">
 				<use xlink:href="#icon_del"></use>
 			</svg><span class="visually-hidden">Закрыть окно</span></button>
 </div>
@@ -243,6 +243,7 @@
 						
 				</div>
 			</div>
+		</div>
 			<div class="registration-form__elements-wrapper">
 				<label class="registration-form__label" for="reg-pass-repeat">*Повтор пароля</label>
 					<div class="registration-form__input-wrapper">
@@ -274,7 +275,7 @@
 						<div class="registration-form__elements-wrapper">
 						
 						<div class="registration-form__capcha-wrapper">
-						<input class = "registration-form__capcha-input " type="text">
+						<input class = "registration-form__capcha-input " id="reg-capcha" type="text">
 						<button class="registration-form__capcha-check  ">26+9</button>
 						<button class="registration-form__capcha-refresh"><svg class="registration-form__capcha-icon" width="25" height="25">
 						<use xlink:href="#icon_reload"></use>

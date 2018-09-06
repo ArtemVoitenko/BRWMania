@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title></title>
+	<title>BRWMania</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 	<link rel="stylesheet" href="../css/style.min.css">
@@ -37,9 +37,9 @@
 				</svg>Пн-Вс 9.00 - 20.00</span>
 			</div>
 			<form action="#" class="main-header__search-form">
-				<div class="main-header__search-field" id="search">
+				<div class="main-header__search-field" >
 					<label class="visually-hidden" for="search">Поиск</label>
-					<input class="main-header__input" name="search" type="search" placeholder = "Поиск">
+					<input class="main-header__input" id="search" name="search" type="search" placeholder = "Поиск">
 
 					<button class="main-header__search-button common-button" name="search-button"><svg class="main-header__search-icon" width="20" height = "20">
 						<use xlink:href="#icon_search"></use>
@@ -91,8 +91,8 @@
 					
 					<p class='cart-modal__total'>Итого:<span class="cart-modal__total-price"> 13156грн</span></p>
 					<div class="cart-modal__buttons-block">
-						<a class="cart-modal__button" href="#" class="cart-modal__open-cart">Просмотр корзины</a>
-						<a class="cart-modal__button cart-modal__button--green" href="#" class="cart-modal__order-checkout">Оформление заказа</a>
+						<a class="cart-modal__button cart-modal__open-cart" href="#" >Просмотр корзины</a>
+						<a class="cart-modal__button cart-modal__button--green cart-modal__order-checkout" href="#" >Оформление заказа</a>
 					</div>
 				</div>
 			</div>
@@ -246,7 +246,7 @@
 				</ul>
 			</li>
 			<li class="horizontal-categories__item"><a href="#" class="horizontal-categories__link horizontal-categories__link--bold">Все бренды <svg class="horizontal-categories__icon horizontal-categories__icon--brands " width="7" height = "5">
-			<use xlink:href="#icon_arrow_down"></use></a></li>
+			<use xlink:href="#icon_arrow_down"></use></svg></a></li>
 			<li class="horizontal-categories__item"><a href="#" class="horizontal-categories__link"><svg class="horizontal-categories__icon"  width="35" height = "35">
 				<use xlink:href="#icon_living_room"></use>
 			</svg>Гостиная</a></li>
@@ -281,11 +281,11 @@
 		Заказать звонок
 	</span>
 	<form action="#" class="call-popup__form">
-		<label class = "call-popup__phone-label" for="phone">Введите Ваш контактный номер телефона:</label>
+		<label class = "call-popup__phone-label" for="phone-number-input">Введите Ваш контактный номер телефона:</label>
 		<input class = "call-popup__phone-input" type="tel" name="phone" id="phone-number-input" placeholder = "+380-XX-XX-XXX">
 		<button class="common-button call-popup__submit">Заказать звонок</button>
 	</form>
-	<button id= "close-call-popup"class="call-popup__close-button"><svg class="call-popup__close-icon"  width="13" height = "13">
+	<button id= "close-call-popup" class="call-popup__close-button"><svg class="call-popup__close-icon"  width="13" height = "13">
 				<use xlink:href="#icon_del"></use>
 			</svg><span class="visually-hidden">Закрыть окно</span></button>
 </div>
@@ -326,7 +326,7 @@
 					<ul class="filters__list">
 						<li class="filters__list-item"><input type="checkbox" name="withMatress" id="withMatress" class="filters__property"><label for="withMatress" class="filters__property-label">С матрасом</label></li>
 						<li class="filters__list-item"><input type="checkbox" name="withLinenBox" id="withLinenBox" class="filters__property"><label for="withLinenBox" class="filters__property-label">С ящиком для белья</label></li>
-						<li class="filters__list-item"><input type="checkbox" name="withLifting" id="withLifting" class="filters__property"><label for="withLifting" class="filters__property-label">С подъемным механизмом</label></li>
+						<li class="filters__list-item"><input type="checkbox" name="withLifting" id="withLifting" class="filters__property"><label for="withLifting" class="filters__property-label">С подъемным механизмом</label></li></ul>
 					</div>
 					<div class="filters__element">
 						<p class="filters__title">Материал</p>
@@ -345,7 +345,7 @@
 						<div class="filters__element">
 							<p class="filters__title">Производитель</p>
 							<ul class="filters__list">
-							<li class="filters__list-item"><input type="checkbox" name="producer-brw" id="producer-brw" class="filters__property"><label for="producer-brw" class="filters__property-label">BRW - Украина</label> <span class="filters__producer-products-quantity">5</span></li>
+							<li class="filters__list-item"><input type="checkbox" name="producer-brw" id="producer-brw" class="filters__property"><label for="producer-brw" class="filters__property-label">BRW - Украина</label> <span class="filters__producer-products-quantity">5</span></li></ul>
 							
 						</div>
 			
@@ -370,12 +370,12 @@
 						<button class="filters__button-filtrate">фильтровать</button>
 						</form>
 					</section>
-			<div class="product-info__side-img-wrapper"><img src="" alt="" class="product-info__side-img"></div>
-			<div class="product-info__side-img-wrapper"><img src="" alt="" class="product-info__side-img"></div>
-			<div class="product-info__side-img-wrapper"><img src="" alt="" class="product-info__side-img"></div>
-			<div class="product-info__side-img-wrapper"><img src="" alt="" class="product-info__side-img"></div>
-			<div class="product-info__side-img-wrapper"><img src="" alt="" class="product-info__side-img"></div>
-			<div class="product-info__side-img-wrapper"><img src="" alt="" class="product-info__side-img"></div>
+			<div class="product-info__side-img-wrapper"><img src="#" alt="" class="product-info__side-img"></div>
+			<div class="product-info__side-img-wrapper"><img src="#" alt="" class="product-info__side-img"></div>
+			<div class="product-info__side-img-wrapper"><img src="#" alt="" class="product-info__side-img"></div>
+			<div class="product-info__side-img-wrapper"><img src="#" alt="" class="product-info__side-img"></div>
+			<div class="product-info__side-img-wrapper"><img src="#" alt="" class="product-info__side-img"></div>
+			<div class="product-info__side-img-wrapper"><img src="#" alt="" class="product-info__side-img"></div>
 		</div>
 		<div class="banner-side-wrapper">
 			
@@ -536,14 +536,14 @@
 			</div>
 			</div>
 			<section class="common-section common-description">
-				<h3 class="section-title">
+				<h3>
 					МОДУЛЬНЫЕ СИСТЕМЫ ДЛЯ ГОСТИНОЙ – ИДЕАЛЬНОЕ РЕШЕНИЕ ДЛЯ ДОМА
 				</h3>
-				<p class="paragraph">Гостиная – одна из особых комнат в доме. Именно здесь собираются гости на пышные застолья, сюда приходят провести тихие семейные вечера все члены семейства… Именно поэтому в ней стоит создать особую атмосферу. Помочь в этом могут модульные системы для гостиной. Они привнесут в интерьер комфорт, уют и функциональность.</p>
-				<p class="paragraph">Давайте поговорим о том, что же собой представляют модульные гостиные, каковы их преимущества и недостатки, а также о том, где выгоднее всего их приобрести.</p>
-				<h3 class="section-title">МОДУЛЬНЫЕ СИСТЕМЫ ДЛЯ ГОСТИНОЙ: ЧТО ЭТО ТАКОЕ?</h3>
-				<p class="paragraph">Помните, как в советские времена практически во всех гостиных стояли огромные мебельные стенки, которые состояли из двух-четырех элементов, соединенных между собою. Конечно, помните! Они изготавливались все на один манер и были похожи как две капли воды. Такие стенки занимали половину комнаты, являлись отличными собирателями пыли и имели сомнительную эстетическую ценность. В то время о модульных системах и не слышали. Хочешь купить стенку – бери ее всю целиком или не бери совсем! Хорошо, что сегодня ситуация кардинально другая! И можно вібрать качествинную мебель BRW или Gerbor.</p>
-				<p class="paragraph">Модульная система для гостиной представляет собою различную мебель, которая имеет единый материал изготовления, цветовую гамму, стилистическое направление и т. д. Это, по сути, комплекс внешне независимых элементов, которые можно приобрести отдельно либо же в комплекте и компоновать по своему усмотрению. Таких модулей может быть от трех до десяти. Чаще всего это:</p>
+				<p>Гостиная – одна из особых комнат в доме. Именно здесь собираются гости на пышные застолья, сюда приходят провести тихие семейные вечера все члены семейства… Именно поэтому в ней стоит создать особую атмосферу. Помочь в этом могут модульные системы для гостиной. Они привнесут в интерьер комфорт, уют и функциональность.</p>
+				<p>Давайте поговорим о том, что же собой представляют модульные гостиные, каковы их преимущества и недостатки, а также о том, где выгоднее всего их приобрести.</p>
+				<h3>МОДУЛЬНЫЕ СИСТЕМЫ ДЛЯ ГОСТИНОЙ: ЧТО ЭТО ТАКОЕ?</h3>
+				<p>Помните, как в советские времена практически во всех гостиных стояли огромные мебельные стенки, которые состояли из двух-четырех элементов, соединенных между собою. Конечно, помните! Они изготавливались все на один манер и были похожи как две капли воды. Такие стенки занимали половину комнаты, являлись отличными собирателями пыли и имели сомнительную эстетическую ценность. В то время о модульных системах и не слышали. Хочешь купить стенку – бери ее всю целиком или не бери совсем! Хорошо, что сегодня ситуация кардинально другая! И можно вібрать качествинную мебель BRW или Gerbor.</p>
+				<p>Модульная система для гостиной представляет собою различную мебель, которая имеет единый материал изготовления, цветовую гамму, стилистическое направление и т. д. Это, по сути, комплекс внешне независимых элементов, которые можно приобрести отдельно либо же в комплекте и компоновать по своему усмотрению. Таких модулей может быть от трех до десяти. Чаще всего это:</p>
 				<ul>
 					<li>витрина;</li>
 					<li>комод;</li>
@@ -554,8 +554,8 @@
 					<li>журнальный столик;</li>
 					<li>полка и пр.</li>
 				</ul>
-				<p class="paragraph">Каждый покупатель выбирает то количество модулей, которое необходимо именно ему.  К примеру, выбранная модульная система включает в себя 7 элементов интерьера. Но клиенту все не нужны, ему необходимы только 2 одинаковые витрины, 2 одинаковых пенала и 1 стеллаж. И купить вот так, по отдельности, вполне возможно в любом интернет-магазине, который продает модульные системы. Ну, а если со временем у покупателя возникнет мысль дополнить интерьер еще каким-то элементом мебели из данной серии, то это и эту идею можно будет воплотить в жизнь без каких-либо проблем.</p>
-				<p class="paragraph">Кстати, в последнее время большой популярностью пользуются модульные системы для гостиной с угловым шкафом. Они помогают существенно сэкономить пространство в небольших комнатах, а также обустроить интерьер по своему вкусу. Угловой шкаф – это вообще чудо дизайнерской мысли.</p>
+				<p>Каждый покупатель выбирает то количество модулей, которое необходимо именно ему.  К примеру, выбранная модульная система включает в себя 7 элементов интерьера. Но клиенту все не нужны, ему необходимы только 2 одинаковые витрины, 2 одинаковых пенала и 1 стеллаж. И купить вот так, по отдельности, вполне возможно в любом интернет-магазине, который продает модульные системы. Ну, а если со временем у покупателя возникнет мысль дополнить интерьер еще каким-то элементом мебели из данной серии, то это и эту идею можно будет воплотить в жизнь без каких-либо проблем.</p>
+				<p>Кстати, в последнее время большой популярностью пользуются модульные системы для гостиной с угловым шкафом. Они помогают существенно сэкономить пространство в небольших комнатах, а также обустроить интерьер по своему вкусу. Угловой шкаф – это вообще чудо дизайнерской мысли.</p>
 			</section>
 		</div>
 		
@@ -605,7 +605,6 @@
 			</div>
 		</div>
 	</section>
-</div>
 </div>
 <footer class="footer">
 	<div class="container">

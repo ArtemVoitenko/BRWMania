@@ -37,3 +37,22 @@
 
 	}
 }
+@media (max-width: 1340px) {
+	.main-nav {
+		&__link {
+			font-size: 14px;
+		}
+	}
+}
+@media (max-width: 1180px) {
+	.main-nav {
+		// display: none;
+		&__list {
+			display: block;
+			height: auto;
+		}
+		&__item {
+			display: block;
+		}
+	}
+}
