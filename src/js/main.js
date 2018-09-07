@@ -67,7 +67,8 @@ paginationLink.click(function (e){
 
 });
 var horizontalCategories = $(".vertical-categories--popup");
-$(".horizontal-categories__link--show-vertical").click(function () {
+$(".horizontal-categories__link--show-vertical").click(function (e) {
+    e.preventDefault();
     horizontalCategories.slideDown();
     fancybox.slideDown();
 })

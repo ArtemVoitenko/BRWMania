@@ -77,3 +77,18 @@
 	}
 
 }
+@media (max-width: 1200px) {
+	.product-comments {
+		margin-left: 0;
+	}
+}
+@media (max-width: 600px) {
+	.product-comments {
+		&__rating {
+		position: relative;
+
+		margin-bottom: 20px;
+		text-align: right;
+	}
+	}
+}

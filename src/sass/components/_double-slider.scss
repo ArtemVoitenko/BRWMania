@@ -47,3 +47,8 @@
 		object-fit: cover;
 	}
 }
+@media (max-width: 360px){
+	.small-slider {
+		width: 220px;
+	}
+}

@@ -16,13 +16,22 @@ $('.slider').slick({
       {
       breakpoint: 1050,
       settings: {
-        slidesToShow: 3
+        slidesToShow: 3,
+        draggable: true
       }
       },
             {
       breakpoint: 800,
       settings: {
         slidesToShow: 2
+      }
+      },
+            {
+      breakpoint: 360,
+      settings: {
+        slidesToShow: 1,
+        arrows: false
+
       }
       },
     ]

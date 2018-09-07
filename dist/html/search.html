@@ -98,6 +98,9 @@
 			</div>
 		</div>
 	</header>
+	<button id="open-main-nav" class="main-nav__show">меню <svg class="main-nav__show-icon " width="27" height = "19">
+				<use xlink:href="#icon_menu"></use>
+			</svg></button>
 	<nav class="main-nav">
 		<ul class="main-nav__list">
 			<li class="main-nav__item"><a href="#" class="main-nav__link">Скачать каталог</a></li>
@@ -115,6 +118,7 @@
 
 </div>
 <div class="container">
+	<button class="horizontal-categories__show-button " id="open-categories-button">Категории</button>
 	<ul class="horizontal-categories">
 		<li class="horizontal-categories__item "><a href="#" class="horizontal-categories__link horizontal-categories__link--bold horizontal-categories__link--show-vertical">
 			<svg class="horizontal-categories__icon
@@ -420,7 +424,7 @@
 			</div>
 			<div class="banner-side-wrapper">
 				
-				<div class="breadcrumbs">
+				<div class="breadcrumbs padding-section">
 					<ul class="breadcrumbs__list">
 						<li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></li>
 						<li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Мебель для гочтиной, зала</a></li>
@@ -429,14 +433,14 @@
 					</ul>
 				</div>
 				<h3 class="page-title page-title--left">поиск - <span class="page-title--capitalize ">Кровать</span></h3>
-				<section class="search common-section">
+				<section class="search common-section ">
 					<form action="#" class="search__form">
 					<label for="page-search" class="search__label">Поиск:</label>
 					<input type="search" name="search" id="page-search" class="search__input">
 					<button type = "submit" class="common-button search__button">поиск</button>
 					</form>
 				</section>
-				<section class="common-section">
+				<section class="common-section padding-section">
 					<h3 class="section-title">Категории, СООТВЕТСТВУЮЩИЕ КРИТЕРИЯМ ПОИСКА</h3>
 					<div class="product-catalog__product-grid">
 				<div class="product-card__wrapper ">
@@ -480,7 +484,7 @@
 				</div>
 			</div>
 				</section>
-				<section class="common-section">
+				<section class="common-section ">
 					<h3 class="section-title">ТОВАРЫ, СООТВЕТСТВУЮЩИЕ КРИТЕРИЯМ ПОИСКА</h3>
 					<section class="product-catalog" id="content">
 						<div class="product-catalog__topline">
@@ -489,6 +493,7 @@
 						<button class="product-catalog__view-button" id="list-view"><svg class="product-catalog__sort-icon" width="25" height="25"><use xlink:href="#icon_sort_2"></use></svg></button>
 					</div>
 					<div class="product-catalog__sorts">
+						<div class="product-catalog__sort-wrapper">
 						<label for="input-sort" class="product-catalog__sort-label">Сортировка</label>
 						<div class="product-catalog__select-wrapper">
 							<select name="sorting-type" id="input-sort" class="product-catalog__sorting-select product-catalog__sorting-type">
@@ -497,6 +502,8 @@
 								<option value="">По умолчанию</option>
 							</select>
 						</div>
+					</div>
+					<div class="product-catalog__sort-wrapper">
 						<label for="input-limit">Показать</label>
 						<div class="product-catalog__select-wrapper">
 							<select name="sorting-type" id="input-limit" class="product-catalog__sorting-select product-catalog__sorting-limit">
@@ -504,6 +511,7 @@
 								<option value="24">24</option>
 								<option value="48">48</option>
 							</select>
+						</div>
 						</div>
 					</div>
 					</div>
@@ -728,7 +736,7 @@
 				<span class="footer__title"><svg  class='footer__icon' width="20" height = "20">
 					<use xlink:href="#icon_support"></use>
 				</svg>связаться с нами</span>
-				<div class="footer__contacts"><span class="footer__contacts-title">График работы: <br> пн-вс 9.00-20.00</span>
+				<div class="footer__contacts footer__list"><span class="footer__contacts-title">График работы: <br> пн-вс 9.00-20.00</span>
 				<span class="footer__contacts-title">Телефоны<a href="tel:(098)-66-05-600" class="footer__number">(098)-66-05-600</a>
 				<a href="tel:(050)-66-05-600" class="footer__number">(050)-66-05-600</a>
 				<a href="tel:(073)-66-05-600" class="footer__number">(073)-66-05-600</a></span>
@@ -739,7 +747,7 @@
 		</div>
 		</div>
 </div>
-<div class="footer__bottom-line">
+<div class="footer__bottom-line padding-section">
 	<div class="container footer__flex-wrapper">
 		<span class="copyright">Copyright 2018</span>
 		<img src="../images/homepage/logo_footer.png" alt="Фирменный магазин мебели

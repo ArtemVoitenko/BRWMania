@@ -28,3 +28,19 @@
 
 	}
 }
+@media (max-width: 640px){
+	.search {
+		&__form {
+			padding: 20px;
+			flex-direction: column;
+			}
+			&__input {
+				width: 100%;
+				margin-bottom: 20px;
+				margin-top: 20px;
+			}
+			&__button {
+				width: 100%;
+			}
+		}
+}

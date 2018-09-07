@@ -12,7 +12,7 @@
 	&__form-input {
 		height: 60px;
 		width: 100%;
-		margin-bottom: 25px;
+		margin-bottom: 15px;
 		padding-left: 15px;
 
 		background-color: #fff;
@@ -69,5 +69,27 @@
 	}
 	&__note {
 		margin-top: 15px;
+	}
+	&__side-divider {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+@media (max-width: 960px) {
+	.review {
+		&__side-divider {
+			flex-direction: column;
+		}
+		&__send-side {
+			width: 100%;
+		}
+		&__text-side {
+			width: 100%;
+		}
+	}
+}
+@media (max-width: 360px) {
+	.review__quality {
+		display: none;
 	}
 }

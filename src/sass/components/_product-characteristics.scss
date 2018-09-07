@@ -48,3 +48,20 @@
 		display: inline-block;
 	}
 }
+@media (max-width:1000px) {
+	.product-characteristics {
+		&__slider-wrapper {
+			max-width: 100%;
+		}
+		&__color-block {
+			margin-top: 10px;
+			position: absolute;
+			bottom: 0;
+			right: 10%;
+		}
+		&__buy-button {
+			width: 80%;
+		}
+
+	}
+}

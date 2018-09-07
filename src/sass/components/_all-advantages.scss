@@ -28,3 +28,12 @@
 		}
 	}
 }
+
+@media (max-width: 600px) {
+	.all-advantages {
+		&__cards-wrapper {
+			flex-direction: column;
+		}
+
+	}
+}

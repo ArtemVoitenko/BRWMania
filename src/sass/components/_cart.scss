@@ -57,10 +57,10 @@
 	.cart__total-sum {
 		display: none;
 	}
-}
-@media (max-width: 780px) {
 	.cart {
-		margin-right: -20px;
-		margin-top: -10px;
+		position: absolute;
+		top: 40px;
+		right: 0;
+		display: block;
 	}
 }

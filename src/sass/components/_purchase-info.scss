@@ -56,3 +56,17 @@
 
 
 }
+@media (max-width: 600px) {
+	.purchase-info {
+		flex-direction: column;
+		&__item {
+			width: 100%;
+			padding-bottom: 20px;
+			padding-top: 20px;
+			&:before {
+				display: none;
+			}
+
+		}
+	}
+}

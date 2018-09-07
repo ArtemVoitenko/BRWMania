@@ -41,3 +41,15 @@
 	padding-right: 10px;
 	padding-left: 10px;
 }
+@media (max-width: 1650px) {
+	.slider {
+		&__button {
+			&--next {
+				right: 10px;
+			}
+			&--prev {
+				right: 45px;
+			}
+		}
+	}
+}

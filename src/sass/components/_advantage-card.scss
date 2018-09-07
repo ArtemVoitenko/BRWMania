@@ -69,3 +69,17 @@
 		}
 	}
 }
+@media (max-width: 600px) {
+	.advantage-card {
+		width: 100%;
+		padding-bottom: 20px;
+		padding-top: 20px;
+		&:before {
+			display: none;
+		}
+		&:after {
+			display: none
+		}
+	}
+
+}

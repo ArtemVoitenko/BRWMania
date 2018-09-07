@@ -21,3 +21,10 @@
 		white-space: nowrap;
 	}
 }
+@media (max-width: 360px) {
+	.all-characteristics {
+		&__item {
+			font-size: 14px;
+		}
+	}
+}
