@@ -15,6 +15,9 @@ body {
 	min-width: 320px;
 	margin: 0 auto;
 }
+.display-flex {
+	display: flex!important;
+}
 .section-title {
 	margin-bottom: 20px;
 	margin-top: 15px;
@@ -201,10 +204,18 @@ body {
 		padding-left: 10px;
 		padding-right: 10px;
 	}
+	.page-title--left {
+		padding-left: 10px;
+	}
 }
 @media (max-width: 1100px) {
 	.side-divider-filters {
 	flex-direction: column;
 	}
 
+}
+@media (max-width: 768px){
+	.continue-button {
+		width: 80%;
+	}
 }

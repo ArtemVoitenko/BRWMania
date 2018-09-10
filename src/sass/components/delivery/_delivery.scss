@@ -37,3 +37,14 @@
 		line-height: 24px;
 	}
 }
+@media (max-width: 767px) {
+	.delivery{
+		&__attention-icon-wrapper {
+		display: none;
+		}
+		&__attention-block {
+			padding-left: 10px;
+		}
+	}
+
+}

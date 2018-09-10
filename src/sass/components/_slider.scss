@@ -37,6 +37,21 @@
 
 
 }
+.slick-dots {
+	display: flex;
+	justify-content: center;
+}
+.slick-dots button {
+	width: 10px;
+	height: 10px;
+	background-color: $black;
+	border-radius: 100%;
+	margin-right: 5px;
+	font-size: 0;
+}
+.slick-active [role="tab"] {
+	background-color: $accent;
+}
 .slider-section {
 	padding-right: 10px;
 	padding-left: 10px;

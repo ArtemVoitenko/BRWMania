@@ -26,3 +26,9 @@
   }
 
 }
+@media (max-width: 768px) {
+  .go-top {
+    transform: scale(0.7);
+    right: 0;
+  }
+}

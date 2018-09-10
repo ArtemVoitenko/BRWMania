@@ -27,10 +27,11 @@ $('.slider').slick({
       }
       },
             {
-      breakpoint: 360,
+      breakpoint: 540,
       settings: {
         slidesToShow: 1,
-        arrows: false
+        arrows: false, 
+        dots: true
 
       }
       },
@@ -43,3 +44,4 @@ $('.banner').slick({
 	arrows: false,
 	respondTo: "slider"
 })
+

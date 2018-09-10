@@ -168,7 +168,7 @@
 @media (max-width: 1500px) {
 	.top-sell__wrapper, .product-catalog__product-grid {
 		.product-card__wrapper {
-				width: 33%;
+				width: 33.333%;
 		}
 	}
 	}
@@ -201,12 +201,20 @@
 
 	}
 	
-@media (max-width: 320px) {
-	.product-card {
+@media (max-width: 540px) {
+	.top-sell__wrapper, .product-catalog__product-grid {
+		.product-card {
 		&__wrapper {
 				width: 100%;
-			}
-}
+		}
+
+	}
+	}
+	.product-card {
+		&__img-wrapper {
+			padding-bottom: 50%;
+		}
+	}
 }
 
 
