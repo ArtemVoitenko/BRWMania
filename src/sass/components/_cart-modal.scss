@@ -71,9 +71,15 @@
 
 		background-color: $accent;
 		border-radius: 2px;
-
+		
+		&:hover {
+			background-color: lighten($accent, 7%);
+		}
 		&--green {
 			background-color: #1A8B04;
+			&:hover {
+				background-color: lighten(#1A8B04,7%);
+			}
 		}
 
 	}
@@ -86,5 +92,21 @@
 		left: 50%;
 		border: 7px solid transparent;
 		border-bottom: 7px solid $black;
+	}
+}
+@media (max-width: 1050px) {
+	.cart-modal {
+		top: 35px;
+		right: 1px;
+	}
+}
+@media (max-width: 360px) {
+	.cart-modal {
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: 80px;
+		width: 100%;
+
 	}
 }

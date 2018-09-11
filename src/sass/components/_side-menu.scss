@@ -35,11 +35,23 @@
 		padding-top: 25px;
 		padding-bottom: 25px;
 		background-color: $accent;
+		
+
 	}
 	&__title {
 		font-size: 16px;
 		text-transform: uppercase;
 		color: #fff;
 		text-align: center;
+	}
+}
+@media (max-width: 767px) {
+	.side-menu {
+		&__list {
+		width: 100%;
+	}
+	&__title-block {
+		cursor: pointer;
+	}
 	}
 }

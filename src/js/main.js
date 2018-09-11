@@ -9,6 +9,13 @@ var filtersMore = $("#filters__show-more");
 var mainNav = $(".main-nav");
 var horizontalCategories = $(".horizontal-categories");
 var filters = $(".filters");
+var review = $(".review--catalog");
+var homeAdress = $(".ordering-form__home-adress");
+var postAdress = $(".ordering-form__post-adress");
+var curierDelivery = $("#curier-delivery");
+var postDelivery = $("#post-delivery");
+
+
 $("#open-main-nav").click (function () {
     mainNav.slideToggle();
 });
@@ -33,24 +40,24 @@ $('.cart__open-btn').click(function() {
 });
 
 $('.button-request-call').click(function () {
-	fancybox.slideDown();
-	callPopUp.slideDown();
+	fancybox.fadeIn();
+	callPopUp.fadeIn();
 });
-$(document).mouseup(function(e) {
+// $(document).mouseup(function(e) {
 
-    if (!callPopUp.is(e.target) &&
-       callPopUp.has(e.target).length === 0) {
-       callPopUp.fadeOut();
-    fancybox.fadeOut();
-    }
-});
+//     if (!callPopUp.is(e.target) &&
+//        callPopUp.has(e.target).length === 0) {
+//        callPopUp.fadeOut();
+//     fancybox.fadeOut();
+//     }
+// });
 $("#close-call-popup").click(function () {
 	callPopUp.fadeOut();
 	fancybox.fadeOut();
 });
 $(".big-slide__wrapper--clickable").click(function () {
-    galleryPopup.slideDown();
-    fancybox.slideDown();
+    galleryPopup.fadeIn();
+    fancybox.fadeIn();
         if(galleryPopup.css('display') === 'block'){
         galleryPopup.css("display", "flex");
     }
@@ -78,17 +85,17 @@ paginationLink.click(function (e){
 var verticalCategories = $(".vertical-categories--popup");
 $(".horizontal-categories__link--show-vertical").click(function (e) {
     e.preventDefault();
-    verticalCategories.slideDown();
-    fancybox.slideDown();
+    verticalCategories.fadeIn();
+    fancybox.fadeIn();
 })
-$(document).mouseup(function(e) {
+// $(document).mouseup(function(e) {
 
-    if (!verticalCategories.is(e.target) &&
-       verticalCategories.has(e.target).length === 0) {
-       verticalCategories.slideUp();
-    fancybox.slideUp();
-    }
-});
+//     if (!verticalCategories.is(e.target) &&
+//        verticalCategories.has(e.target).length === 0) {
+//        verticalCategories.slideUp();
+//     fancybox.fadeOut();
+//     }
+// });
 filtersMore.click(function () {
     filtersList.removeClass("filters__list--compressed");
     filtersMore.hide();
@@ -106,4 +113,27 @@ $(".footer__title").click(function () {
 $(".filters__show-button").click(function () {
     filters.slideToggle();
 })
+
+$(".cart-modal__delete-item").click(function () {
+    $(this).parent().remove();
+});
+$(".product-comments__link").click(function () {
+    review.slideToggle();
+});
+
+curierDelivery.on("change", function () {
+    homeAdress.show();
+    postAdress.hide();
+});
+postDelivery.on("change", function () {
+    postAdress.show();
+    homeAdress.hide();    
+});
+
+$(".vertical-categories__hide-item").click(function () {
+        verticalCategories.fadeOut();
+    fancybox.fadeOut();
+});
+
+
 });

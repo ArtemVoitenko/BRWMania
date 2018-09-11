@@ -8,12 +8,12 @@
 	
 	<div class=" side-divider-filters">
 		<div class="categories-side-wrapper">
-					<button class="filters__show-button " id="open-filters-button">фильтры<svg class="filters__show-icon" width="27" height = "19">
-				<use xlink:href="#icon_arrow_down"></use>
-			</svg></button>
+					<button class="filters__show-button " id="open-filters-button">фильтры<svg width="20" height="25" class="filters__show-icon"><use xlink:href="#icon_filter"></use></svg></button>
 			//= include/filters.html
+			<div class="product-info__side-img-block">
 			<div class="product-info__side-img-wrapper"><img src="#" alt="" class="product-info__side-img"></div>
 			<div class="product-info__side-img-wrapper"><img src="#" alt="" class="product-info__side-img"></div>
+		</div>
 		</div>
 		<div class="product-info__side-wrapper ">
 			//= include/breadcrumbs.html
@@ -43,9 +43,50 @@
 						<section class="product-comments">
 							<div class="product-comments__topline">
 								<h6 class="product-comments__title">отзывы (<span class="product-comments__quantity">3</span>)</h6>
-								<a href="#" class="product-comments__link">Написать отзыв</a>
+								<button class="product-comments__link">Написать отзыв</button>
 							</div>
 							<div class="product-comments__wrapper">
+								<section class="review review--catalog">
+						<span class="review__title">Написать отзыв</span>
+						<form action="#" class="review__form">
+							<div class="review__side-divider">
+								<div class="review__text-side">
+									<div class="registration-form__input-wrapper review__input-wrapper ">
+										<div class="registration-form__icon-wrapper">
+											<i class="registration-form__circle">
+											<svg class="registration-form__icon" width="25" height="20">
+												<use xlink:href="#icon_user_comment"></use>
+											</svg></i></div>
+											<input type="text" id="review-name" class="registration-form__input" placeholder="Имя">
+											
+										</div>
+										<textarea class = "review__content-field" name="comment-text" id="comment-text" placeholder = "Введите сообщение"></textarea>
+									</div>
+									<div class ="review__send-side">
+										<div class="review__quality-wrapper">
+											<span class="review__quality">Плохо</span>
+											<div class="review__stars">
+												<fieldset class="rating">
+													<input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
+													<input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
+													<input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
+													<input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
+													<input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
+												</fieldset></div>
+												<span class="review__quality">Хорошо</span>
+												
+											</div>
+											<label for="review-capcha" class="review__capcha-label">Введите код, указанный на картинке:</label>
+											<div class="review__capcha-wrapper">
+												<input type="text" name="review-capcha" id="review-capcha" class="review__form-input">
+											<button class="review__send-capcha">gddg54</button></div>
+											<button type="submit" class="review__submit common-button">Отправить сообщение</button>
+										</div>
+									</div>
+									
+								</form>
+								<p class="review__note">Примечание:  HTML разметка не поддерживается! Используйте обычный текст.</p>
+							</section>
 								<div class="product-comments__item">
 									<span class="product-comments__name">
 										<svg class="product-comments__icon" width="13" height="15">

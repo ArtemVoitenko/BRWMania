@@ -1,13 +1,44 @@
 .ordering {
 	&__table {
 		margin-top: 25px;
-		overflow-x: scroll;
-
+		// overflow-x: auto;
+		width: 100%;
+				
 
 	}
 	&__table-wrapper {
 		max-width: 100%;
-		overflow: scroll;
+		overflow-x: auto;
+		::-webkit-scrollbar-button {
+background-repeat:no-repeat;
+width:5px;
+height:0px
+}
+
+::-webkit-scrollbar-track {
+background-color:#ecedee
+}
+
+::-webkit-scrollbar-thumb {
+-webkit-border-radius: 0px;
+border-radius: 0px;
+background-color: $accent;
+}
+
+::-webkit-scrollbar-thumb:hover{
+background-color: lighten($accent, 7% );
+}
+
+::-webkit-resizer{
+background-image:url('');
+background-repeat:no-repeat;
+width:4px;
+height:0px
+}
+
+::-webkit-scrollbar{
+width: 4px;
+}
 	}
 
 	&__row{
@@ -23,6 +54,8 @@
 	&__column {
 		
 		font-size: 16px;
+		padding-left: 10px;
+		padding-right: 10px;
 		// color: #fff;
 		padding-top: 20px;
 		padding-bottom: 20px;

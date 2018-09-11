@@ -108,6 +108,9 @@
 	.product-catalog {
 		padding-left: 10px;
 		padding-right: 20px;
+			&__shown-products-quantity {
+			padding-right: 10px;
+		}
 	}
 }
 

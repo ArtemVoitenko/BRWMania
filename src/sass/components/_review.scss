@@ -2,7 +2,18 @@
 	padding: 25px;
 	background-color: $grey;
 	margin-bottom: 25px;
-
+	&--catalog {
+		display: none;
+		.review__side-divider {
+			flex-direction: column;
+		}
+		.review__send-side {
+			width: 100%;
+		}
+		.review__text-side {
+			width: 100%;
+		}
+	}
 	&__title {
 		display: block;
 		font-size: 24px;
@@ -91,5 +102,10 @@
 @media (max-width: 360px) {
 	.review__quality {
 		display: none;
+	}
+}
+@media (max-width: 767px) {
+	.review {
+		padding: 10px;
 	}
 }

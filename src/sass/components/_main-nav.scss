@@ -17,9 +17,10 @@
 	&__item {
 		position: relative;
 		height: 100%;
+		width: 100%;
+		text-align: center;
 		box-sizing: border-box;
-		padding-left: 12px;
-		padding-right: 12px;
+
 
 		&:hover {
 			&:before {
@@ -38,7 +39,8 @@
 
 	&__link {
 		display: block;
-
+		padding-left: 12px;
+		padding-right: 12px;
 		color: #fff;
 		text-decoration: none;
 		font-size: 16px;

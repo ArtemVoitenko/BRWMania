@@ -1,6 +1,8 @@
 .all-characteristics {
 	&__item {
+		position: relative;
 		display: flex;
+		justify-content: space-between;
 		font-size: 16px;
 		line-height: 24px;
 	}
@@ -15,6 +17,8 @@
 	}
 	&__name {
 		white-space: nowrap;
+		display: inline-block;
+		
 	}
 	&__value {
 		font-weight: bold;

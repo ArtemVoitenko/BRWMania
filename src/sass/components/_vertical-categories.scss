@@ -10,7 +10,20 @@
 	list-style-type: none;
 	background-color: $grey;
 
+	&__hider {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translate(-50%, 0);
+		fill: $accent;
 
+	}
+	&__hide-item {
+		display: block;
+		height: 30px;
+		width: 100%;
+		position: relative;
+	}
 	&__link {
 		position: relative;
 

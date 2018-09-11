@@ -86,3 +86,16 @@
 		top: 14px;
 	}
 }
+@media (max-width: 1650px) {
+	.new-article {
+		&__item-button {
+			right: 10px;
+		}
+	}
+}
+@media (max-width: 360px) {
+	.new-button {
+		padding: 10px 35px;
+		margin: 10px;
+	}	
+}

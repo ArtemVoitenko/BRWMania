@@ -6,7 +6,7 @@
 	transform: translate(-50%, -50%);
 
 	
-	padding: 35px 80px;
+	padding: 35px 60px;
 	display: inline-block;
 	display: none;
 	
@@ -24,8 +24,8 @@
 	&__phone-input {
 		display: block;
 		width: 100%;
-		height: 80px;
-		margin-bottom: 40px;
+		height: 60px;
+		margin-bottom: 20px;
 		
 		font-size: 24px;
 		text-align: center;
@@ -42,7 +42,7 @@
 	}
 	&__submit {
 		width: 100%;
-		height: 80px;
+		height: 60px;
 		
 		font-size: 24px;
 		color: #fff;
