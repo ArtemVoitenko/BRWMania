@@ -31,6 +31,7 @@
 		object-fit: cover;
 	}
 	&__side-img-wrapper {
+		width: 310px;
 		position: relative;
 		margin-bottom: 25px;
 
@@ -39,6 +40,11 @@
 		overflow: hidden;
 		background-color: $grey;
 
+	}
+	&__side-img-block {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
 	}
 	&__rating {
 		display: flex;
@@ -155,6 +161,9 @@
 		}
 		&__comments-wrapper {
 			padding-right: 0;
+		}
+		&__side-img-block {
+			display: none;
 		}
 	}
 }
