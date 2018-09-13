@@ -196,7 +196,7 @@
 								<svg class="registration-form__icon" width="50" height="35">
 						<use xlink:href="#icon_email_reg"></use>
 					</svg></i></div>
-						<input type="email" id="reg-email" class="registration-form__input" placeholder="ex@gmail.com">
+						<input type="email" id="reg-email" class="registration-form__input" placeholder="ex@gmail.com" required>
 					</div>
 				</div>
 				<div class="registration-form__elements-wrapper">
@@ -207,7 +207,7 @@
 								<svg class="registration-form__icon" width="25" height="20">
 						<use xlink:href="#icon_user_comment"></use>
 					</svg></i></div>
-						<input type="text" id="reg-name" class="registration-form__input" placeholder="ФИО">
+						<input type="text" id="reg-name" class="registration-form__input" placeholder="ФИО" required>
 						
 				</div>
 				<label class="registration-form__label" for="reg-number">*Телефон</label>
@@ -217,7 +217,7 @@
 								<svg class="registration-form__icon" width="25" height="20">
 						<use xlink:href="#icon_call"></use>
 					</svg></i></div>
-						<input type="text" id="reg-number" class="registration-form__input" placeholder="+38 (ХХХ) ХХ ХХ">
+						<input type="number"  id="reg-number" class="registration-form__input" placeholder="+38 (ХХХ) ХХ ХХ">
 					</div>
 			</div>
 					</div>
@@ -228,7 +228,7 @@
 								<svg class="registration-form__icon" width="25" height="20">
 						<use xlink:href="#icon_address_contact"></use>
 					</svg></i></div>
-						<input type="text" id="reg-adress" class="registration-form__input" placeholder="Киев, ул. lorem, д.5, кв.25">
+						<input type="text" id="reg-adress" required class="registration-form__input" placeholder="Киев, ул. lorem, д.5, кв.25">
 					</div>
 
 					<div class="registration__password common-section">
@@ -242,7 +242,7 @@
 								<svg class="registration-form__icon" width="50" height="35">
 						<use xlink:href="#icon_password_reg"></use>
 					</svg></i></div>
-						<input type="password" id="reg-password" class="registration-form__input" placeholder="********">
+						<input type="password" id="reg-password" required class="registration-form__input" placeholder="********">
 						
 				</div>
 			</div>
@@ -255,7 +255,7 @@
 								<svg class="registration-form__icon" width="50" height="35">
 						<use xlink:href="#icon_password_repeat_reg"></use>
 					</svg></i></div>
-						<input type="text" id="reg-pass-repeat" class="registration-form__input" placeholder="********">
+						<input type="text" id="reg-pass-repeat" class="registration-form__input" required placeholder="********">
 						
 				</div>
 			</div>
@@ -268,7 +268,7 @@
 						<p class="registration-form__dispatch-question">
 							Подписка на новости:
 						</p>
-						<input class="registration-form__radio" type="radio" name="dispatch" id="dispatch-yes">
+						<input class="registration-form__radio" checked type="radio" name="dispatch" id="dispatch-yes">
 						<label for="dispatch-yes" class="registration-form__radio-label">Да</label>
 						<input class="registration-form__radio" type="radio" name="dispatch" id="dispatch-no">
 						<label for="dispatch-no" class="registration-form__radio-label">Нет</label>
@@ -278,7 +278,7 @@
 						<div class="registration-form__elements-wrapper">
 						
 						<div class="registration-form__capcha-wrapper">
-						<input class = "registration-form__capcha-input " id="reg-capcha" type="text">
+						<input class = "registration-form__capcha-input " required id="reg-capcha" type="text">
 						<button class="registration-form__capcha-check  ">26+9</button>
 						<button class="registration-form__capcha-refresh"><svg class="registration-form__capcha-icon" width="25" height="25">
 						<use xlink:href="#icon_reload"></use>

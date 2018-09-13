@@ -155,3 +155,15 @@
 	}
 	}
 }
+@media (max-width: 540px) {
+	.product-catalog__product-grid {
+		.product-card {
+			&:hover {
+				.product-card__details {
+					display: none;
+					
+				}
+			}
+		}
+	}
+}

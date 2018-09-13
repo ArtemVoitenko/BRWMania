@@ -1,0 +1,173 @@
+//= include/head.html
+//= include/header.html
+//= include/call-popup.html
+<div class="container">
+	//= include/breadcrumbs.html
+	<section class="ordering">
+		<p class="page-title page-title--capitalize">Оформление заказа</p>
+		<div class="ordering__table-wrapper">
+		<table class="ordering__table">
+			<tr class="ordering__row">
+				<td class="ordering__column"></td>
+				<td class="ordering__column">Фото</td>
+				<td class="ordering__column">название товара</td>
+				<td class="ordering__column">артикул</td>
+				<td class="ordering__column">код товара</td>
+				<td class="ordering__column">количество</td>
+				<td class="ordering__column">цена</td>
+				<td class="ordering__column">итого</td>
+			</tr>
+			<tr class="ordering__row">
+				<td class="ordering__column">
+					<button class="ordering__delete">
+					<svg class='ordering__del-icon centered' width="10" height = "10">
+						<use xlink:href="#icon_del"></use>
+					</svg></button></td>
+					<td class="ordering__column"><div class="ordering__img-wrapper"><img class ="ordering__img" src="../images/catalog_1/small_product_pic.jpg" alt=""></div></td>
+					<td class="ordering__column"><span class="common-bold">BRW (БРВ) Аляска</span><br>Alaska гостинная</td>
+					<td class="ordering__column">000008004130</td>
+					<td class="ordering__column">10020</td>
+					<td class="ordering__column"><div class="quantity-switch quantity-switch--ordering">
+						<button class="quantity-switch__less">-</button>
+						<input class="quantity-switch__number" readonly value="1" type="text">
+						<button class="quantity-switch__more">+</button>
+					</div></td>
+					<td class="ordering__column">7134 грн.</td>
+					<td class="ordering__column"><span class="common-bold">7134 грн.</span></td>
+					
+				</tr>
+			<tr class="ordering__row">
+				<td class="ordering__column">
+					<button class="ordering__delete">
+					<svg class='ordering__del-icon centered' width="10" height = "10">
+						<use xlink:href="#icon_del"></use>
+					</svg></button></td>
+					<td class="ordering__column"><div class="ordering__img-wrapper"><img class ="ordering__img" src="../images/catalog_1/small_product_pic.jpg" alt=""></div></td>
+					<td class="ordering__column"><span class="common-bold">BRW (БРВ) Аляска</span><br>Alaska гостинная</td>
+					<td class="ordering__column">000008004130</td>
+					<td class="ordering__column">10020</td>
+					<td class="ordering__column"><div class="quantity-switch quantity-switch--ordering">
+						<button class="quantity-switch__less">-</button>
+						<input class="quantity-switch__number" readonly value="1" type="text">
+						<button class="quantity-switch__more">+</button>
+					</div></td>
+					<td class="ordering__column">7134 грн.</td>
+					<td class="ordering__column"><span class="common-bold">7134 грн.</span></td>
+				</tr>
+			</table>
+			</div>
+			<p class="ordering__total">Итого: <span class="ordering__sum">14459 грн.</span></p>
+			<div class="ordering__info common-section padding-section">
+				
+				<form action="#" class="ordering-form" id ="#ordering-form">
+					<div class="ordering-form__wrapper-left">
+						<p class="section-title">ОБЩАЯ ИНФОРМАЦИЯ</p>
+					<label for="delivery-email" class="registration-form__label">*E-Mail</label>
+						<div class="registration-form__input-wrapper">
+							<div class="registration-form__icon-wrapper">
+								<i class="registration-form__circle">
+								<svg class="registration-form__icon" width="50" height="35">
+						<use xlink:href="#icon_email_reg"></use>
+					</svg></i></div>
+						<input type="email" id="delivery-email" class="registration-form__input" required placeholder="ex@gmail.com">
+					</div>
+				
+				
+					<label class="registration-form__label" for="delivery-name">*ФИО</label>
+					<div class="registration-form__input-wrapper">
+							<div class="registration-form__icon-wrapper">
+								<i class="registration-form__circle">
+								<svg class="registration-form__icon" width="25" height="20">
+						<use xlink:href="#icon_user_comment"></use>
+					</svg></i></div>
+						<input type="text" required id="delivery-name" class="registration-form__input" placeholder="ФИО">
+						
+				</div>
+				<label class="registration-form__label" for="delivery-number">*Телефон</label>
+					<div class="registration-form__input-wrapper">
+							<div class="registration-form__icon-wrapper">
+								<i class="registration-form__circle">
+								<svg class="registration-form__icon" width="25" height="20">
+						<use xlink:href="#icon_call"></use>
+					</svg></i></div>
+						<input type="text" required id="delivery-number" class="registration-form__input" placeholder="+38 (ХХХ) ХХ ХХ">
+					</div>
+					<div class="ordering-form__delivery common-section">
+						<p class="section-title">способ доставки</p>
+						<input class="registration-form__radio" type="radio" name="delivery-type" id="curier-delivery" checked>
+						<label for="curier-delivery" class="registration-form__radio-label ordering-form__radio-label">Курьером домой</label>
+						<input class="registration-form__radio" type="radio" name="delivery-type" id="post-delivery">
+						<label for="post-delivery" class="registration-form__radio-label ordering-form__radio-label">На отделение новой почты</label>
+						<div class="ordering-form__home-adress">
+						<p class="common-bold ordering-form__small-title ">
+							Адрес получателя:
+						</p>
+						<input class="ordering-form__adress-input" required type="text" id="adr-street">
+						<label for="adr-street" class="ordering-form__adress-label">Улица</label>
+						<div class="ordering-form__divider">
+						<div class="ordering-form__adress-wrapper">
+						<input class="ordering-form__adress-input  required ordering-form__adress-input--half" type="text" id="adr-building">
+						<label for="adr-building" class="ordering-form__adress-label">Дом</label>
+					</div>
+					
+					<div class="ordering-form__adress-wrapper">
+						
+						<input class="ordering-form__adress-input required ordering-form__adress-input--half" type="text" id="adr-flat">
+						<label for="adr-flat" class="ordering-form__adress-label ">Квартира</label>
+						</div>
+						</div>
+						</div>
+						<div class="ordering-form__post-adress"><p class="common-bold ordering-form__small-title">Отделение новой почты</p>
+						<div class="registration-form__input-wrapper">
+							<div class="registration-form__icon-wrapper">
+								
+								<svg class="registration-form__icon" width="50" height="40">
+						<use xlink:href="#icon_address_reg"></use>
+					</svg></div>
+						<input type="text" required id="delivery-adr" class="registration-form__input" placeholder="32">
+						
+				</div></div>
+					</div>
+			</div>
+			<div class="ordering-form__wrapper-right">
+				<p class="section-title">
+					способ оплаты
+				</p>
+				<p class="ordering-form__payment-title">Выберите способ оплаты для этого заказа:</p>
+				<input class="registration-form__radio" type="radio" name="payment-type" id="full-payment" checked>
+				<label for="full-payment" class="registration-form__radio-label ordering-form__radio-label">100% Оплата</label>
+				<input class="registration-form__radio" type="radio" name="payment-type" id="prepaid-payment">
+				<label for="prepaid-payment" class="registration-form__radio-label ordering-form__radio-label">Аванс + Оплата при доставке</label>
+				<input class="registration-form__radio" type="radio" name="payment-type" id="transfer-payment">
+				<label for="transfer-payment" class="registration-form__radio-label ordering-form__radio-label">Банковский перевод</label>
+				<input class="registration-form__radio" type="radio" name="payment-type" id="part-payment">
+				<label for="part-payment" class="registration-form__radio-label ordering-form__radio-label">Оплата частями (ПриватБанк)</label>
+				
+				<input class="registration-form__radio" type="radio" name="payment-type" id="installment-payment">
+				<label for="installment-payment" class="registration-form__radio-label ordering-form__radio-label">Мгновенная рассрочка</label>
+				<div class="ordering-form__payment-info">
+				<a href="#" class="ordering-form__payment-button">Подробнее о методе оплаты</a>
+				<div class="ordering-form__payment-sum-block">
+					<p>Сумма платежа</p>
+					<p class="ordering-form__payment-sum">7229.50</p>
+					<p>грн / мес</p>
+					</div>
+					<p class="common-bold ordering-form__small-title ordering-form__small-title--center">Срок кредитования:</p>
+					<div class="ordering-form__payment-wrapper">
+					<input class = "ordering-form__payment-input" id="ordering-form__payment-time" type="text" value="1">
+					<label class="ordering-form__payment-label" for="ordering-form__payment-time"> месяцев</label>
+					</div>
+					<div class="ordering-form__payment-wrapper">
+					<input class = "ordering-form__payment-input" id="ordering-form__payment-number" type="text" value = "2" disabled>
+					<label class="ordering-form__payment-label" for="ordering-form__payment-number">платежей</label>
+				</div>
+				</div>
+				<button class="common-button registration-form__submit ordering-form__submit" id="ordering-form__submit" type="submit">заказ подтверждаю</button>
+			</div>
+				</form>
+
+			</div>
+		</section>
+	</div>
+	//= include/footer.html
+	//= include/foot.html
