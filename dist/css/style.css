@@ -3103,6 +3103,64 @@ body {
     width: 55px;
     height: 55px; } }
 
+.entrance__block {
+  width: 49%; }
+
+.entrance__button {
+  display: inline-block;
+  line-height: 60px; }
+
+.entrance__text {
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 24px; }
+
+.entrance__small-title {
+  font-size: 18px; }
+
+.entrance__link {
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: underline; }
+  .entrance__link:hover {
+    color: #ea3c27; }
+
+.entrance-right-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-left: 15px;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+@media (max-width: 1024px) {
+  .entrance-right-wrapper {
+    -ms-flex-direction: column;
+        flex-direction: column; }
+  .entrance__block {
+    width: 100%; }
+  .entrance__block-enter {
+    -ms-flex-order: -1;
+        order: -1; } }
+
+@media (max-width: 767px) {
+  .entrance-right-wrapper {
+    margin-left: 0; } }
+
+.err404__img {
+  text-align: center;
+  margin: 0 auto; }
+
+.err404__title {
+  font-size: 45px;
+  color: #ea3c27;
+  text-align: center;
+  margin-bottom: 100px; }
+
+@media (max-width: 767px) {
+  .err404__title {
+    font-size: 35px; } }
+
 /* Slider */
 .slick-slider {
   position: relative;

@@ -1,0 +1,76 @@
+//= include/head.html
+//= include/header.html
+//= include/call-popup.html
+<div class="container">
+	//= include/breadcrumbs.html
+	<div class="registration__side-divider">
+		<div class="entrance-left-wrapper">
+			<div class="side-menu">
+				<div class="side-menu__title-block">
+					<h4 class="side-menu__title">
+					<svg class="side-menu__icon" width="20" height="20">
+						<use xlink:href="#icon_account"></use>
+					</svg>Личный кабинет
+					</h4>
+				</div>
+				<ul class="side-menu__list">
+					<li class="side-menu__item"><a href="#" class="side-menu__link">Вход / Регистрация</a></li>
+					<li class="side-menu__item"><a href="#" class="side-menu__link">Забыли пароль?</a></li>
+					<li class="side-menu__item"><a href="#" class="side-menu__link">Моя информация</a></li>
+					<li class="side-menu__item"><a href="#" class="side-menu__link">Изменить мои адреса</a></li>
+					<li class="side-menu__item"><a href="#" class="side-menu__link">Закладки</a></li>
+					<li class="side-menu__item"><a href="#" class="side-menu__link">История заказов</a></li>
+					<li class="side-menu__item"><a href="#" class="side-menu__link">Возвраты</a></li>
+					<li class="side-menu__item"><a href="#" class="side-menu__link">История фин. операций</a></li>
+					<li class="side-menu__item"><a href="#" class="side-menu__link">Подписка на новости</a></li>
+					<li class="side-menu__item"><a href="#" class="side-menu__link">Регулярные платежи</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="entrance-right-wrapper padding-section">
+			<div class="entrance__new-user entrance__block ">
+				<p class="registration__title">Новый пользователь</p>
+				<div class="common-section">
+					<p class="section-title">Регистрация</p>
+					<p class="entrance__text">Создание учетной записи поможет делать следующие покупки быстрее (не надо будет снова вводить адрес и контактную информацию), видеть состояние заказа, а также видеть заказы, сделанные ранее. Вы также сможете накапливать при покупках призовые баллы (на них тоже можно что-то купить), а постоянным покупателям мы предлагаем систему скидок.</p>
+					<a href="registration.html" class="common-button entrance__button registration-form__submit">Регистрация</a>
+				</div>
+			</div>
+			<div class="entrance__registred entrance__block entrance__block-enter">
+
+				<p class="registration__title">Зарегистрированный пользователь</p>
+				<div class="common-section">
+					<p class="section-title">Войти в личный кабинет</p>
+				<form action="#" class="entrance__form" id="entrance__form">
+					<label for="enter-email" class="registration-form__label">*E-Mail</label>
+					<div class="registration-form__input-wrapper">
+						<div class="registration-form__icon-wrapper">
+							<i class="registration-form__circle">
+							<svg class="registration-form__icon" width="50" height="35">
+								<use xlink:href="#icon_email_reg"></use>
+							</svg></i></div>
+							<input type="email" id="enter-email" class="registration-form__input" placeholder="ex@gmail.com" required>
+						</div>
+						<label class="registration-form__label" for="reg-password">Пароль:</label>
+						<div class="registration-form__input-wrapper">
+							<div class="registration-form__icon-wrapper">
+								<i class="registration-form__circle">
+								<svg class="registration-form__icon" width="50" height="35">
+									<use xlink:href="#icon_password_reg"></use>
+								</svg></i></div>
+								<input type="password" id="reg-password" required class="registration-form__input" placeholder="********">
+								
+							</div>
+							<a href="#" class="entrance__link">Забыли пароль?</a>
+							<button class="common-button registration-form__submit" type="submit">продолжить<svg class="registration-form__submit-icon" width="15" height="10">
+						<use xlink:href="#icon_next"></use>
+					</svg>
+				</button>
+						</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		//= include/footer.html
+		//= include/foot.html

@@ -1,0 +1,18 @@
+.err404 {
+	
+	&__img {
+		text-align: center;
+		margin: 0 auto;
+	}
+	&__title {
+		font-size: 45px;
+		color: $accent;
+		text-align: center;
+		margin-bottom: 100px;
+	}
+}
+@media (max-width: 767px) {
+	.err404__title {
+		font-size: 35px;
+	}
+}
