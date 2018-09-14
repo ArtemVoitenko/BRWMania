@@ -1,5 +1,12 @@
 .pagination {
-	text-align: center;
+	display: flex;
+	justify-content: space-between;
+	&__text {
+
+	}
+	&__pages {
+		
+	}
 
 	&__link {
 		position: relative;

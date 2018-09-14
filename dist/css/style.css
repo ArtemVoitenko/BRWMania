@@ -2756,7 +2756,10 @@ body {
     width: 100%; } }
 
 .pagination {
-  text-align: center; }
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
   .pagination__link {
     position: relative;
     display: inline-block;
