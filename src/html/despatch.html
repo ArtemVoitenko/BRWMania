@@ -1,0 +1,60 @@
+//= include/head.html
+//= include/header.html
+//= include/call-popup.html
+<div class="container">
+	//= include/breadcrumbs.html
+	<div class="registration__side-divider">
+		<div class="categories-side-wrapper">
+			<div class="side-menu">
+				<div class="side-menu__title-block">
+					<p class="side-menu__title">
+						<svg class="side-menu__icon" width="20" height="20">
+							<use xlink:href="#icon_account"></use>
+						</svg>Личный кабинет
+					</p>
+				</div>
+				<ul class="side-menu__list">
+					<li class="side-menu__item"><a href="entrance.html" class="side-menu__link">Вход</a></li>
+					<li class="side-menu__item"><a href="registration.html" class="side-menu__link">Регистрация</a></li>
+					<li class="side-menu__item"><a href="forgot-pass.html" class="side-menu__link">Забыли пароль?</a></li>
+					<li class="side-menu__item"><a href="#" class="side-menu__link">Моя информация</a></li>
+					<li class="side-menu__item"><a href="#" class="side-menu__link">Изменить мои адреса</a></li>
+					<li class="side-menu__item"><a href="#" class="side-menu__link">Подписка на новости</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="registration__side-wrapper">
+			<section class="registration">
+				<p class="registration__title">Персональная информация</p>
+				<p class="registration__undertitle">Если Вы уже зарегистрированы, перейдите на страницу <a href="#" class="registration__entrance-link">входа в систему</a>.</p>
+				<section class="common-section personal-info">
+					<p class="section-title">Текущий статус подписки</p>
+					<ul class="personal-info__list">
+						<li class="personal-info__item">Статус: <span class="personal-info__value common-bold"> Подписан</span></li>
+					</ul>
+				</section>
+				<form action="#" class="registration-form">
+					<div class="common-section registartion__dispatch">
+						<p class="section-title">
+							рассылка новостей
+						</p>
+						<p class="registration-form__dispatch-question">
+							Подписка на новости:
+						</p>
+						<input class="registration-form__radio" checked type="radio" name="dispatch" id="dispatch-yes">
+						<label for="dispatch-yes" class="registration-form__radio-label">Да</label>
+						<input class="registration-form__radio" type="radio" name="dispatch" id="dispatch-no">
+						<label for="dispatch-no" class="registration-form__radio-label">Нет</label>
+					</div>	
+					<div class="registration-form__elements-wrapper">
+						<button class="common-button registration-form__submit" type="submit">продолжить<svg class="registration-form__submit-icon" width="15" height="10">
+						<use xlink:href="#icon_next"></use>
+					</svg></button></div>
+					
+				</form>
+			</section>
+		</div>
+	</div>
+</div>
+//= include/footer.html
+//= include/foot.html
