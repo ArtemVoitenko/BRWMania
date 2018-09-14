@@ -3160,7 +3160,8 @@ body {
     font-size: 35px; } }
 
 .forgot-pass {
-  width: 50%; }
+  width: 50%;
+  margin: 0 auto; }
   .forgot-pass__text {
     margin-top: 20px; }
 
