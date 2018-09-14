@@ -1,0 +1,23 @@
+
+.forgot-pass {
+	width: 50%;
+	&__text {
+		margin-top: 20px;
+	}
+
+}
+.pass-right-wrapper {
+	width: 100%;
+	margin-left: 20px;
+}
+@media (max-width: 1024px) {
+	.forgot-pass {
+		width: 100%;
+}
+}
+@media (max-width: 767px) {
+	.pass-right-wrapper {
+		margin-left: 0;
+	}
+
+}

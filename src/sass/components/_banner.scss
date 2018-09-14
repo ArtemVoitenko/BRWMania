@@ -1,6 +1,5 @@
 .banner {
-	max-width: 970px;
-	margin: 0 auto;
+
 	width: 100%;
 	&__item {
 		padding-bottom: 14%;
@@ -16,15 +15,5 @@
 		bottom: 0;
 		object-fit: cover;
 
-	}
-}
-@media (max-width: 1400px) {
-	.banner {
-	max-width: 700px
-	}
-}
-@media (max-width: 1150px) {
-	.banner {
-	max-width: 100%;
 	}
 }
