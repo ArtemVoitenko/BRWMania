@@ -862,8 +862,12 @@ body {
     -o-object-fit: cover;
        object-fit: cover; }
   .product-card__name {
+    display: inline-block;
+    height: 60px;
+    overflow: hidden;
     color: #333;
-    line-height: 20px; }
+    line-height: 20px;
+    text-overflow: ellipsis; }
   .product-card__advantages {
     position: absolute;
     top: 90px;
