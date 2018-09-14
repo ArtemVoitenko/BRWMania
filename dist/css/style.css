@@ -1462,6 +1462,71 @@ body {
   height: 100%;
   background-color: rgba(4, 7, 7, 0.5); }
 
+.common-popup {
+  position: fixed;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 35px 60px;
+  display: inline-block;
+  text-align: center;
+  background-color: #fff; }
+  .common-popup__buttons {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
+  .common-popup__title {
+    display: block;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 40px; }
+  .common-popup__phone-input {
+    display: block;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+    border: 1px solid #040707; }
+  .common-popup__phone-label {
+    display: block;
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 35px; }
+  .common-popup__submit {
+    padding: 10px;
+    height: 40px;
+    display: inline-block;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    background-color: #ea3c27; }
+  .common-popup__close-button {
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    display: block;
+    width: 35px;
+    height: 35px;
+    background-color: #ea3c27; }
+    .common-popup__close-button:before {
+      content: '';
+      position: absolute;
+      left: -5px;
+      top: -5px;
+      z-index: -1;
+      display: block;
+      width: 35px;
+      height: 35px;
+      background-color: #040707; }
+  .common-popup__close-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
 .filters {
   width: 310px;
   padding: 25px;
@@ -3179,6 +3244,18 @@ body {
 @media (max-width: 767px) {
   .pass-right-wrapper {
     margin-left: 0; } }
+
+.alert {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 10px;
+  background-color: #ebecec; }
+  .alert-success {
+    border-top: 3px solid #439A46;
+    color: #439A46; }
+  .alert-danger {
+    border-top: 3px solid #E04848;
+    color: #E04848; }
 
 /* Slider */
 .slick-slider {

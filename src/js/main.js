@@ -51,8 +51,9 @@ $('.button-request-call').click(function () {
 //     fancybox.fadeOut();
 //     }
 // });
-$("#close-call-popup").click(function () {
-	callPopUp.fadeOut();
+$(".close-popup").click(function () {
+    console.log($(this).parent());
+	$(this).parent().fadeOut();
 	fancybox.fadeOut();
 });
 $(".big-slide__wrapper--clickable").click(function () {

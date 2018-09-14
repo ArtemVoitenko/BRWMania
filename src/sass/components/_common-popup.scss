@@ -1,0 +1,92 @@
+.common-popup {
+	position: fixed;
+	z-index: 10;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	
+	padding: 35px 60px;
+	display: inline-block;
+	// display: none;
+	
+	text-align: center;
+
+	background-color: #fff;
+	&__buttons {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__title {
+		display: block;
+
+		font-size: 36px;
+		font-weight: bold;
+		margin-bottom: 40px;
+	}
+	&__phone-input {
+		display: block;
+		width: 100%;
+		height: 60px;
+		margin-bottom: 20px;
+		
+		font-size: 24px;
+		text-align: center;
+
+		border: 1px solid $black; 
+	}
+
+	&__phone-label {
+		display: block;
+
+		font-size: 24px;
+		line-height: 24px;
+		margin-bottom: 35px;
+	}
+	&__submit {
+		// width: 49%;
+		padding: 10px;
+		height: 40px;
+		display: inline-block;
+		
+		font-size: 18px;
+		color: #fff;
+		text-align: center;
+
+		background-color: $accent;
+	}
+
+	&__close-button {
+		position: absolute;
+		right: -10px;
+		top: -10px;
+
+		display: block;
+		width: 35px;
+		height: 35px;
+
+		background-color: $accent;
+
+		&:before {
+			content: '';
+			position: absolute;
+			left: -5px;
+			top: -5px;
+			z-index: -1;
+
+			display: block;
+			width: 35px;
+			height: 35px;
+
+			background-color: $black;
+		}
+
+	}
+	&__close-icon {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+}

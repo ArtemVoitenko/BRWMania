@@ -1,0 +1,15 @@
+.alert {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding: 10px;
+	background-color: $grey;
+	
+	&-success {
+    	border-top: 3px solid #439A46;
+    	color: #439A46;
+	}
+	&-danger {
+    	border-top: 3px solid #E04848;
+    	color: #E04848;
+	}
+}
