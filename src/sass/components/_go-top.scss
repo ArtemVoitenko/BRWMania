@@ -15,7 +15,7 @@
   &__icon {
     display: block;
 
-    fill: $grey;
+    fill: darken($grey, 15%);
   }
 
   &:hover {

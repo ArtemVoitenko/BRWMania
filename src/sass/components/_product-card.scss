@@ -162,25 +162,31 @@
 		flex-direction: column;
 	}
 }
-// .product-catalog__product-grid--full-width {
-// 	.product-card__wrapper {
-// 		width: 33%;
-// 	}
-// 	}
-@media (max-width: 1500px) {
+.product-catalog__product-grid--full-width {
+	.product-card__wrapper {
+		width: 25%;
+	}
+	}
+@media (max-width: 1343px) {
 	.top-sell__wrapper, .product-catalog__product-grid {
 		.product-card__wrapper {
 				width: 33.333%;
 		}
 	}
+		.product-catalog__product-grid--full-width {
+			.product-card__wrapper {
+				width: 25%;
+	
 	}
-// @media (max-width: 1100px) {
-// 	.product-catalog__product-grid {
-// 		.product-card__wrapper {
-// 		width: 50%;
-// 		}
-// 	}
-// }
+	}
+	}
+@media (max-width: 1050px) {
+	.product-catalog__product-grid--full-width {
+		.product-card__wrapper {
+			width: 33.333%;
+	}
+}
+}
 @media (max-width: 800px) {
 	.top-sell__wrapper, .product-catalog__product-grid {
 		.product-card__wrapper {
@@ -258,7 +264,7 @@
 
 		}
 		&__price {
-			font-size: 25px;
+			font-size: 18px;
 		}
 		&__advantages {
 			display: flex;

@@ -1,0 +1,103 @@
+//= include/head.html
+//= include/header.html
+//= include/call-popup.html
+<div class="container">
+	//= include/breadcrumbs.html
+	<p class="page-title">отзывы</p>
+					<section class="product-comments common-section padding-section product-comments--full-width">
+						<h6 class="section-title">отзывы (<span class="product-comments__quantity">3</span>)</h6>
+						<div class="product-comments__wrapper product-comments__wrapper--full-width">
+							<div class="product-comments__item">
+								<span class="product-comments__name">
+									<svg class="product-comments__icon" width="13" height="15">
+										<use xlink:href="#icon_user_review_read"></use>
+									</svg>Елена Шкорина
+								</span>
+								<div class="product-comments__rating">
+									<span class="product-comments__rating-item">
+										<svg class="product-comments__rate-icon" width="23" height="24">
+											<use xlink:href="#icon_star_full_reviews"></use>
+										</svg>
+									</span>
+									<span class="product-comments__rating-item">
+										<svg class="product-comments__rate-icon" width="23" height="24">
+											<use xlink:href="#icon_star_full_reviews"></use>
+										</svg>
+									</span>
+									<span class="product-comments__rating-item">
+										<svg class="product-comments__rate-icon" width="23" height="24">
+											<use xlink:href="#icon_star_full_reviews"></use>
+										</svg>
+									</span>
+									<span class="product-comments__rating-item">
+										<svg class="product-comments__rate-icon" width="23" height="24">
+											<use xlink:href="#icon_star_full_reviews"></use>
+										</svg>
+									</span>
+									<span class="product-comments__rating-item">
+										<svg class="product-comments__rate-icon" width="23" height="24">
+											<use xlink:href="#icon_star_full_reviews"></use>
+										</svg>
+									</span>
+								</div>
+								<p class="product-comments__content">Спинка удобная, не прогибается. А на кровати, хотела бы, валятся сутки напролет, такая удобная! Как только увидела у вас ее, твердо решила – вот это то, что мне нужно! спасибо вам, что не только оперативно доставили, но и так же собрали! Представить не могла, что белая мебель проста в уходе. Оказалось, все дело в материалах. В моей спальне стоит белый комплект «Вайт». Удачно подобранное покрытие деталей делает уборку легкой, а эксплуатацию приятной.</p>
+								<div class="product-comments__img-block">
+									<div class="product-comments__img-wrapper">
+									<img src="../images/catalog_1/small_product_pic.jpg" alt="" class="product-comments__img responsive-img"></div>
+									<div class="product-comments__img-wrapper">
+									<img src="../images/catalog_1/big_product_pic.jpg" alt="" class="product-comments__img responsive-img"></div>
+									<div class="product-comments__img-wrapper">
+									<img src="../images/catalog_1/big_product_pic.jpg" alt="" class="product-comments__img responsive-img"></div>
+									<div class="product-comments__img-wrapper">
+									<img src="../images/catalog_1/small_product_pic_pop_up.jpg" alt="" class="product-comments__img responsive-img"></div>
+								</div>
+								<p class = "product-comments__date">May 21st, 2011</p>
+							</div>
+						</div>
+						<span class="product-catalog__shown-products-quantity">Показано с 1 по 3 из 3 (всего 1 страниц)</span>
+					</section>
+					<section class="review">
+						<span class="review__title">Написать отзыв</span>
+						<form action="#" class="review__form" enctype="multipart/form-data" method="post">
+							<div class="review__side-divider">
+								<div class="review__text-side">
+									<div class="registration-form__input-wrapper review__input-wrapper ">
+										<div class="registration-form__icon-wrapper">
+											<i class="registration-form__circle">
+											<svg class="registration-form__icon" width="25" height="20">
+												<use xlink:href="#icon_user_comment"></use>
+											</svg></i></div>
+											<input type="text" id="review-name" class="registration-form__input" placeholder="Имя">
+											
+										</div>
+										<textarea class = "review__content-field" name="comment-text" id="comment-text" placeholder = "Введите сообщение"></textarea>
+										<input type="file" name="photo" multiple accept="image/*">
+									</div>
+									<div class ="review__send-side">
+										<div class="review__quality-wrapper">
+											<span class="review__quality">Плохо</span>
+												<div class="review__stars">
+												<fieldset class="rating">
+													<input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
+													<input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
+													<input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
+													<input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
+													<input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
+												</fieldset></div>
+												<span class="review__quality">Хорошо</span>
+												</div>
+											
+											<label for="review-capcha" class="review__capcha-label">Введите код, указанный на картинке:</label>
+											<div class="review__capcha-wrapper">
+												<input type="text" name="review-capcha" id="review-capcha" class="review__form-input">
+											<button class="review__send-capcha">gddg54</button></div>
+											<button type="submit" class="review__submit common-button">Отправить сообщение</button>
+										</div>
+									</div>
+									
+								</form>
+								<p class="review__note">Примечание:  HTML разметка не поддерживается! Используйте обычный текст.</p>
+							</section>
+	</div>
+	//= include/footer.html
+	//= include/foot.html

@@ -75,6 +75,17 @@
 	&--full-width {
 		margin-left: 0;
 	}
+	&__img-block {
+		margin-top: 10px;
+		display: flex;
+		align-items: center;
+	}
+	&__img-wrapper {
+	max-width: 100px;
+	height: auto;
+	margin-right: 10px;
+	}
+
 
 }
 @media (max-width: 1200px) {
