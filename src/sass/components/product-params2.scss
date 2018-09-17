@@ -1,0 +1,28 @@
+.product-params2 {
+	&__image {
+		
+		margin: 0 auto;
+		margin-top: 10px;
+		width: 40%;
+		height: auto;
+	}
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+
+	}
+	&__element {
+		margin-bottom: 10px;
+		margin-right: 20px;
+		display: flex;
+		align-items: center;
+	}
+}
+@media (max-width: 1024px){
+	.product-params2 {
+		&__image {
+			width: 20%;
+			order: -1;
+		}
+	}
+}

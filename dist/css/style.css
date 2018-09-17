@@ -3227,6 +3227,32 @@ body {
     width: 55px;
     height: 55px; } }
 
+.product-params2__image {
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 40%;
+  height: auto; }
+
+.product-params2__list {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.product-params2__element {
+  margin-bottom: 10px;
+  margin-right: 20px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center; }
+
+@media (max-width: 1024px) {
+  .product-params2__image {
+    width: 20%;
+    -ms-flex-order: -1;
+        order: -1; } }
+
 .entrance__block {
   width: 49%; }
 
