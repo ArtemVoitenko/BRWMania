@@ -48,3 +48,12 @@
 	}
 
 }
+@media(max-width: 768px) {
+	.pagination {
+		flex-direction: column;
+		align-items: center;
+		&__text {
+			order: -1;
+		}
+	}
+}

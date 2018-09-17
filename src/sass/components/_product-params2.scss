@@ -3,7 +3,7 @@
 		
 		margin: 0 auto;
 		margin-top: 10px;
-		width: 40%;
+		width: %;
 		height: auto;
 	}
 	&__list {
@@ -18,11 +18,19 @@
 		align-items: center;
 	}
 }
-@media (max-width: 1024px){
+@media (max-width: 1200px){
 	.product-params2 {
+
 		&__image {
 			width: 20%;
 			order: -1;
 		}
+	}
+}
+@media (max-width: 1023px){
+	.product-params2 {
+		padding-left: 10%;
+		padding-right: 10%;
+
 	}
 }

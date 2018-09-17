@@ -372,6 +372,7 @@ body {
   height: auto; }
 
 .page-title {
+  margin-top: 10px;
   font-size: 24px;
   font-weight: bold;
   text-align: center;
@@ -2909,6 +2910,16 @@ body {
       .pagination__link--active:after {
         display: none; }
 
+@media (max-width: 768px) {
+  .pagination {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center; }
+    .pagination__text {
+      -ms-flex-order: -1;
+          order: -1; } }
+
 .ordering__table {
   margin-top: 25px;
   width: 100%; }
@@ -3230,7 +3241,7 @@ body {
 .product-params2__image {
   margin: 0 auto;
   margin-top: 10px;
-  width: 40%;
+  width: %;
   height: auto; }
 
 .product-params2__list {
@@ -3247,11 +3258,16 @@ body {
   -ms-flex-align: center;
       align-items: center; }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .product-params2__image {
     width: 20%;
     -ms-flex-order: -1;
         order: -1; } }
+
+@media (max-width: 1023px) {
+  .product-params2 {
+    padding-left: 10%;
+    padding-right: 10%; } }
 
 .entrance__block {
   width: 49%; }
@@ -3340,6 +3356,63 @@ body {
   .alert-danger {
     border-top: 3px solid #E04848;
     color: #E04848; }
+
+.brands-table__note {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
+  font-size: 18px; }
+
+.brands-table__letter {
+  display: block;
+  height: 40px;
+  border-bottom: 1px solid #ebecec;
+  padding-left: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 40px; }
+
+.brands-table__list {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-left: 10px;
+  padding-right: 10px; }
+
+.brands-table__list-brand {
+  height: 40px;
+  width: 25%;
+  line-height: 40px; }
+
+.brands-table__item {
+  margin-bottom: 20px;
+  border: 1px solid #ebecec; }
+
+.brands-table__link {
+  font-size: 18px; }
+  .brands-table__link:hover {
+    color: #ea3c27; }
+
+.alphabet {
+  display: inline; }
+  .alphabet__item {
+    display: inline-block;
+    font-size: 18px; }
+  .alphabet__link {
+    color: #ea3c27;
+    font-size: 20px;
+    font-weight: bold; }
+    .alphabet__link:hover {
+      color: #040707; }
+
+@media (max-width: 768px) {
+  .brands-table__list-brand {
+    width: 33.333%; } }
+
+@media (max-width: 425px) {
+  .brands-table__list-brand {
+    width: 50%; } }
 
 /* Slider */
 .slick-slider {

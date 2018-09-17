@@ -1,0 +1,72 @@
+.brands-table {
+	&__note {
+		margin-top: 10px;
+		margin-bottom: 10px;
+		display: inline-block;
+
+		font-size: 18px;
+	}
+	&__letter {
+		display: block;
+		height: 40px;
+		border-bottom: 1px solid $grey;
+		padding-left: 10px;
+
+		font-size: 20px;
+		font-weight: bold;
+		line-height: 40px;
+
+	}
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	&__list-brand {
+		height: 40px;
+		width: 25%;
+		line-height: 40px;
+	}
+	&__item {
+		margin-bottom: 20px;
+		border: 1px solid $grey;
+	}
+	&__link {
+		font-size: 18px;
+
+		&:hover {
+			color: $accent;
+		}
+	}
+}
+
+.alphabet {
+	display: inline;
+	&__item {
+		display: inline-block;
+		font-size: 18px;
+	}
+	&__link {
+		color: $accent;
+		font-size: 20px;
+		font-weight: bold;
+		&:hover {
+			color: $black;
+		}
+	}
+}
+@media (max-width: 768px) {
+	.brands-table {
+		&__list-brand {
+			width: 33.333%;
+		}
+	}
+}
+@media (max-width: 425px) {
+	.brands-table {
+		&__list-brand {
+			width: 50%;
+		}
+	}
+}
