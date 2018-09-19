@@ -7,12 +7,25 @@
 
 	
 	padding: 35px 60px;
-	display: inline-block;
+	// display: inline-block;
 	display: none;
 	
 	text-align: center;
 
 	background-color: #fff;
+	&__wrapper {
+		position: fixed;
+		left: 0;
+		top: 0;
+		z-index: 7;
+		// display: none;
+		
+
+		width: 100%;
+		height: 100%;
+
+	background-color: transparentize($black, 0.5);
+	}
 	&__buttons {
 		display: flex;
 		justify-content: space-between;
@@ -20,7 +33,7 @@
 	&__title {
 		display: block;
 
-		font-size: 36px;
+		font-size: 20px;
 		font-weight: bold;
 		margin-bottom: 40px;
 	}
@@ -43,8 +56,7 @@
 		line-height: 24px;
 		margin-bottom: 35px;
 	}
-	&__submit {
-		// width: 49%;
+	&__button {
 		padding: 10px;
 		height: 40px;
 		display: inline-block;

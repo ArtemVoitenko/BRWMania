@@ -2,7 +2,7 @@
 	position: absolute;
 	top: 100%;
 	right: -1px;
-	z-index: 5;
+	z-index: 10;
 	
 	display: flex;
 	display: none;
@@ -100,12 +100,12 @@
 		right: 1px;
 	}
 }
-@media (max-width: 360px) {
+@media (max-width: 767px) {
 	.cart-modal {
 		position: fixed;
 		left: 0;
 		right: 0;
-		top: 80px;
+		top: 0;
 		width: 100%;
 
 	}

@@ -33,7 +33,6 @@
 
 
 	&__total-sum {
-		margin-right: 30px;
 
 		font-size: 16px;
 		font-weight: 700;
@@ -63,4 +62,22 @@
 		right: 0;
 		display: block;
 	}
+}
+@media (max-width: 767px) {
+	.cart {
+		// transform: scale(0.6);
+		top: 20px;
+		// right: -25px;
+		&__icon {
+			transform: scale(0.6);
+			left: -75px
+		}
+		&__products-quantity {
+			transform: scale(0.6);
+			left: -35px;
+			top: -26px;	
+		}
+
+	}
+
 }

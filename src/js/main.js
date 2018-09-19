@@ -14,12 +14,15 @@ var homeAdress = $(".ordering-form__home-adress");
 var postAdress = $(".ordering-form__post-adress");
 var curierDelivery = $("#curier-delivery");
 var postDelivery = $("#post-delivery");
+var buttonBuy = $(".product-card__cart-button");
+var commonPopup = $(".common-popup");
+var commonPopupContinue = $(".common-popup__button-continue");
 
 
-$("#open-main-nav").click (function () {
+$("#open-main-nav").on("click", function () {
     mainNav.slideToggle();
 });
-$("#open-categories-button").click(function () {
+$("#open-categories-button").on("click", function () {
     horizontalCategories.toggleClass("display-flex");
     });
 
@@ -35,11 +38,11 @@ $('.vertical-categories__item').hover(function() {
 //     }
 // });
 
-$('.cart__open-btn').click(function() {
+$('.cart__open-btn').on("click", function() {
     cartModal.slideToggle();
 });
 
-$('.button-request-call').click(function () {
+$('.button-request-call').on("click", function () {
 	fancybox.fadeIn();
 	callPopUp.fadeIn();
 });
@@ -51,19 +54,19 @@ $('.button-request-call').click(function () {
 //     fancybox.fadeOut();
 //     }
 // });
-$(".close-popup").click(function () {
+$("body").on("click",".close-popup", function () {
     console.log($(this).parent());
 	$(this).parent().fadeOut();
 	fancybox.fadeOut();
 });
-$(".big-slide__wrapper--clickable").click(function () {
+$(".big-slide__wrapper--clickable").on("click", function () {
     galleryPopup.fadeIn();
     fancybox.fadeIn();
         if(galleryPopup.css('display') === 'block'){
         galleryPopup.css("display", "flex");
     }
 })
-$("#close-gallery").click(function () {
+$("#close-gallery").on("click", function () {
     galleryPopup.fadeOut();
     fancybox.fadeOut();
 
@@ -77,14 +80,14 @@ $("#grid-view").on("click", function () {
     productCardList.removeClass("list-view");
 });
 var paginationLink = $(".pagination__link");
-paginationLink.click(function (e){
+paginationLink.on("click", function (e){
     e.preventDefault();
     paginationLink.removeClass("pagination__link--active");
     $(this).addClass("pagination__link--active");
 
 });
 var verticalCategories = $(".vertical-categories--popup");
-$(".horizontal-categories__link--show-vertical").click(function (e) {
+$(".horizontal-categories__link--show-vertical").on("click", function (e) {
     e.preventDefault();
     verticalCategories.fadeIn();
     fancybox.fadeIn();
@@ -97,28 +100,28 @@ $(".horizontal-categories__link--show-vertical").click(function (e) {
 //     fancybox.fadeOut();
 //     }
 // });
-filtersMore.click(function () {
+filtersMore.on("click", function () {
     filtersList.removeClass("filters__list--compressed");
     filtersMore.hide();
     filtersHide.show();
 })
-filtersHide.click(function () {
+filtersHide.on("click", function () {
     filtersList.addClass("filters__list--compressed");
     filtersHide.hide();
     filtersMore.show();
 })
 
-$(".footer__title").click(function () {
+$(".footer__title").on("click", function () {
     $(this).next(".footer__list").slideToggle();
 })
-$(".filters__show-button").click(function () {
+$(".filters__show-button").on("click", function () {
     filters.slideToggle();
 })
 
-$(".cart-modal__delete-item").click(function () {
+$(".cart-modal__delete-item").on("click", function () {
     $(this).parent().remove();
 });
-$(".product-comments__link").click(function () {
+$(".product-comments__link").on("click", function () {
     review.slideToggle();
 });
 
@@ -131,10 +134,25 @@ postDelivery.on("change", function () {
     homeAdress.hide();    
 });
 
-$(".vertical-categories__hide-item").click(function () {
+$(".vertical-categories__hide-item").on("click", function () {
         verticalCategories.fadeOut();
     fancybox.fadeOut();
 });
 
+// buttonBuy.on("click", function () {
+//     fancybox.fadeIn();
+//     commonPopup.fadeIn();
+//     var productName = $(this).parent().siblings(".product__link").children(".product-card__name").text();
+//     commonPopup.children(".common-popup__title").text("Товар" + " " + productName + " " + "добавлен в корзину")
+// });
+
+$("body").on("click", ".common-popup__button-continue", function () {
+    $(".common-popup").fadeOut();
+    fancybox.fadeOut();
+});
+$(".main-header__show-phones").on("click", function () {
+    $(".phones").fadeIn();
+    fancybox.fadeIn();
+})
 
 });

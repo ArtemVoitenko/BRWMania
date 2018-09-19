@@ -1,9 +1,9 @@
 .product-params2 {
 	&__image {
-		
+		order: -1;
 		margin: 0 auto;
 		margin-top: 10px;
-		width: %;
+		margin-right: 20px;
 		height: auto;
 	}
 	&__list {
@@ -24,6 +24,7 @@
 		&__image {
 			width: 20%;
 			order: -1;
+			margin-left: 0;
 		}
 	}
 }

@@ -30,8 +30,8 @@ $('.slider').slick({
       breakpoint: 540,
       settings: {
         slidesToShow: 1,
-        arrows: false, 
-        dots: true
+        // arrows: false, 
+        // dots: true
 
       }
       },
