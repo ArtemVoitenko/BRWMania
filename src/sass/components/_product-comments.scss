@@ -72,6 +72,9 @@
 	&__rate-icon {
 		fill: $accent;
 	}
+	&__rate-icon--not {
+		fill: $grey;
+	}
 	&--full-width {
 		margin-left: 0;
 	}

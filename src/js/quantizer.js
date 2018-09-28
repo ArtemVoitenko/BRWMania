@@ -1,4 +1,4 @@
-
+$(function () {
 $('.quantity-switch__less').on('click', function(e) {
     e.preventDefault();
     var quantityInput = $(this).siblings('.quantity-switch__number');
@@ -7,6 +7,7 @@ $('.quantity-switch__less').on('click', function(e) {
         quantityValue --;
         $(quantityInput).val(quantityValue);
     }
+    // $(".btn .btn-primary").click();
 });
 
 $('.quantity-switch__more').on('click', function(e) {
@@ -17,4 +18,6 @@ $('.quantity-switch__more').on('click', function(e) {
         quantityValue ++;
         $(quantityInput).val(quantityValue);
     }
+    // $(".btn .btn-primary").click();
+});
 });

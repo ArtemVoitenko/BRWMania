@@ -74,6 +74,10 @@
 		fill: #fff;
 		
 	}
+
+}
+.main-nav .main-nav__close {
+		display: none;	
 }
 @media (max-width: 1340px) {
 	.main-nav {
@@ -101,10 +105,12 @@
 	.main-nav {
 		position: fixed;
 		top: 0;
+		padding-top: 20px;
 		height: 100%;
 		z-index: 20;
 
 		background-color: $black;
+		overflow: auto;
 		&__show {
 			position: absolute;
 			top: 3px;
@@ -123,6 +129,11 @@
 		&__show-icon {
 			fill: $accent;
 		}
+	}
+	.main-nav .main-nav__close {
+		top: 10px;
+		right: 10px;
+		display: block;
 	}
 }
 .button__icon--show-phones {

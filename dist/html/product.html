@@ -264,8 +264,14 @@
 			</svg></button></li>
 				</ul>
 			</li>
-			<li class="horizontal-categories__item"><a href="#" class="horizontal-categories__link horizontal-categories__link--bold">Все бренды <svg class="horizontal-categories__icon horizontal-categories__icon--brands " width="7" height = "5">
-			<use xlink:href="#icon_arrow_down"></use></svg></a></li>
+			<li class="horizontal-categories__item show-all-brands"><a href="#" class="horizontal-categories__link horizontal-categories__link--bold ">Все бренды <svg class="horizontal-categories__icon horizontal-categories__icon--brands " width="7" height = "5">
+			<use xlink:href="#icon_arrow_down"></use></svg></a><ul class="brands-popup">
+				<li class="brands-popup__item"><a href="#" class="brands-popup__link">бренд1</a></li>
+				<li class="brands-popup__item"><a href="#" class="brands-popup__link">бренд2</a></li>
+				<li class="brands-popup__item"><a href="#" class="brands-popup__link">бренд3</a></li>
+				<li class="brands-popup__item"><a href="#" class="brands-popup__link">бренд4</a></li>
+				<li class="brands-popup__item"><a href="#" class="brands-popup__link">бренд5</a></li>
+			</ul></li>	
 			<li class="horizontal-categories__item"><a href="#" class="horizontal-categories__link"><svg class="horizontal-categories__icon"  width="35" height = "35">
 				<use xlink:href="#icon_living_room"></use>
 			</svg>Гостиная</a></li>
@@ -326,11 +332,12 @@
 			<div class="product-info__left-side">
 				<div class="product-characteristics__slider-wrapper">
 					<div class="big-slide__wrapper">
-						<img class = "big-slide__img" src="../images/product/big_product_pic_slider.jpg" alt="">
+						<!-- <img class = "big-slide__img" src="../images/product/big_product_pic_slider.jpg" alt=""> -->
+						<iframe class = "big-slide__img" width="100%" height="100%" src="https://www.youtube.com/embed/_Yc06fmgZjc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 					</div>
 					<div class="small-slider">
 						<div class="small-slider__slide">
-							<img src="../images/product/small_pic_product_slider_1.jpg" data-img-big = "../images/product/big_product_pic_slider.jpg" alt="">
+							<img src="../images/product/small_pic_product_slider_1.jpg" data-img-big = "https://www.youtube.com/embed/_Yc06fmgZjc" alt="">
 						</div>
 						<div class="small-slider__slide">
 							<img src="../images/product/small_pic_product_slider_2.jpg" alt="" data-img-big = "../images/product/big_product_pic_slider.jpg">
@@ -341,9 +348,13 @@
 						<div class="small-slider__slide">
 							<img src="../images/product/small_pic_product_slider_3.jpg" alt="" data-img-big = "../images/product/big_product_pic_slider.jpg">
 						</div>
+						<div class="small-slider__slide">
+							<img src="../images/product/small_pic_product_slider_3.jpg" alt="" data-img-big = "../images/product/big_product_pic_slider.jpg">
+						</div>
 					</div>
 				</div>
 			</div>
+
 			<div class="product-info__right-side">
 				<div class="product-info__buy-panel">
 				<div class="product-info__rating">
@@ -370,13 +381,10 @@
 					</span>
 					<span class="common-bold">Оценка: 4 -</span> <span class="product-info__mark">3 голос(а)</span>
 				</div>
+				<div class="product-info__elements-container">
 				<div class="product-info__elements-wrapper">
 					<span class="product-info__price">8766 грн.</span>
-					<button class="product-characteristics__buy-button common-button"><svg class='product-characteristics__button-icon' width="22" height = "16">
-						<use xlink:href="#icon_buy_product"></use>
-					</svg>Купить</button>
-				</div>
-				<div class="product-info__quantity">
+					<div class="product-info__quantity">
 				<span class='product-info__quantity-label'>Количество:</span>
 				<div class="quantity-switch quantity-switch--big">
 					<button class="quantity-switch__less">-</button>
@@ -384,51 +392,28 @@
 					<button class="quantity-switch__more">+</button>
 				</div>
 				</div>
+				</div>
+				
 				<div class="product-info__elements-wrapper">
+					<button class="product-characteristics__buy-button common-button"><svg class='product-characteristics__button-icon' width="22" height = "16">
+						<use xlink:href="#icon_buy_product"></use>
+					</svg>Купить</button>
 					<button class="product-characteristics__buy-button common-button common-button--black">Купить в кредит</button>
 					<button class="product-characteristics__click-buy">Купить в 1-н клик</button>
 				</div>
-				<form class="product-params">
-					<input type="radio" name="product-color" id="product-color1" class="product-params__radio">
-					<label for="product-color1" class="product-params__item"><div class="product-params__img-wrapper"><img class="product-params__img" src="../images/product/color.jpg" alt=""></div></label>
-					<input type="radio" name="product-color" id="product-color2" class="product-params__radio">
-					<label for="product-color2" class="product-params__item"><div class="product-params__img-wrapper"><img class="product-params__img" src="../images/product/color.jpg" alt=""></div></label>
-					<input type="radio" name="product-color" id="product-color3" class="product-params__radio">
-					<label for="product-color3" class="product-params__item"><div class="product-params__img-wrapper"><img class="product-params__img" src="../images/product/color.jpg" alt=""></div></label>
-					<input type="radio" name="product-color" id="product-color4" class="product-params__radio">
-					<label for="product-color4" class="product-params__item"><div class="product-params__img-wrapper"><img class="product-params__img" src="../images/product/color.jpg" alt=""></div></label>
-					<input type="radio" name="product-color" id="product-color5" class="product-params__radio">
-					<label for="product-color5" class="product-params__item"><div class="product-params__img-wrapper"><img class="product-params__img" src="../images/product/color.jpg" alt=""></div></label>
-					<input type="radio" name="product-color" id="product-color6" class="product-params__radio">
-					<label for="product-color6" class="product-params__item"><div class="product-params__img-wrapper"><img class="product-params__img" src="../images/product/color.jpg" alt=""></div></label>
-					<input type="radio" name="product-color" id="product-color7" class="product-params__radio">
-					<label for="product-color7" class="product-params__item"><div class="product-params__img-wrapper"><img class="product-params__img" src="../images/product/color.jpg" alt=""></div></label>
-					<input type="radio" name="product-color" id="product-color8" class="product-params__radio">
-					<label for="product-color8" class="product-params__item"><div class="product-params__img-wrapper"><img class="product-params__img" src="../images/product/color.jpg" alt=""></div></label>
-					<input type="radio" name="product-color" id="product-color9" class="product-params__radio">
-					<label for="product-color9" class="product-params__item"><div class="product-params__img-wrapper"><img class="product-params__img" src="../images/product/color.jpg" alt=""></div></label>
-					<input type="radio" name="product-color" id="product-color10" class="product-params__radio">
-					<label for="product-color10" class="product-params__item"><div class="product-params__img-wrapper"><img class="product-params__img" src="../images/product/color.jpg" alt=""></div></label>
-				</form>
+				</div>
+
 				<div class="product-params2">
 					<div class="product-params2__category">
 						<p class="product-params2__title section-title">Цвет:</p>
-						<ul class="product-params2__list">
-						<li class="product-params2__element">цвет белый / белый глянец <img src="../images/product/color.jpg" alt="" class="product-params2__image"></li>
-						<li class="product-params2__element">цвет белый / белый глянец <img src="../images/product/color.jpg" alt="" class="product-params2__image"></li>
-						<li class="product-params2__element">цвет белый / белый глянец <img src="../images/product/color.jpg" alt="" class="product-params2__image"></li>
-						<li class="product-params2__element">цвет белый / белый глянец <img src="../images/product/color.jpg" alt="" class="product-params2__image"></li>
-						</ul>
+
+					<form class="product-params">
+					<input type="radio" name="product-color" id="product-color1" class="product-params__radio">
+					<label for="product-color1" class="product-params2__element">
+					<img class="product-params2__image" src="../images/product/color.jpg" alt="">цвет белый / белый глянец</label><input type="radio" name="product-color" id="product-color1" class="product-params__radio">
+				</form>
 					</div>
-					<div class="product-params2__category">
-						<p class="product-params2__title section-title">Цвет:</p>
-						<ul class="product-params2__list">
-						<li class="product-params2__element">цвет белый / белый гл</li>
-						<li class="product-params2__element">цвет белый / белый гл</li>
-						<li class="product-params2__element">цвет белый / белый гл</li>
-						<li class="product-params2__element">цвет белый / белый гл</li>
-						</ul>
-					</div>
+
 				</div>
 			</div>
 			</div>
@@ -1262,8 +1247,23 @@
 					<use xlink:href="#icon_del"></use>
 					</svg><span class="visually-hidden">Закрыть окно</span></button>
 				</div>
+			<div class="one-click-modal common-popup">
+				<span class="call-popup__title">
+					Купить в один клик
+				</span>
+				<form action="#" class="call-popup__form">
+					<label class = "call-popup__phone-label" for="phone-number-input">Введите Ваш контактный номер телефона:</label>
+					<input class = "call-popup__phone-input" type="tel" name="phone" id="phone-number-input" placeholder = "+380-XX-XX-XXX">
+					<button class="common-button call-popup__submit">Заказать</button>
+				</form>
+				<button id= "close-call-popup" class="call-popup__close-button close-popup"><svg class="call-popup__close-icon"  width="13" height = "13">
+							<use xlink:href="#icon_del"></use>
+						</svg><span class="visually-hidden">Закрыть окно</span></button>
+			</div>
 			
 			<div class="fancybox"></div>
+			<div class="fancybox"></div>
+			<div class="fancybox-categories"></div>
 			<div hidden>
 			  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="0" height="0" style="position:absolute">
 			  	

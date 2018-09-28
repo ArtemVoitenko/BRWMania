@@ -1,0 +1,46 @@
+.noUi-horizontal .noUi-handle {
+	top: -4px;
+	left: 0;
+	width: 16px;
+	height: 16px;
+	border-radius: 0;
+	box-shadow: none;
+	border: none;
+	background-color: $accent;
+	cursor: pointer;
+	&:before {
+		display: none;
+	}
+	&:after {
+		display: none;
+	}
+}
+.noUi-background {
+	background-color: #fff;
+	box-shadow: none;
+
+}
+.noUi-target {
+	border-radius: none;
+	box-shadow: none;
+	border: none;
+}
+.noUi-horizontal {
+	height: 8px;
+}
+.noUi-connect {
+	background-color: $accent;
+	box-shadow: none;
+}
+.noUi-origin {
+	border-radius: 0;
+}
+.noUi-pips .noUi-pips-horizontal {
+	display: none;
+}
+.option-name {
+	display: none;	
+}
+.scale {
+	margin-left: 0;
+}

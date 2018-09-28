@@ -9,6 +9,10 @@
 		color: $black;
 		line-height: 20px;
 		text-decoration: none;
+		&:hover {
+			color: $accent;
+			text-decoration: underline;
+		}
 	}
 
 }

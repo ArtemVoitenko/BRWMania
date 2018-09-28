@@ -264,8 +264,14 @@
 			</svg></button></li>
 				</ul>
 			</li>
-			<li class="horizontal-categories__item"><a href="#" class="horizontal-categories__link horizontal-categories__link--bold">Все бренды <svg class="horizontal-categories__icon horizontal-categories__icon--brands " width="7" height = "5">
-			<use xlink:href="#icon_arrow_down"></use></svg></a></li>
+			<li class="horizontal-categories__item show-all-brands"><a href="#" class="horizontal-categories__link horizontal-categories__link--bold ">Все бренды <svg class="horizontal-categories__icon horizontal-categories__icon--brands " width="7" height = "5">
+			<use xlink:href="#icon_arrow_down"></use></svg></a><ul class="brands-popup">
+				<li class="brands-popup__item"><a href="#" class="brands-popup__link">бренд1</a></li>
+				<li class="brands-popup__item"><a href="#" class="brands-popup__link">бренд2</a></li>
+				<li class="brands-popup__item"><a href="#" class="brands-popup__link">бренд3</a></li>
+				<li class="brands-popup__item"><a href="#" class="brands-popup__link">бренд4</a></li>
+				<li class="brands-popup__item"><a href="#" class="brands-popup__link">бренд5</a></li>
+			</ul></li>	
 			<li class="horizontal-categories__item"><a href="#" class="horizontal-categories__link"><svg class="horizontal-categories__icon"  width="35" height = "35">
 				<use xlink:href="#icon_living_room"></use>
 			</svg>Гостиная</a></li>
@@ -311,39 +317,25 @@
 
 <div class="fancybox"></div>
 <div class="gallery-popup centered">
-	
-	<span class="gallery-popup__title">BRW (БРВ) Кровать  Индиана Indiana (дуб шутер) JLOZ90 (Каркас)СИСТЕМА АВАТАР</span>
+	<span class="gallery-popup__title">dfgdfg</span>
 	<div class="gallery-popup__slider-wrapper">
-		
-		<div class="big-slide__wrapper">
-			<img class = "big-slide__img" src="../images/catalog_1/big_product_pic.jpg" alt="">
+		<div id='popup-gallery-slide' class="product-gallery__big-slider">
+			<div class="product-gallery__slide big-slide__wrapper"> <img src="../images/product/big_product_pic_slider.jpg" alt="" class="product-gallery__slide-img big-slide__img responsive-img"> </div>
 		</div>
-		<div class="small-slider">
-			<div class="small-slider__slide">
-				<img src="../images/product/small_pic_product_slider_1.jpg" data-img-big = "../images/product/big_product_pic_slider.jpg" alt="">
-			</div>
-			<div class="small-slider__slide">
-				<img src="../images/product/small_pic_product_slider_2.jpg" alt="" data-img-big = "../images/catalog_1/big_product_pic.jpg">
-			</div>
-			<div class="small-slider__slide">
-				<img src="../images/product/small_pic_product_slider_3.jpg" alt="" data-img-big = "../images/catalog_1/big_product_pic_pop_up.jpg">
-			</div>
-			<div class="small-slider__slide">
-				<img src="../images/product/small_pic_product_slider_3.jpg" alt="" data-img-big = "../images/catalog_1/big_product_pic.jpg">
-			</div>
-			
-		</div>
-		<div class="gallery-popup__purchase">
-			<p class="gallery-popup__price">2142 грн.</p>
-			<button class="product-card__cart-button gallery-popup__cart-button common-button"><svg class='product-card__button-icon' width="35" height = "25">
-				<use xlink:href="#icon_buy_product"></use>
-			</svg>Купить</button>
+		<div id='popup-gallery-thumbs' class="product-gallery__thumbs">
+			<div class="product-gallery__thumb"><img src="../images/catalog_1/small_product_pic.jpg" alt="" class="product-gallery__thumb-img"></div>
 		</div>
 	</div>
-	<button id="close-gallery" class="call-popup__close-button gallery-popup__close-button"><svg class="call-popup__close-icon"  width="13" height = "13">
-				<use xlink:href="#icon_del"></use>
-			</svg><span class="visually-hidden">Закрыть окно</span></button>
-</div>
+	<div class="gallery-popup__purchase">
+		<p class="gallery-popup__price">2142 грн.</p>
+		<button class="gallery-popup__cart-button common-button"><svg class='gallery-popup__button-icon' width="35" height = "25">
+			<use xlink:href="#icon_buy_product"></use>
+		</svg>Купить</button>
+	</div>
+	<button  class="common-popup__close-button close-popup gallery-popup__close-button"><svg class="common-popup__close-icon" width="13" height="13">
+		<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon_del"></use>
+		</svg><span class="visually-hidden">Закрыть окно</span></button>
+	</div>
 
 <div class="container">
 	
@@ -446,7 +438,7 @@
 			<div class="product-info padding-section">
 				<h2 class="product-info__title">система аватар</h2>
 				<div class="product-info__wrapper">
-					<div class="product-info__slider-wrapper">
+<!-- 					<div class="product-info__slider-wrapper">
 					<div class="big-slide__wrapper big-slide__wrapper--clickable">
 						<img class = "big-slide__img" src="../images/catalog_1/big_product_pic.jpg" alt="">
 					</div>
@@ -464,7 +456,36 @@
 							<img src="../images/product/small_pic_product_slider_3.jpg" alt="" data-img-big = "../images/catalog_1/big_product_pic.jpg">
 						</div>
 					</div>
-					</div>
+					</div> -->
+					<div  class="product-gallery__wrapper">
+						<div id="gallery-slide" class="product-gallery__big-slider product-gallery__big-slider--clickable">
+							<div class="product-gallery__slide big-slide__wrapper"> <img src="../images/product/big_product_pic_slider.jpg" alt="" class="product-gallery__slide-img big-slide__img responsive-img"> </div>
+							<div class="product-gallery__slide big-slide__wrapper"> <img src="../images/product/big_product_pic_slider.jpg" alt="" class="product-gallery__slide-img big-slide__img responsive-img"> </div>
+							<div class="product-gallery__slide big-slide__wrapper"> <img src="../images/product/big_product_pic_slider.jpg" alt="" class="product-gallery__slide-img big-slide__img responsive-img"> </div>
+							<div class="product-gallery__slide big-slide__wrapper"> <img src="../images/product/big_product_pic_slider.jpg" alt="" class="product-gallery__slide-img big-slide__img responsive-img"> </div>
+							<div class="product-gallery__slide big-slide__wrapper"> <img src="../images/product/big_product_pic_slider.jpg" alt="" class="product-gallery__slide-img big-slide__img responsive-img"> </div>
+							<div class="product-gallery__slide big-slide__wrapper"> <img src="../images/product/big_product_pic_slider.jpg" alt="" class="product-gallery__slide-img big-slide__img responsive-img"> </div>
+							<div class="product-gallery__slide big-slide__wrapper"> <img src="../images/product/big_product_pic_slider.jpg" alt="" class="product-gallery__slide-img big-slide__img responsive-img"> </div>
+							<div class="product-gallery__slide big-slide__wrapper"> <img src="../images/product/big_product_pic_slider.jpg" alt="" class="product-gallery__slide-img big-slide__img responsive-img"> </div>
+							<div class="product-gallery__slide big-slide__wrapper"> <img src="../images/product/big_product_pic_slider.jpg" alt="" class="product-gallery__slide-img big-slide__img responsive-img"> </div>
+							<div class="product-gallery__slide big-slide__wrapper"> <img src="../images/product/big_product_pic_slider.jpg" alt="" class="product-gallery__slide-img big-slide__img responsive-img"> </div>
+							<div class="product-gallery__slide big-slide__wrapper"> <img src="../images/product/big_product_pic_slider.jpg" alt="" class="product-gallery__slide-img big-slide__img responsive-img"> </div>
+						</div>
+							<div id="gallery-thumbs" class="product-gallery__thumbs">
+								<div class="product-gallery__thumb"><img src="../images/catalog_1/small_product_pic.jpg" alt="" class="product-gallery__thumb-img"></div>
+								<div class="product-gallery__thumb"><img src="../images/catalog_1/small_product_pic.jpg" alt="" class="product-gallery__thumb-img"></div>
+								<div class="product-gallery__thumb"><img src="../images/catalog_1/small_product_pic.jpg" alt="" class="product-gallery__thumb-img"></div>
+								<div class="product-gallery__thumb"><img src="../images/catalog_1/small_product_pic.jpg" alt="" class="product-gallery__thumb-img"></div>
+								<div class="product-gallery__thumb"><img src="../images/catalog_1/small_product_pic.jpg" alt="" class="product-gallery__thumb-img"></div>
+								<div class="product-gallery__thumb"><img src="../images/catalog_1/small_product_pic.jpg" alt="" class="product-gallery__thumb-img"></div>
+								<div class="product-gallery__thumb"><img src="../images/catalog_1/small_product_pic.jpg" alt="" class="product-gallery__thumb-img"></div>
+								<div class="product-gallery__thumb"><img src="../images/catalog_1/small_product_pic.jpg" alt="" class="product-gallery__thumb-img"></div>
+								<div class="product-gallery__thumb"><img src="../images/catalog_1/small_product_pic.jpg" alt="" class="product-gallery__thumb-img"></div>
+								<div class="product-gallery__thumb"><img src="../images/catalog_1/small_product_pic.jpg" alt="" class="product-gallery__thumb-img"></div>
+								<div class="product-gallery__thumb"><img src="../images/catalog_1/small_product_pic.jpg" alt="" class="product-gallery__thumb-img"></div>
+							</div>
+						</div>
+					
 					<div class="product-info__comments-wrapper">
 						<section class="product-comments">
 							<div class="product-comments__topline">
@@ -868,8 +889,23 @@
 		<use xlink:href="#icon_del"></use>
 		</svg><span class="visually-hidden">Закрыть окно</span></button>
 	</div>
+<div class="one-click-modal common-popup">
+	<span class="call-popup__title">
+		Купить в один клик
+	</span>
+	<form action="#" class="call-popup__form">
+		<label class = "call-popup__phone-label" for="phone-number-input">Введите Ваш контактный номер телефона:</label>
+		<input class = "call-popup__phone-input" type="tel" name="phone" id="phone-number-input" placeholder = "+380-XX-XX-XXX">
+		<button class="common-button call-popup__submit">Заказать</button>
+	</form>
+	<button id= "close-call-popup" class="call-popup__close-button close-popup"><svg class="call-popup__close-icon"  width="13" height = "13">
+				<use xlink:href="#icon_del"></use>
+			</svg><span class="visually-hidden">Закрыть окно</span></button>
+</div>
 
 <div class="fancybox"></div>
+<div class="fancybox"></div>
+<div class="fancybox-categories"></div>
 <div hidden>
   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="0" height="0" style="position:absolute">
   	

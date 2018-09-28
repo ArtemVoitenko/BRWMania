@@ -1,3 +1,5 @@
+$(function () {
+
 $('.slider').slick({
     slidesToShow: 5,
     slidesToScroll: 1,
@@ -16,7 +18,7 @@ $('.slider').slick({
       {
       breakpoint: 1050,
       settings: {
-        slidesToShow: 3,
+        slidesToShow: 2,
         draggable: true
       }
       },
@@ -27,7 +29,7 @@ $('.slider').slick({
       }
       },
             {
-      breakpoint: 540,
+      breakpoint: 767,
       settings: {
         slidesToShow: 1,
         // arrows: false, 
@@ -43,5 +45,6 @@ $('.banner').slick({
 	fade: true,
 	arrows: false,
 	respondTo: "slider"
-})
+});
+});
 

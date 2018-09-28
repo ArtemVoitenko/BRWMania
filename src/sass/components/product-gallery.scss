@@ -1,0 +1,38 @@
+.product-gallery {
+	width: 100%;
+
+	&__wrapper {
+		max-width: 650px;
+		max-height: 100%;
+		width: 50%;
+		overflow-x: hidden;
+		display: block;
+	}
+	&__thumbs {
+		margin-top: 20px;
+	}
+	&__thumb-img {
+		margin: 0 auto;
+	}
+	&__thumb {
+		cursor: pointer;
+	}
+}
+// .product-gallery__thumb .slick-current {
+// 	border: 1px solid $accent;
+// }
+.product-gallery__thumbs .slick-track {
+	margin-left: auto!important;
+	margin-right: auto!important;
+}
+
+@media (max-width: 1200px) {
+	.product-gallery {
+
+	&__wrapper {
+		width: 100%;
+		margin: 0 auto;
+		margin-bottom: 20px;
+}
+}
+}

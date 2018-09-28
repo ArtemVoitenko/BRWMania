@@ -18,9 +18,8 @@ var buttonBuy = $(".product-card__cart-button");
 var commonPopup = $(".common-popup");
 var commonPopupContinue = $(".common-popup__button-continue");
 
-
 $("#open-main-nav").on("click", function () {
-    mainNav.slideToggle();
+    mainNav.toggle('slide','left');
 });
 $("#open-categories-button").on("click", function () {
     horizontalCategories.toggleClass("display-flex");
@@ -46,14 +45,14 @@ $('.button-request-call').on("click", function () {
 	fancybox.fadeIn();
 	callPopUp.fadeIn();
 });
-// $(document).mouseup(function(e) {
+$(document).mouseup(function(e) {
 
-//     if (!callPopUp.is(e.target) &&
-//        callPopUp.has(e.target).length === 0) {
-//        callPopUp.fadeOut();
-//     fancybox.fadeOut();
-//     }
-// });
+    if (!$(".common-popup").is(e.target) &&
+       $(".common-popup").has(e.target).length === 0) {
+       $(".common-popup").fadeOut();
+    fancybox.fadeOut();
+    }
+});
 $("body").on("click",".close-popup", function () {
     console.log($(this).parent());
 	$(this).parent().fadeOut();
@@ -65,13 +64,13 @@ $(".big-slide__wrapper--clickable").on("click", function () {
         if(galleryPopup.css('display') === 'block'){
         galleryPopup.css("display", "flex");
     }
-})
+});
 $("#close-gallery").on("click", function () {
     galleryPopup.fadeOut();
     fancybox.fadeOut();
 
 });
-var productCardList = $(".product-card__wrapper")
+var productCardList = $(".product-card__wrapper");
 $("#list-view").on("click", function () {
     console.log(productCardList);
     productCardList.addClass("list-view");
@@ -90,16 +89,16 @@ var verticalCategories = $(".vertical-categories--popup");
 $(".horizontal-categories__link--show-vertical").on("click", function (e) {
     e.preventDefault();
     verticalCategories.fadeIn();
-    fancybox.fadeIn();
+    $(".fancybox-categories").fadeIn();
 })
-// $(document).mouseup(function(e) {
+$(document).mouseup(function(e) {
 
-//     if (!verticalCategories.is(e.target) &&
-//        verticalCategories.has(e.target).length === 0) {
-//        verticalCategories.slideUp();
-//     fancybox.fadeOut();
-//     }
-// });
+    if (!verticalCategories.is(e.target) &&
+       verticalCategories.has(e.target).length === 0) {
+       verticalCategories.fadeOut();
+    $(".fancybox-categories").fadeOut();
+    }
+});
 filtersMore.on("click", function () {
     filtersList.removeClass("filters__list--compressed");
     filtersMore.hide();
@@ -109,14 +108,14 @@ filtersHide.on("click", function () {
     filtersList.addClass("filters__list--compressed");
     filtersHide.hide();
     filtersMore.show();
-})
+});
 
 $(".footer__title").on("click", function () {
     $(this).next(".footer__list").slideToggle();
-})
+});
 $(".filters__show-button").on("click", function () {
     filters.slideToggle();
-})
+});
 
 $(".cart-modal__delete-item").on("click", function () {
     $(this).parent().remove();
@@ -150,9 +149,25 @@ $("body").on("click", ".common-popup__button-continue", function () {
     $(".common-popup").fadeOut();
     fancybox.fadeOut();
 });
+$("body").on("click", ".product-card__buy-button", function () {
+    $(".one-click-modal").fadeIn();
+    fancybox.fadeIn();
+});
 $(".main-header__show-phones").on("click", function () {
     $(".phones").fadeIn();
     fancybox.fadeIn();
-})
+});
+$('#reg-number').inputmask("+380-(99)-99-99-999");
+$('#input-telephone').inputmask("+380-(99)-99-99-999");
+$('#phone-number-input').inputmask("+380-(99)-99-99-999");
+$('#one-click-input').inputmask("+380-(99)-99-99-999");
+
+$(".product-gallery__big-slider--clickable").click(function () {
+    galleryPopup.fadeIn();
+    fancybox.fadeIn();
+        if(galleryPopup.css('display') === 'block'){
+        galleryPopup.css("display", "flex");
+    }
+});
 
 });

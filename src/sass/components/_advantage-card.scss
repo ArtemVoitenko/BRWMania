@@ -27,6 +27,14 @@
 		line-height: 20px;
 		
 	}
+	&__link {
+		display: block;
+    	text-decoration: underline;
+    	margin-top: 10px;
+    	&:hover {
+    		color: $accent;
+    	}
+	}
 
 	&:before {
 		content: '';

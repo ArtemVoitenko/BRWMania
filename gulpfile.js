@@ -53,13 +53,12 @@ const config = {
   jsBuild: [
     `${pathes.src.js}/libs/jquery-3.3.1.min.js`,
     `${pathes.src.js}/libs/jquery-ui.min.js`,
-    `${pathes.src.js}/libs/zoomove.min.js`,
+    `${pathes.src.js}/libs/jquery.inputmask.bundle.min.js`,
     `${pathes.src.js}/libs/slick.min.js`,
     `${pathes.src.js}/go-top.js`,
     `${pathes.src.js}/quantizer.js`,
     `${pathes.src.js}/product-info__slider.js`,
     `${pathes.src.js}/slider.js`,
-    `${pathes.src.js}/range-sliders.js`,
     `${pathes.src.js}/main.js`
   ]
 };
