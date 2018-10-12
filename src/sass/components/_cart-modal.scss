@@ -8,6 +8,8 @@
 	display: none;
 	flex-direction: column;
 	width: 310px;
+	max-height: 400px;
+	overflow: auto;
 	padding: 5px;
 
 	background-color: #fff;

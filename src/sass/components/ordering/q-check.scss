@@ -1,0 +1,52 @@
+#d_quickcheckout td {
+	text-align: center;
+	min-width: 200px;
+	&:first-of-type {
+		min-width: 50px;
+	}
+}
+#d_quickcheckout .qc-quantity {
+	width: auto;
+}
+#d_quickcheckout a {
+	color: $black;
+	&:hover {
+		color: $accent;
+	}
+}
+#d_quickcheckout label {
+	font-size: 14px;
+	margin-bottom: 15px;
+}
+#d_quickcheckout .form-horizontal .form-group {
+	margin-left: 0;
+	margin-right: 0;
+}
+#d_quickcheckout button {
+	text-transform: uppercase;
+	color: #fff;
+}
+#d_quickcheckout .qc-totals .row:last-child {
+	margin-right: 0;
+	margin-left: 0;
+	border: none;
+}
+#d_quickcheckout .qc-totals .row:last-child div {
+	font-size: 24px;
+	font-weight: bold;
+}
+.qc-image a {
+	display: inline-block;
+}
+.qc-checkout-product {
+	overflow-x: auto;
+}
+@media (max-width: 768px) {
+	#d_quickcheckout td {
+		min-width: 100px;
+}
+}
+// #d_quickcheckout .row {
+// 	margin-left: 0;
+// 	margin-right: 0;
+// }

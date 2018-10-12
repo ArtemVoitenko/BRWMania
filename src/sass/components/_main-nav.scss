@@ -68,10 +68,8 @@
 
 	&__show-icon {
 		position: absolute;
-		right: 10px;
-		top: 50%;
-		transform: translate(0, -50%);
 		fill: #fff;
+		right: 10px;
 		
 	}
 
@@ -99,6 +97,7 @@
 		&__show {
 			display: block;
 		}
+
 	}
 }
 @media (max-width: 767px) {
@@ -110,16 +109,17 @@
 		z-index: 20;
 
 		background-color: $black;
-		overflow: auto;
 		&__show {
 			position: absolute;
-			top: 3px;
+			top: 7px;
 			left: 10px;
 			font-size: 0;
-			width: 40px;
-			background-color: transparent;
+			width: 30px;
+			height: 30px;
+			background-color: $black;
+			border-radius: 2px;
 			&:hover {
-				background-color: transparent;
+				background-color: $black;
 		}
 		}
 		&__link {
@@ -127,7 +127,11 @@
 			padding-right: 30px;
 		}
 		&__show-icon {
-			fill: $accent;
+			fill: #fff;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
 		}
 	}
 	.main-nav .main-nav__close {

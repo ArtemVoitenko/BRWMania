@@ -1,6 +1,5 @@
 $(function () {
 $('.quantity-switch__less').on('click', function(e) {
-    e.preventDefault();
     var quantityInput = $(this).siblings('.quantity-switch__number');
     var quantityValue = quantityInput.val();
     if (quantityValue > 1) {
@@ -11,7 +10,6 @@ $('.quantity-switch__less').on('click', function(e) {
 });
 
 $('.quantity-switch__more').on('click', function(e) {
-    e.preventDefault();
     var quantityInput = $(this).siblings('.quantity-switch__number');
     var quantityValue = quantityInput.val();
     if (quantityValue <= 9) {

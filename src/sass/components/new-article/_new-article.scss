@@ -20,6 +20,12 @@
 			margin-left: 30px;
 			margin-bottom: 30px;
 		}
+	&__description {
+		&:first-letter {
+			font-size: 50px;
+			color: $accent;
+		}
+	}
 	
 	
 
@@ -38,7 +44,7 @@
 
 		display: inline-block;
 		padding-top: 20px;
-		padding-bottom: 20px;
+		padding-bottom: 75px;
 
 		border-bottom: 1px solid $black;
 	}

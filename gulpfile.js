@@ -51,8 +51,9 @@ const pathes = {
 
 const config = {
   jsBuild: [
-    `${pathes.src.js}/libs/jquery-3.3.1.min.js`,
+    // `${pathes.src.js}/libs/jquery-3.3.1.min.js`,
     `${pathes.src.js}/libs/jquery-ui.min.js`,
+    `${pathes.src.js}/libs/jquery.zoom.min.js`,
     `${pathes.src.js}/libs/jquery.inputmask.bundle.min.js`,
     `${pathes.src.js}/libs/slick.min.js`,
     `${pathes.src.js}/go-top.js`,

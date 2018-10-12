@@ -1,6 +1,7 @@
 .all-advantages {
 	margin-top: 50px;
 	margin-bottom: 50px;
+	clear: both;
 	&__title {
 		margin-bottom: 55px;
 
@@ -29,11 +30,11 @@
 	}
 }
 
-@media (max-width: 600px) {
-	.all-advantages {
-		&__cards-wrapper {
-			flex-direction: column;
-		}
+// @media (max-width: 600px) {
+// 	.all-advantages {
+// 		&__cards-wrapper {
+// 			flex-direction: column;
+// 		}
 
-	}
-}
+// 	}
+// }

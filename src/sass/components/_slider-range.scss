@@ -9,6 +9,14 @@
 	background-color: #fff;
 
 }
+#d_quickcheckout .progress-striped .progress-bar-success {
+	background-image: none;
+	background-color: $accent;
+}
+#d_quickcheckout .progress {
+	height: 15px;
+}
+
 .ui-slider-handle {
 	position: absolute;
 	top: -3px;
@@ -45,4 +53,9 @@
 	justify-content: space-between;
 	align-items: center;
 	margin-bottom: 20px;
+}
+
+.ui-widget-content .ui-state-active {
+	background-color: darken($accent, 10%);
+	border: none;
 }

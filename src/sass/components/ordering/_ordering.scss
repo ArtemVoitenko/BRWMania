@@ -48,8 +48,14 @@ width: 4px;
 			background-color: $accent;
 			color: #fff;
 			text-transform: uppercase;
+			height: 60px;
+
 		}
 
+	}
+	&__line {
+		border-bottom: 1px solid $grey;
+		font-size: 16px;
 	}
 	&__column {
 		
@@ -97,5 +103,12 @@ width: 4px;
 	&__sum {
 		font-size: 24px;
 		font-weight: bold;
+	}
+}
+@media (max-width: 768px) {
+	.ordering {
+		&__column {
+			font-size: 12px;
+		}
 	}
 }

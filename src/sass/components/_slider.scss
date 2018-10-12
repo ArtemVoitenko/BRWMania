@@ -18,12 +18,12 @@
 		}
 		&--prev {
 			top: -40px;
-			right: 35px;
+			right: 45px;
 
 		}
 		&--next {
 			top: -40px;
-			right: 0;
+			right: 10px;
 		}
 	}
 
@@ -55,26 +55,17 @@
 .slick-active [role="tab"] {
 	background-color: $accent;
 }
-.slider-section {
+
+@media (max-width: 1650px) {
+	.slider-section {
 	padding-right: 10px;
 	padding-left: 10px;
 }
-@media (max-width: 1650px) {
-	.slider {
-		&__button {
-			&--next {
-				right: 10px;
-			}
-			&--prev {
-				right: 45px;
-			}
-		}
-	}
 }
-@media (max-width: 540px) {
+@media (max-width: 768px) {
 	.slider {
 		&__button {
-			top: -5px;
+			top: -10px;
 			z-index: 10;
 		}
 	}

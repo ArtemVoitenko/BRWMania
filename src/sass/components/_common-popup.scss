@@ -26,9 +26,19 @@
 
 	background-color: transparentize($black, 0.5);
 	}
+	&--success {
+		display: none;
+	}
+	&__success-phrase {
+		font-size: 20px;
+		color: $green;
+	}
 	&__buttons {
 		display: flex;
 		justify-content: space-between;
+	}
+	&__buttons-on-page {
+		margin-top: 20px;
 	}
 	&__title {
 		display: block;
@@ -91,6 +101,14 @@
 			height: 35px;
 
 			background-color: $black;
+
+			
+		}
+		&:hover {
+			background-color: darken($accent, 5%);
+		}
+		&:active {
+			background-color: lighten($accent, 5%);
 		}
 
 	}
@@ -99,6 +117,7 @@
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
+		transition: 2s;
 	}
 
 }
@@ -110,8 +129,14 @@
 			flex-direction: column;
 			justify-content: center;
 		}
-		&__button-continue {
-			margin-bottom: 15px;
+		&__buttons-on-page {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+		&__button {
+			&:first-child {
+				margin-bottom: 15px;
+			}
 		}
 		&__title {
 			font-size: 16px;

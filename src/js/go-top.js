@@ -1,6 +1,4 @@
    $('body').append("<button class='go-top' title='Вверх'><svg class='go-top__icon' width = '65' height='58'><use xlink:href='#icon_up'></use></svg>Вверх</button>");
-
-
    $(function() {
        $.fn.scrollToTop = function() {
            $(this).hide().removeAttr("href");
@@ -17,7 +15,6 @@
            })
        }
    });
-
    $(function() {
        $(".go-top").scrollToTop();
    });

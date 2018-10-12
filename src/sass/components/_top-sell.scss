@@ -8,3 +8,8 @@
 		flex-wrap: wrap;
 	}
 }
+@media (max-width: 768px) {
+	.top-sell {
+		margin-top: 0;
+	}
+}

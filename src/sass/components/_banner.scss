@@ -16,4 +16,35 @@
 		object-fit: cover;
 
 	}
+	&__button {
+		position: absolute;
+		top: 50%;
+		transform: translate(0, -50%);
+		
+		background-color: $grey;
+		width: 40px;
+		height: 40px;
+		z-index: -1;
+		opacity: 0.4;
+		&--next {
+			right: 0;
+		}
+		&--prev {
+			left: 0;
+		}
+		&:hover {
+			opacity: 1;
+		}
+	}
+		&:hover {
+		.banner__button {
+			z-index: 2;
+		}
+	}
+
+}
+@media (max-width: 1100px){
+	.side-banners {
+		display: none;
+	}
 }

@@ -50,6 +50,9 @@
 		&:hover {
 			fill: darken($accent, 7%);
 		}
+		&:active {
+			fill: lighten($accent, 5%);
+		}
 	}
 }
 @media (max-width: 1040px) {
