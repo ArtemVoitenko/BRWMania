@@ -101,7 +101,7 @@
 		width: 49%;
 	}
 	&__side-wrapper {
-		padding-left: 20px;
+		// padding-left: 20px;
 		width: 100%;
 	}
 	&__price-old {
@@ -109,11 +109,7 @@
 		text-decoration: line-through;	
 	}
 	}
-@media (max-width: 1650px) {
-	.product-info__side-wrapper {
-		padding-left: 0;
-}
-}
+
 @media (max-width: 1200px){
 	.product-info {
 		&__wrapper {

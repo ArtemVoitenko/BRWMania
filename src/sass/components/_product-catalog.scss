@@ -205,6 +205,14 @@
 	}
 }
 }
+@media (max-width: 359px){
+	.product-catalog{
+		&__sorting-type{
+			
+			width: 119px;
+			}
+		}
+}
 // @media (max-width: 500px) {
 // 	.product-catalog {
 // 		&__sorts {

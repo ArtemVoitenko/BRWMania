@@ -55,6 +55,9 @@
 		align-items: center;
 		margin-bottom: 10px;
 	}
+	&__term-flex {
+		display: flex;
+	}
 	&__term-wrapper {
 		position: relative;
 	}
@@ -93,4 +96,11 @@
 }
 #d_quickcheckout #payment_view a.payment__more-info {
 	display: block!important;
+}
+@media (max-width: 767px) {
+	.payment-sum__result-wrapper--credit {
+		font-size: 20px;
+		margin-top: 5px;
+		margin-bottom: 10px;
+	}
 }

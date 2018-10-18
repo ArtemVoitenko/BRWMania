@@ -66,6 +66,9 @@
 	box-shadow: inset 0px 0px 0px 2px rgba(234,60,39,1);
 	outline: none;
 }
+.product-gallery__slide-img {
+	max-height: 570px;
+}
 @media (max-width: 360px){
 	.small-slider {
 		width: 220px;

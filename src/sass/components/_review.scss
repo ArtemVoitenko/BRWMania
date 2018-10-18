@@ -89,6 +89,14 @@
 		display: flex;
 		justify-content: space-between;
 	}
+	&__attach-button {
+		display: inline-block;
+		padding: 5px 10px;
+		margin-top: 10px;
+	}
+	&__added-name {
+		display: block;
+	}
 }
 @media (max-width: 960px) {
 	.review {

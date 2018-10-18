@@ -20,6 +20,7 @@ var commonPopupContinue = $(".common-popup__button-continue");
 var paginationLink = $(".pagination__link");
 var productCardList = $(".product-card__wrapper");
 var brandsPopup = $(".brands-popup");
+var verticalCategories = $(".vertical-categories--popup");
 
 $("#open-main-nav").on("click", function () {
     mainNav.toggle('slide','left');
@@ -81,18 +82,18 @@ paginationLink.on("click", function (e){
     paginationLink.removeClass("pagination__link--active");
     $(this).addClass("pagination__link--active");
 });
-
-var verticalCategories = $(".vertical-categories--popup");
-$(".horizontal-categories__link--show-vertical").on("click", function (e) {
+window.showVertical = function (e) {
     e.preventDefault();
     verticalCategories.fadeIn();
     $(".fancybox-categories").fadeIn();
-})
+}
+
+$(".horizontal-categories__link--show-vertical").on("click", showVertical);
 filtersMore.on("click", function () {
     filtersList.removeClass("filters__list--compressed");
     filtersMore.hide();
     filtersHide.show();
-})
+});
 filtersHide.on("click", function () {
     filtersList.addClass("filters__list--compressed");
     filtersHide.hide();
@@ -137,6 +138,9 @@ $(".main-header__show-phones").on("click", function () {
 $('.zoom').zoom({
   magnify: 1.5
 });
+if($(window).width()<=1024) {
+  $('.zoom').trigger('zoom.destroy');
+}
 function initializeGalleryPopup() {
   $('#popup-gallery-slide').slick({
   slidesToShow: 1,
@@ -215,7 +219,7 @@ $(document).mouseup(function(e) {
     }
 });
 $(document).mouseup(function(e) {
-    if (!$(".cart-modal").is(e.target) &&
+    if (!$(".cart-modal").is(e.target) && !$(".cart__open-btn").is(e.target) &&
        $(".cart-modal").has(e.target).length === 0) {
        $(".cart-modal").fadeOut();
     }
