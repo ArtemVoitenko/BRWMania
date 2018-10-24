@@ -22,16 +22,16 @@ $(".top-sell__wrapper").slick({
       }
       },
       {
-      breakpoint: 1025,
+      breakpoint: 1024,
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 3,
         draggable: true
       }
       },
             {
       breakpoint: 767,
       settings: {
-        slidesToShow: 1,
+        slidesToShow: 2,
         // arrows: false, 
         // dots: true
 
@@ -55,9 +55,9 @@ $('.slider').slick({
       }
   },
       {
-      breakpoint: 1025,
+      breakpoint: 1024,
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 3,
         draggable: true
       }
       },
@@ -65,7 +65,7 @@ $('.slider').slick({
             {
       breakpoint: 767,
       settings: {
-        slidesToShow: 1,
+        slidesToShow: 2,
         // arrows: false, 
         // dots: true
 

@@ -31,6 +31,12 @@
 			flex-direction: column;
 			border-bottom: 1px dashed $black;
 		}
+		&__dots {
+			width: 0;
+		}
+		&__value {
+			white-space: normal;
+		}
 	}
 }
 @media (max-width: 360px) {

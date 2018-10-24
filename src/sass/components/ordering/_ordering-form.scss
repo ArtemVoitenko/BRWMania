@@ -128,7 +128,9 @@
 		margin-top: 45px;
 	}
 }
-
+.postAdress {
+	display: none;
+}
 @media (max-width: 1024px) {
 	.ordering-form {
 		&__payment-sum {

@@ -1,7 +1,9 @@
 $(function () {
+    var quantityValue;
+    var quantityInput;
 $('.quantity-switch__less').on('click', function(e) {
-    var quantityInput = $(this).siblings('.quantity-switch__number');
-    var quantityValue = quantityInput.val();
+    quantityInput = $(this).siblings('.quantity-switch__number');
+    quantityValue = quantityInput.val();
     if (quantityValue > 1) {
         quantityValue --;
         $(quantityInput).val(quantityValue);
@@ -10,12 +12,18 @@ $('.quantity-switch__less').on('click', function(e) {
 });
 
 $('.quantity-switch__more').on('click', function(e) {
-    var quantityInput = $(this).siblings('.quantity-switch__number');
-    var quantityValue = quantityInput.val();
-    if (quantityValue <= 9) {
+    if(quantityValue < 100){
+    quantityInput = $(this).siblings('.quantity-switch__number');
+    quantityValue = quantityInput.val();
+    
         quantityValue ++;
         $(quantityInput).val(quantityValue);
     }
+  // $('body').on('change','.quantity-switch__number',function(){
+  //      if(quantityValue > 100){
+  //       $(quantityInput).val(99);
+  //      }
+  //       });
     // $(".btn .btn-primary").click();
 });
 });

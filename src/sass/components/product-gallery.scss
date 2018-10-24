@@ -2,10 +2,11 @@
 	width: 100%;
 
 	&__wrapper {
+		position: relative;
 		max-width: 650px;
 		max-height: 100%;
 		width: 50%;
-		overflow-x: hidden;
+		overflow: hidden;
 		display: block;
 	}
 	&__thumbs {
@@ -36,3 +37,8 @@
 }
 }
 }
+// .product-gallery__big-slider--clickable {
+// 	&:hover {
+// 		cursor: pointer;
+// 	}
+// }

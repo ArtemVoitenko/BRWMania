@@ -1,4 +1,5 @@
 .product-info {
+	position: relative;
 	&__title {
 		margin-bottom: 20px;
 
@@ -17,6 +18,7 @@
 		width: 50%;
 	}
 	&__comments-wrapper {
+		position: relative;
 		width: 50%;
 
 		padding-right: 20px;
@@ -55,6 +57,22 @@
 	&__rating-item {
 		margin-right: 5px;
 	}
+	&__show-video {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translate(-50%, 0);
+		display: block;
+		padding: 10px 50px 10px 10px;
+    	
+	}
+	&__video-icon {
+		fill: #fff;
+		position: absolute;
+   		right: 10px;
+    	top: 50%;
+    	transform: translateY(-50%);
+	}
 	&__price {
 		margin-bottom: 10px;
 		font-size: 24px;
@@ -80,7 +98,13 @@
 		}
 
 	}
+	&__sale-container {
+		display: flex;
+    	flex-direction: column;
+    	align-items: flex-start;
+	}
 	&__side-divider {
+		position: relative;
 		display: flex;
 		justify-content: space-between;
 	}
@@ -99,6 +123,7 @@
 	}
 	&__right-side {
 		width: 49%;
+		position: relative;
 	}
 	&__side-wrapper {
 		// padding-left: 20px;
@@ -115,17 +140,18 @@
 		&__wrapper {
 			flex-direction: column;
 		}
-		&__buttons-wrapper {
-			flex-direction: row;
-			&:first-child {
-				margin-right: 10px;
-			}
-		}
+
 		&__slider-wrapper {
 			width: 100%;
 		}
 		&__comments-wrapper {
 			width: 100%;
+		}
+		&__show-video {
+			position: relative;
+			margin: 0 auto;
+			left: inherit;
+			transform: inherit;
 		}
 	}
 
@@ -149,6 +175,12 @@
 			// padding-left: 10px;
 			// padding-right: 10px;
 
+		}
+				&__buttons-wrapper {
+			flex-direction: row;
+			&:first-child {
+				margin-right: 10px;
+			}
 		}
 		&__rating {
 			// justify-content: flex-end;
@@ -199,10 +231,33 @@
 	.product-info__side-wrapper {
 		padding-left: 0;
 	}
-	.product-info__title {
-		margin-top: 20px;
-		
+	.product-info__side-divider {
+		overflow: hidden;
+}
+}
+@media (max-width: 1023px) {
+	.product-info {
+		&__title{
+		font-size: 18px;
+		margin-top: 10px;
+		margin-bottom: 10px;
 	}
+		&__rating {
+			margin-bottom: 10px;
+		}
+		&__elements-wrapper {
+			&:first-child {
+				flex-direction: row;
+				justify-content: space-around;
+				position: relative;
+			}
+		}
+		// &__price-old {
+		// 	position: absolute;
+  //   		left: 5px;
+  //   		top: 0;
+		// }
+}
 }
 
 @media (max-width: 600px){

@@ -53,6 +53,9 @@ width: 4px;
 		}
 
 	}
+	&__history-table {
+		overflow: auto;
+	}
 	&__line {
 		border-bottom: 1px solid $grey;
 		font-size: 16px;
@@ -65,8 +68,12 @@ width: 4px;
 		// color: #fff;
 		padding-top: 20px;
 		padding-bottom: 20px;
+		text-align: center;
 		&:first-child {
 			width: 90px;
+		}
+		&--history:first-child {
+			width: inherit;
 		}
 	}
 	&__img-wrapper {

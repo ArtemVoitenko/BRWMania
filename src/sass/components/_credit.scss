@@ -65,6 +65,16 @@
 		&__sum-title {
 			font-size: 16px;
 		}
+		&__button {
+			padding-top: 5px;
+			padding-bottom: 5px;
+			margin-top: 0;
+
+		}
+		&__terms {
+			display: flex;
+			justify-content: space-between;
+		}
 	}
 	.credit__additional-data-phys {
 		margin-top: 0!important;

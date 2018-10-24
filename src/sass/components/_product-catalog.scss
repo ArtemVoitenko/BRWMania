@@ -123,18 +123,18 @@
 	}
 }
 
-@media (max-width: 1024px) {
-	.product-catalog__product-grid {
-		.product-card {
-			&:hover {
-				.product-card__details {
-					display: none;
+// @media (max-width: 1024px) {
+// 	.product-catalog__product-grid {
+// 		.product-card {
+// 			&:hover {
+// 				.product-card__details {
+// 					display: none;
 					
-				}
-			}
-		}
-	}
-}
+// 				}
+// 			}
+// 		}
+// 	}
+// }
 @media (max-width: 768px){
 	.product-catalog {
 		padding-left: 0;

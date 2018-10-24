@@ -20,7 +20,8 @@
 		position: relative;
 
 		display: inline-block;
-		padding: 10px 60px;
+		width: 100%;
+		padding: 10px 0;
 		margin-top: 15px;
 		margin-bottom: 15px;
 		background-color: $green;
@@ -49,6 +50,7 @@
 	}
 }
 .payment {
+
 	&__term {
 		display: flex;
 		justify-content: center;
@@ -98,9 +100,19 @@
 	display: block!important;
 }
 @media (max-width: 767px) {
-	.payment-sum__result-wrapper--credit {
-		font-size: 20px;
-		margin-top: 5px;
-		margin-bottom: 10px;
+	.payment-sum{
+		&__result-wrapper--credit {
+			font-size: 20px;
+			margin-top: 5px;
+			margin-bottom: 10px;
+			padding: 3px 0;
 	}
+
+}
+.payment__text--credit {
+		position: relative;
+		left: auto;
+		top: auto;
+		transform: none;
+}
 }
